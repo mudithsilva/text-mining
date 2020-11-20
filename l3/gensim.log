@@ -1,0 +1,864 @@
+2020-11-20 08:25:41,376:INFO:using symmetric alpha at 0.1
+2020-11-20 08:25:41,377:INFO:using symmetric eta at 0.1
+2020-11-20 08:25:41,378:INFO:using serial LDA version on this node
+2020-11-20 08:25:41,380:INFO:running online (multi-pass) LDA training, 10 topics, 50 passes over the supplied corpus of 2898 documents, updating model once every 2000 documents, evaluating perplexity every 2898 documents, iterating 50x with a convergence threshold of 0.001000
+2020-11-20 08:25:41,380:INFO:PROGRESS: pass 0, at document #2000/2898
+2020-11-20 08:25:42,795:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:25:42,796:INFO:topic #9 (0.100): 0.017*"new" + 0.015*"government" + 0.014*"year" + 0.012*"congress" + 0.011*"america" + 0.011*"freedom" + 0.011*"national" + 0.011*"system" + 0.011*"let" + 0.010*"women"
+2020-11-20 08:25:42,796:INFO:topic #1 (0.100): 0.020*"federal" + 0.019*"government" + 0.017*"people" + 0.012*"year" + 0.011*"budget" + 0.010*"congress" + 0.008*"spending" + 0.008*"years" + 0.008*"health" + 0.008*"american"
+2020-11-20 08:25:42,796:INFO:topic #3 (0.100): 0.019*"people" + 0.018*"new" + 0.016*"american" + 0.015*"world" + 0.010*"year" + 0.010*"years" + 0.009*"america" + 0.009*"congress" + 0.009*"government" + 0.007*"children"
+2020-11-20 08:25:42,797:INFO:topic #7 (0.100): 0.018*"know" + 0.011*"government" + 0.011*"budget" + 0.010*"help" + 0.010*"need" + 0.009*"let" + 0.009*"system" + 0.008*"federal" + 0.008*"act" + 0.008*"american"
+2020-11-20 08:25:42,797:INFO:topic #5 (0.100): 0.016*"nuclear" + 0.014*"world" + 0.014*"new" + 0.013*"american" + 0.013*"energy" + 0.012*"soviet" + 0.012*"union" + 0.011*"nations" + 0.011*"economic" + 0.010*"program"
+2020-11-20 08:25:42,797:INFO:topic diff=1.574864, rho=1.000000
+2020-11-20 08:25:43,549:INFO:-6.899 per-word bound, 119.4 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:25:43,550:INFO:PROGRESS: pass 0, at document #2898/2898
+2020-11-20 08:25:44,109:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:25:44,110:INFO:topic #8 (0.100): 0.033*"world" + 0.024*"people" + 0.018*"america" + 0.018*"new" + 0.013*"american" + 0.012*"peace" + 0.012*"working" + 0.011*"time" + 0.011*"nation" + 0.011*"congress"
+2020-11-20 08:25:44,110:INFO:topic #7 (0.100): 0.028*"know" + 0.022*"let" + 0.021*"crime" + 0.018*"police" + 0.014*"community" + 0.014*"need" + 0.013*"help" + 0.013*"americans" + 0.012*"budget" + 0.012*"minimum"
+2020-11-20 08:25:44,110:INFO:topic #1 (0.100): 0.022*"people" + 0.017*"government" + 0.015*"work" + 0.014*"care" + 0.013*"budget" + 0.013*"welfare" + 0.012*"year" + 0.012*"years" + 0.012*"federal" + 0.011*"health"
+2020-11-20 08:25:44,110:INFO:topic #2 (0.100): 0.030*"year" + 0.020*"years" + 0.019*"college" + 0.015*"americans" + 0.013*"children" + 0.013*"tax" + 0.012*"congress" + 0.011*"work" + 0.010*"know" + 0.010*"way"
+2020-11-20 08:25:44,111:INFO:topic #6 (0.100): 0.031*"america" + 0.027*"work" + 0.018*"children" + 0.016*"people" + 0.016*"family" + 0.013*"new" + 0.012*"best" + 0.012*"americans" + 0.011*"year" + 0.011*"help"
+2020-11-20 08:25:44,111:INFO:topic diff=0.842076, rho=0.707107
+2020-11-20 08:25:44,111:INFO:PROGRESS: pass 1, at document #2000/2898
+2020-11-20 08:25:45,141:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:25:45,141:INFO:topic #4 (0.100): 0.022*"america" + 0.017*"security" + 0.013*"economic" + 0.013*"new" + 0.012*"future" + 0.012*"nation" + 0.011*"people" + 0.011*"social" + 0.008*"american" + 0.008*"year"
+2020-11-20 08:25:45,142:INFO:topic #1 (0.100): 0.023*"government" + 0.020*"federal" + 0.019*"people" + 0.016*"health" + 0.015*"budget" + 0.014*"congress" + 0.013*"care" + 0.012*"year" + 0.011*"president" + 0.011*"welfare"
+2020-11-20 08:25:45,142:INFO:topic #8 (0.100): 0.040*"world" + 0.024*"people" + 0.017*"america" + 0.015*"american" + 0.014*"new" + 0.014*"peace" + 0.013*"nation" + 0.011*"time" + 0.011*"rights" + 0.010*"change"
+2020-11-20 08:25:45,142:INFO:topic #3 (0.100): 0.024*"new" + 0.022*"people" + 0.019*"children" + 0.019*"american" + 0.016*"century" + 0.016*"right" + 0.012*"america" + 0.012*"help" + 0.011*"let" + 0.011*"world"
+2020-11-20 08:25:45,142:INFO:topic #0 (0.100): 0.023*"years" + 0.018*"administration" + 0.016*"federal" + 0.014*"congress" + 0.013*"new" + 0.013*"energy" + 0.013*"states" + 0.012*"nation" + 0.012*"program" + 0.011*"national"
+2020-11-20 08:25:45,142:INFO:topic diff=0.521827, rho=0.538460
+2020-11-20 08:25:45,927:INFO:-6.482 per-word bound, 89.4 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:25:45,927:INFO:PROGRESS: pass 1, at document #2898/2898
+2020-11-20 08:25:46,730:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:25:46,731:INFO:topic #3 (0.100): 0.030*"new" + 0.024*"children" + 0.022*"people" + 0.022*"century" + 0.018*"right" + 0.016*"american" + 0.015*"schools" + 0.015*"america" + 0.015*"teachers" + 0.014*"communities"
+2020-11-20 08:25:46,732:INFO:topic #4 (0.100): 0.027*"america" + 0.022*"security" + 0.017*"social" + 0.016*"new" + 0.012*"nation" + 0.012*"tonight" + 0.011*"support" + 0.011*"economic" + 0.010*"people" + 0.010*"future"
+2020-11-20 08:25:46,732:INFO:topic #0 (0.100): 0.028*"years" + 0.017*"new" + 0.013*"administration" + 0.013*"national" + 0.012*"federal" + 0.012*"million" + 0.012*"states" + 0.012*"energy" + 0.012*"congress" + 0.011*"space"
+2020-11-20 08:25:46,732:INFO:topic #2 (0.100): 0.034*"year" + 0.023*"tax" + 0.023*"years" + 0.022*"college" + 0.017*"americans" + 0.013*"congress" + 0.011*"children" + 0.011*"way" + 0.011*"work" + 0.010*"cuts"
+2020-11-20 08:25:46,732:INFO:topic #5 (0.100): 0.026*"nuclear" + 0.019*"peace" + 0.019*"new" + 0.017*"nations" + 0.017*"world" + 0.014*"weapons" + 0.013*"america" + 0.012*"soviet" + 0.011*"union" + 0.010*"countries"
+2020-11-20 08:25:46,732:INFO:topic diff=0.655620, rho=0.538460
+2020-11-20 08:25:46,732:INFO:PROGRESS: pass 2, at document #2000/2898
+2020-11-20 08:25:48,219:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:25:48,219:INFO:topic #3 (0.100): 0.027*"new" + 0.022*"people" + 0.022*"children" + 0.019*"right" + 0.018*"century" + 0.018*"american" + 0.015*"america" + 0.014*"help" + 0.013*"schools" + 0.013*"let"
+2020-11-20 08:25:48,220:INFO:topic #1 (0.100): 0.026*"government" + 0.022*"federal" + 0.021*"health" + 0.020*"people" + 0.016*"budget" + 0.016*"congress" + 0.016*"care" + 0.014*"president" + 0.013*"programs" + 0.012*"year"
+2020-11-20 08:25:48,220:INFO:topic #6 (0.100): 0.031*"work" + 0.031*"america" + 0.024*"children" + 0.022*"family" + 0.021*"people" + 0.015*"best" + 0.013*"parents" + 0.013*"americans" + 0.012*"child" + 0.011*"new"
+2020-11-20 08:25:48,220:INFO:topic #4 (0.100): 0.022*"america" + 0.022*"security" + 0.015*"social" + 0.014*"economic" + 0.014*"future" + 0.013*"new" + 0.012*"nation" + 0.010*"support" + 0.009*"people" + 0.009*"long"
+2020-11-20 08:25:48,220:INFO:topic #7 (0.100): 0.037*"crime" + 0.035*"know" + 0.025*"let" + 0.016*"house" + 0.016*"police" + 0.014*"community" + 0.013*"budget" + 0.013*"act" + 0.012*"help" + 0.012*"americans"
+2020-11-20 08:25:48,220:INFO:topic diff=0.520446, rho=0.474099
+2020-11-20 08:25:48,850:INFO:-6.359 per-word bound, 82.1 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:25:48,850:INFO:PROGRESS: pass 2, at document #2898/2898
+2020-11-20 08:25:49,240:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:25:49,240:INFO:topic #4 (0.100): 0.027*"security" + 0.025*"america" + 0.020*"social" + 0.015*"new" + 0.012*"support" + 0.012*"economic" + 0.012*"nation" + 0.011*"tonight" + 0.011*"future" + 0.010*"need"
+2020-11-20 08:25:49,240:INFO:topic #5 (0.100): 0.026*"nuclear" + 0.021*"peace" + 0.019*"world" + 0.018*"nations" + 0.017*"new" + 0.016*"soviet" + 0.014*"weapons" + 0.013*"states" + 0.013*"trade" + 0.012*"america"
+2020-11-20 08:25:49,241:INFO:topic #8 (0.100): 0.048*"world" + 0.030*"people" + 0.025*"america" + 0.017*"nation" + 0.017*"american" + 0.017*"peace" + 0.017*"new" + 0.013*"time" + 0.012*"today" + 0.011*"change"
+2020-11-20 08:25:49,241:INFO:topic #6 (0.100): 0.034*"work" + 0.032*"children" + 0.029*"america" + 0.022*"people" + 0.019*"family" + 0.016*"child" + 0.016*"parents" + 0.015*"americans" + 0.014*"best" + 0.014*"families"
+2020-11-20 08:25:49,241:INFO:topic #3 (0.100): 0.032*"new" + 0.025*"children" + 0.022*"century" + 0.022*"people" + 0.020*"right" + 0.017*"america" + 0.016*"communities" + 0.016*"schools" + 0.016*"teachers" + 0.015*"help"
+2020-11-20 08:25:49,241:INFO:topic diff=0.595223, rho=0.474099
+2020-11-20 08:25:49,241:INFO:PROGRESS: pass 3, at document #2000/2898
+2020-11-20 08:25:50,303:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:25:50,305:INFO:topic #5 (0.100): 0.022*"nuclear" + 0.021*"soviet" + 0.021*"world" + 0.018*"peace" + 0.018*"nations" + 0.016*"states" + 0.014*"united" + 0.012*"countries" + 0.012*"new" + 0.012*"trade"
+2020-11-20 08:25:50,305:INFO:topic #0 (0.100): 0.024*"years" + 0.021*"energy" + 0.020*"administration" + 0.018*"new" + 0.018*"federal" + 0.014*"program" + 0.014*"congress" + 0.014*"national" + 0.012*"million" + 0.011*"inflation"
+2020-11-20 08:25:50,305:INFO:topic #1 (0.100): 0.029*"government" + 0.024*"health" + 0.023*"federal" + 0.020*"people" + 0.018*"congress" + 0.018*"budget" + 0.016*"care" + 0.015*"president" + 0.014*"programs" + 0.012*"welfare"
+2020-11-20 08:25:50,305:INFO:topic #9 (0.100): 0.030*"women" + 0.025*"year" + 0.020*"thank" + 0.019*"america" + 0.018*"let" + 0.018*"god" + 0.016*"congress" + 0.015*"men" + 0.015*"new" + 0.014*"national"
+2020-11-20 08:25:50,305:INFO:topic #2 (0.100): 0.037*"tax" + 0.037*"year" + 0.021*"years" + 0.016*"college" + 0.016*"americans" + 0.012*"cut" + 0.012*"congress" + 0.011*"cuts" + 0.010*"way" + 0.010*"people"
+2020-11-20 08:25:50,305:INFO:topic diff=0.476759, rho=0.428392
+2020-11-20 08:25:50,810:INFO:-6.291 per-word bound, 78.3 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:25:50,810:INFO:PROGRESS: pass 3, at document #2898/2898
+2020-11-20 08:25:51,195:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:25:51,195:INFO:topic #8 (0.100): 0.051*"world" + 0.032*"people" + 0.029*"america" + 0.019*"nation" + 0.018*"american" + 0.018*"peace" + 0.015*"new" + 0.014*"time" + 0.013*"freedom" + 0.012*"today"
+2020-11-20 08:25:51,196:INFO:topic #5 (0.100): 0.025*"nuclear" + 0.021*"peace" + 0.020*"world" + 0.019*"nations" + 0.017*"soviet" + 0.015*"new" + 0.015*"trade" + 0.015*"states" + 0.014*"weapons" + 0.014*"united"
+2020-11-20 08:25:51,196:INFO:topic #9 (0.100): 0.028*"thank" + 0.028*"year" + 0.025*"women" + 0.021*"america" + 0.018*"let" + 0.018*"congress" + 0.015*"god" + 0.015*"ask" + 0.015*"national" + 0.014*"men"
+2020-11-20 08:25:51,196:INFO:topic #0 (0.100): 0.028*"years" + 0.020*"new" + 0.020*"energy" + 0.017*"administration" + 0.016*"federal" + 0.015*"national" + 0.014*"million" + 0.013*"program" + 0.013*"congress" + 0.011*"percent"
+2020-11-20 08:25:51,196:INFO:topic #3 (0.100): 0.035*"new" + 0.024*"children" + 0.023*"century" + 0.021*"right" + 0.021*"people" + 0.019*"america" + 0.017*"communities" + 0.016*"schools" + 0.016*"teachers" + 0.016*"help"
+2020-11-20 08:25:51,196:INFO:topic diff=0.504544, rho=0.428392
+2020-11-20 08:25:51,196:INFO:PROGRESS: pass 4, at document #2000/2898
+2020-11-20 08:25:51,977:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:25:51,978:INFO:topic #7 (0.100): 0.044*"crime" + 0.037*"know" + 0.030*"let" + 0.022*"house" + 0.016*"bill" + 0.016*"police" + 0.015*"pass" + 0.015*"community" + 0.013*"congress" + 0.012*"big"
+2020-11-20 08:25:51,978:INFO:topic #8 (0.100): 0.053*"world" + 0.033*"people" + 0.029*"america" + 0.020*"nation" + 0.020*"american" + 0.019*"peace" + 0.018*"freedom" + 0.013*"time" + 0.013*"new" + 0.012*"today"
+2020-11-20 08:25:51,978:INFO:topic #1 (0.100): 0.031*"government" + 0.027*"health" + 0.023*"federal" + 0.020*"people" + 0.019*"congress" + 0.018*"budget" + 0.017*"care" + 0.016*"president" + 0.014*"programs" + 0.013*"welfare"
+2020-11-20 08:25:51,978:INFO:topic #6 (0.100): 0.035*"work" + 0.032*"children" + 0.027*"america" + 0.023*"people" + 0.023*"family" + 0.017*"child" + 0.015*"best" + 0.015*"families" + 0.015*"parents" + 0.013*"americans"
+2020-11-20 08:25:51,978:INFO:topic #4 (0.100): 0.029*"security" + 0.021*"social" + 0.020*"america" + 0.015*"future" + 0.015*"economic" + 0.013*"new" + 0.012*"support" + 0.012*"nation" + 0.011*"need" + 0.011*"long"
+2020-11-20 08:25:51,978:INFO:topic diff=0.403911, rho=0.393780
+2020-11-20 08:25:52,407:INFO:-6.251 per-word bound, 76.2 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:25:52,408:INFO:PROGRESS: pass 4, at document #2898/2898
+2020-11-20 08:25:52,738:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:25:52,738:INFO:topic #4 (0.100): 0.034*"security" + 0.026*"social" + 0.022*"america" + 0.014*"new" + 0.014*"support" + 0.013*"economic" + 0.012*"need" + 0.012*"future" + 0.011*"nation" + 0.011*"long"
+2020-11-20 08:25:52,739:INFO:topic #2 (0.100): 0.040*"tax" + 0.037*"year" + 0.022*"college" + 0.021*"years" + 0.016*"americans" + 0.014*"cut" + 0.013*"cuts" + 0.011*"education" + 0.011*"congress" + 0.011*"million"
+2020-11-20 08:25:52,739:INFO:topic #1 (0.100): 0.030*"government" + 0.029*"health" + 0.021*"people" + 0.020*"federal" + 0.019*"congress" + 0.019*"budget" + 0.018*"care" + 0.017*"president" + 0.015*"welfare" + 0.014*"work"
+2020-11-20 08:25:52,739:INFO:topic #9 (0.100): 0.031*"thank" + 0.030*"year" + 0.027*"women" + 0.022*"america" + 0.018*"congress" + 0.018*"let" + 0.017*"ask" + 0.016*"god" + 0.015*"national" + 0.015*"men"
+2020-11-20 08:25:52,739:INFO:topic #8 (0.100): 0.052*"world" + 0.034*"people" + 0.033*"america" + 0.020*"nation" + 0.019*"american" + 0.018*"peace" + 0.016*"freedom" + 0.014*"new" + 0.014*"time" + 0.014*"americans"
+2020-11-20 08:25:52,739:INFO:topic diff=0.410564, rho=0.393780
+2020-11-20 08:25:52,739:INFO:PROGRESS: pass 5, at document #2000/2898
+2020-11-20 08:25:53,851:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:25:53,852:INFO:topic #1 (0.100): 0.032*"government" + 0.029*"health" + 0.024*"federal" + 0.021*"congress" + 0.020*"people" + 0.019*"budget" + 0.017*"care" + 0.017*"president" + 0.015*"programs" + 0.014*"welfare"
+2020-11-20 08:25:53,853:INFO:topic #0 (0.100): 0.023*"years" + 0.023*"energy" + 0.020*"administration" + 0.019*"new" + 0.018*"federal" + 0.016*"program" + 0.014*"congress" + 0.013*"national" + 0.013*"inflation" + 0.012*"million"
+2020-11-20 08:25:53,853:INFO:topic #3 (0.100): 0.035*"new" + 0.023*"right" + 0.023*"children" + 0.020*"america" + 0.020*"century" + 0.019*"people" + 0.017*"help" + 0.015*"communities" + 0.015*"tonight" + 0.015*"schools"
+2020-11-20 08:25:53,854:INFO:topic #2 (0.100): 0.046*"tax" + 0.038*"year" + 0.019*"years" + 0.017*"college" + 0.015*"americans" + 0.015*"cut" + 0.012*"cuts" + 0.011*"people" + 0.011*"percent" + 0.010*"hope"
+2020-11-20 08:25:53,854:INFO:topic #9 (0.100): 0.034*"women" + 0.030*"year" + 0.026*"thank" + 0.022*"america" + 0.019*"god" + 0.019*"let" + 0.018*"men" + 0.017*"congress" + 0.015*"national" + 0.014*"ask"
+2020-11-20 08:25:53,854:INFO:topic diff=0.333660, rho=0.366396
+2020-11-20 08:25:54,663:INFO:-6.224 per-word bound, 74.8 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:25:54,664:INFO:PROGRESS: pass 5, at document #2898/2898
+2020-11-20 08:25:55,510:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:25:55,511:INFO:topic #6 (0.100): 0.040*"children" + 0.037*"work" + 0.023*"people" + 0.022*"america" + 0.021*"child" + 0.021*"family" + 0.019*"parents" + 0.018*"families" + 0.015*"best" + 0.013*"americans"
+2020-11-20 08:25:55,511:INFO:topic #1 (0.100): 0.031*"government" + 0.030*"health" + 0.021*"federal" + 0.021*"people" + 0.020*"congress" + 0.019*"budget" + 0.018*"president" + 0.018*"care" + 0.016*"welfare" + 0.015*"work"
+2020-11-20 08:25:55,511:INFO:topic #7 (0.100): 0.047*"crime" + 0.037*"know" + 0.034*"let" + 0.022*"house" + 0.020*"bill" + 0.020*"pass" + 0.018*"police" + 0.017*"congress" + 0.017*"community" + 0.014*"ask"
+2020-11-20 08:25:55,512:INFO:topic #8 (0.100): 0.051*"world" + 0.036*"america" + 0.034*"people" + 0.020*"nation" + 0.019*"american" + 0.018*"peace" + 0.018*"freedom" + 0.014*"time" + 0.014*"americans" + 0.014*"new"
+2020-11-20 08:25:55,512:INFO:topic #2 (0.100): 0.043*"tax" + 0.038*"year" + 0.022*"college" + 0.020*"years" + 0.016*"americans" + 0.015*"cut" + 0.013*"cuts" + 0.012*"people" + 0.012*"million" + 0.011*"education"
+2020-11-20 08:25:55,512:INFO:topic diff=0.336128, rho=0.366396
+2020-11-20 08:25:55,512:INFO:PROGRESS: pass 6, at document #2000/2898
+2020-11-20 08:25:56,911:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:25:56,911:INFO:topic #2 (0.100): 0.049*"tax" + 0.038*"year" + 0.018*"years" + 0.017*"college" + 0.015*"americans" + 0.015*"cut" + 0.012*"people" + 0.012*"cuts" + 0.012*"jobs" + 0.011*"percent"
+2020-11-20 08:25:56,912:INFO:topic #1 (0.100): 0.033*"government" + 0.030*"health" + 0.025*"federal" + 0.022*"congress" + 0.020*"people" + 0.019*"budget" + 0.018*"president" + 0.017*"care" + 0.015*"programs" + 0.015*"welfare"
+2020-11-20 08:25:56,912:INFO:topic #9 (0.100): 0.035*"women" + 0.031*"year" + 0.028*"thank" + 0.022*"america" + 0.019*"god" + 0.019*"let" + 0.018*"men" + 0.018*"congress" + 0.015*"national" + 0.014*"ask"
+2020-11-20 08:25:56,912:INFO:topic #0 (0.100): 0.023*"energy" + 0.023*"years" + 0.020*"administration" + 0.020*"new" + 0.018*"federal" + 0.017*"program" + 0.014*"inflation" + 0.013*"congress" + 0.013*"national" + 0.012*"economic"
+2020-11-20 08:25:56,912:INFO:topic #8 (0.100): 0.051*"world" + 0.035*"america" + 0.034*"people" + 0.021*"freedom" + 0.021*"nation" + 0.020*"american" + 0.019*"peace" + 0.014*"time" + 0.013*"americans" + 0.012*"new"
+2020-11-20 08:25:56,912:INFO:topic diff=0.278373, rho=0.344031
+2020-11-20 08:25:57,803:INFO:-6.203 per-word bound, 73.7 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:25:57,804:INFO:PROGRESS: pass 6, at document #2898/2898
+2020-11-20 08:25:58,196:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:25:58,196:INFO:topic #8 (0.100): 0.050*"world" + 0.038*"america" + 0.034*"people" + 0.021*"nation" + 0.020*"american" + 0.018*"freedom" + 0.018*"peace" + 0.015*"americans" + 0.014*"time" + 0.013*"new"
+2020-11-20 08:25:58,197:INFO:topic #7 (0.100): 0.046*"crime" + 0.038*"know" + 0.036*"let" + 0.023*"house" + 0.021*"bill" + 0.021*"pass" + 0.019*"congress" + 0.017*"police" + 0.016*"community" + 0.015*"ask"
+2020-11-20 08:25:58,197:INFO:topic #9 (0.100): 0.035*"thank" + 0.033*"year" + 0.030*"women" + 0.023*"america" + 0.019*"let" + 0.019*"congress" + 0.018*"ask" + 0.017*"god" + 0.016*"men" + 0.016*"national"
+2020-11-20 08:25:58,197:INFO:topic #5 (0.100): 0.025*"nuclear" + 0.021*"world" + 0.020*"peace" + 0.020*"nations" + 0.019*"trade" + 0.018*"soviet" + 0.018*"states" + 0.016*"united" + 0.014*"weapons" + 0.013*"new"
+2020-11-20 08:25:58,197:INFO:topic #1 (0.100): 0.032*"government" + 0.032*"health" + 0.022*"federal" + 0.022*"congress" + 0.021*"people" + 0.020*"budget" + 0.019*"president" + 0.018*"care" + 0.016*"welfare" + 0.015*"work"
+2020-11-20 08:25:58,197:INFO:topic diff=0.279726, rho=0.344031
+2020-11-20 08:25:58,197:INFO:PROGRESS: pass 7, at document #2000/2898
+2020-11-20 08:25:59,055:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:25:59,056:INFO:topic #1 (0.100): 0.035*"government" + 0.032*"health" + 0.025*"federal" + 0.023*"congress" + 0.020*"people" + 0.020*"budget" + 0.019*"president" + 0.017*"care" + 0.015*"programs" + 0.015*"welfare"
+2020-11-20 08:25:59,056:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"administration" + 0.020*"new" + 0.018*"federal" + 0.017*"program" + 0.014*"inflation" + 0.013*"economic" + 0.013*"congress" + 0.013*"national"
+2020-11-20 08:25:59,056:INFO:topic #4 (0.100): 0.036*"security" + 0.027*"social" + 0.017*"america" + 0.015*"future" + 0.014*"economic" + 0.014*"need" + 0.013*"new" + 0.013*"support" + 0.012*"long" + 0.010*"action"
+2020-11-20 08:25:59,056:INFO:topic #2 (0.100): 0.051*"tax" + 0.039*"year" + 0.017*"years" + 0.017*"college" + 0.016*"cut" + 0.015*"americans" + 0.014*"people" + 0.013*"jobs" + 0.013*"cuts" + 0.012*"million"
+2020-11-20 08:25:59,057:INFO:topic #9 (0.100): 0.036*"women" + 0.032*"year" + 0.029*"thank" + 0.023*"america" + 0.020*"god" + 0.019*"let" + 0.019*"men" + 0.018*"congress" + 0.016*"national" + 0.015*"ask"
+2020-11-20 08:25:59,057:INFO:topic diff=0.238178, rho=0.325317
+2020-11-20 08:25:59,656:INFO:-6.188 per-word bound, 72.9 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:25:59,656:INFO:PROGRESS: pass 7, at document #2898/2898
+2020-11-20 08:26:00,125:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:00,125:INFO:topic #1 (0.100): 0.034*"government" + 0.033*"health" + 0.022*"congress" + 0.022*"federal" + 0.021*"people" + 0.020*"budget" + 0.019*"president" + 0.017*"care" + 0.017*"welfare" + 0.016*"work"
+2020-11-20 08:26:00,125:INFO:topic #6 (0.100): 0.044*"children" + 0.038*"work" + 0.024*"child" + 0.022*"people" + 0.022*"family" + 0.021*"families" + 0.020*"parents" + 0.018*"america" + 0.014*"best" + 0.014*"school"
+2020-11-20 08:26:00,126:INFO:topic #4 (0.100): 0.041*"security" + 0.032*"social" + 0.018*"america" + 0.014*"need" + 0.014*"support" + 0.014*"new" + 0.013*"economic" + 0.012*"future" + 0.012*"long" + 0.011*"drugs"
+2020-11-20 08:26:00,126:INFO:topic #3 (0.100): 0.040*"new" + 0.025*"right" + 0.024*"children" + 0.024*"century" + 0.022*"america" + 0.019*"communities" + 0.017*"help" + 0.017*"people" + 0.017*"teachers" + 0.016*"schools"
+2020-11-20 08:26:00,126:INFO:topic #5 (0.100): 0.024*"nuclear" + 0.022*"world" + 0.020*"nations" + 0.019*"peace" + 0.019*"trade" + 0.019*"states" + 0.018*"soviet" + 0.017*"united" + 0.014*"weapons" + 0.013*"new"
+2020-11-20 08:26:00,126:INFO:topic diff=0.238617, rho=0.325317
+2020-11-20 08:26:00,126:INFO:PROGRESS: pass 8, at document #2000/2898
+2020-11-20 08:26:01,005:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:01,006:INFO:topic #9 (0.100): 0.036*"women" + 0.033*"year" + 0.031*"thank" + 0.023*"america" + 0.020*"god" + 0.019*"let" + 0.019*"men" + 0.018*"congress" + 0.016*"national" + 0.016*"ask"
+2020-11-20 08:26:01,006:INFO:topic #5 (0.100): 0.023*"world" + 0.022*"nuclear" + 0.021*"soviet" + 0.020*"states" + 0.019*"nations" + 0.018*"united" + 0.018*"peace" + 0.017*"trade" + 0.013*"international" + 0.013*"countries"
+2020-11-20 08:26:01,006:INFO:topic #3 (0.100): 0.039*"new" + 0.026*"right" + 0.023*"children" + 0.022*"america" + 0.021*"century" + 0.018*"help" + 0.018*"communities" + 0.016*"people" + 0.015*"schools" + 0.015*"teachers"
+2020-11-20 08:26:01,007:INFO:topic #6 (0.100): 0.042*"children" + 0.038*"work" + 0.025*"family" + 0.023*"child" + 0.023*"people" + 0.020*"families" + 0.018*"parents" + 0.018*"america" + 0.015*"best" + 0.013*"school"
+2020-11-20 08:26:01,007:INFO:topic #8 (0.100): 0.048*"world" + 0.038*"america" + 0.034*"people" + 0.022*"freedom" + 0.021*"nation" + 0.020*"american" + 0.018*"peace" + 0.014*"time" + 0.014*"americans" + 0.012*"union"
+2020-11-20 08:26:01,007:INFO:topic diff=0.208187, rho=0.309359
+2020-11-20 08:26:01,441:INFO:-6.176 per-word bound, 72.3 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:01,442:INFO:PROGRESS: pass 8, at document #2898/2898
+2020-11-20 08:26:01,756:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:01,757:INFO:topic #9 (0.100): 0.037*"thank" + 0.035*"year" + 0.031*"women" + 0.024*"america" + 0.020*"ask" + 0.019*"let" + 0.018*"congress" + 0.018*"god" + 0.017*"men" + 0.016*"national"
+2020-11-20 08:26:01,757:INFO:topic #1 (0.100): 0.035*"government" + 0.034*"health" + 0.023*"congress" + 0.023*"federal" + 0.021*"people" + 0.020*"budget" + 0.020*"president" + 0.018*"welfare" + 0.017*"care" + 0.016*"reform"
+2020-11-20 08:26:01,757:INFO:topic #4 (0.100): 0.043*"security" + 0.033*"social" + 0.017*"america" + 0.015*"need" + 0.014*"support" + 0.014*"new" + 0.013*"economic" + 0.013*"long" + 0.012*"future" + 0.011*"drugs"
+2020-11-20 08:26:01,757:INFO:topic #2 (0.100): 0.049*"tax" + 0.038*"year" + 0.022*"college" + 0.017*"years" + 0.016*"cut" + 0.015*"people" + 0.015*"americans" + 0.013*"cuts" + 0.013*"million" + 0.013*"jobs"
+2020-11-20 08:26:01,757:INFO:topic #6 (0.100): 0.045*"children" + 0.039*"work" + 0.025*"child" + 0.022*"family" + 0.022*"people" + 0.021*"families" + 0.021*"parents" + 0.017*"america" + 0.014*"school" + 0.014*"care"
+2020-11-20 08:26:01,757:INFO:topic diff=0.208579, rho=0.309359
+2020-11-20 08:26:01,757:INFO:PROGRESS: pass 9, at document #2000/2898
+2020-11-20 08:26:02,763:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:02,763:INFO:topic #8 (0.100): 0.047*"world" + 0.040*"america" + 0.034*"people" + 0.022*"freedom" + 0.021*"nation" + 0.020*"american" + 0.018*"peace" + 0.014*"americans" + 0.014*"time" + 0.013*"union"
+2020-11-20 08:26:02,764:INFO:topic #2 (0.100): 0.053*"tax" + 0.038*"year" + 0.017*"college" + 0.016*"cut" + 0.016*"people" + 0.016*"years" + 0.015*"jobs" + 0.014*"americans" + 0.014*"income" + 0.013*"million"
+2020-11-20 08:26:02,764:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"administration" + 0.020*"new" + 0.018*"federal" + 0.018*"program" + 0.015*"inflation" + 0.014*"economic" + 0.014*"growth" + 0.013*"congress"
+2020-11-20 08:26:02,764:INFO:topic #3 (0.100): 0.041*"new" + 0.027*"right" + 0.023*"children" + 0.022*"america" + 0.022*"century" + 0.018*"communities" + 0.018*"help" + 0.016*"people" + 0.015*"schools" + 0.015*"teachers"
+2020-11-20 08:26:02,764:INFO:topic #4 (0.100): 0.039*"security" + 0.029*"social" + 0.015*"america" + 0.015*"need" + 0.014*"future" + 0.013*"economic" + 0.013*"support" + 0.013*"new" + 0.013*"long" + 0.010*"action"
+2020-11-20 08:26:02,764:INFO:topic diff=0.185249, rho=0.295540
+2020-11-20 08:26:03,173:INFO:-6.166 per-word bound, 71.8 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:03,173:INFO:PROGRESS: pass 9, at document #2898/2898
+2020-11-20 08:26:03,461:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:03,462:INFO:topic #4 (0.100): 0.044*"security" + 0.034*"social" + 0.016*"america" + 0.015*"need" + 0.014*"support" + 0.014*"new" + 0.013*"long" + 0.013*"economic" + 0.012*"future" + 0.011*"drugs"
+2020-11-20 08:26:03,462:INFO:topic #3 (0.100): 0.042*"new" + 0.026*"right" + 0.024*"century" + 0.024*"children" + 0.023*"america" + 0.020*"communities" + 0.018*"help" + 0.017*"teachers" + 0.016*"schools" + 0.016*"people"
+2020-11-20 08:26:03,462:INFO:topic #7 (0.100): 0.043*"crime" + 0.038*"know" + 0.037*"let" + 0.026*"house" + 0.024*"congress" + 0.023*"bill" + 0.022*"pass" + 0.018*"ask" + 0.016*"police" + 0.015*"community"
+2020-11-20 08:26:03,462:INFO:topic #5 (0.100): 0.024*"nuclear" + 0.023*"world" + 0.021*"nations" + 0.020*"states" + 0.019*"trade" + 0.019*"peace" + 0.019*"soviet" + 0.018*"united" + 0.014*"international" + 0.013*"weapons"
+2020-11-20 08:26:03,462:INFO:topic #1 (0.100): 0.036*"government" + 0.035*"health" + 0.024*"congress" + 0.023*"federal" + 0.021*"people" + 0.021*"budget" + 0.020*"president" + 0.018*"welfare" + 0.017*"care" + 0.017*"reform"
+2020-11-20 08:26:03,462:INFO:topic diff=0.185534, rho=0.295540
+2020-11-20 08:26:03,463:INFO:PROGRESS: pass 10, at document #2000/2898
+2020-11-20 08:26:04,128:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:04,129:INFO:topic #9 (0.100): 0.037*"women" + 0.035*"year" + 0.032*"thank" + 0.024*"america" + 0.020*"god" + 0.019*"let" + 0.019*"men" + 0.018*"ask" + 0.017*"congress" + 0.016*"years"
+2020-11-20 08:26:04,129:INFO:topic #6 (0.100): 0.044*"children" + 0.039*"work" + 0.025*"family" + 0.025*"child" + 0.022*"families" + 0.022*"people" + 0.019*"parents" + 0.015*"america" + 0.014*"care" + 0.014*"school"
+2020-11-20 08:26:04,129:INFO:topic #8 (0.100): 0.047*"world" + 0.040*"america" + 0.034*"people" + 0.022*"freedom" + 0.021*"nation" + 0.021*"american" + 0.018*"peace" + 0.014*"americans" + 0.013*"time" + 0.013*"union"
+2020-11-20 08:26:04,129:INFO:topic #5 (0.100): 0.024*"world" + 0.022*"nuclear" + 0.021*"soviet" + 0.020*"states" + 0.020*"nations" + 0.019*"united" + 0.018*"peace" + 0.017*"trade" + 0.014*"international" + 0.013*"countries"
+2020-11-20 08:26:04,129:INFO:topic #2 (0.100): 0.054*"tax" + 0.038*"year" + 0.017*"college" + 0.016*"people" + 0.016*"cut" + 0.016*"jobs" + 0.015*"years" + 0.015*"income" + 0.014*"americans" + 0.013*"million"
+2020-11-20 08:26:04,129:INFO:topic diff=0.167479, rho=0.283421
+2020-11-20 08:26:04,520:INFO:-6.158 per-word bound, 71.4 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:04,521:INFO:PROGRESS: pass 10, at document #2898/2898
+2020-11-20 08:26:04,822:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:04,823:INFO:topic #8 (0.100): 0.046*"world" + 0.042*"america" + 0.034*"people" + 0.022*"nation" + 0.020*"american" + 0.019*"freedom" + 0.017*"peace" + 0.016*"americans" + 0.014*"time" + 0.013*"union"
+2020-11-20 08:26:04,823:INFO:topic #6 (0.100): 0.047*"children" + 0.040*"work" + 0.026*"child" + 0.023*"families" + 0.023*"family" + 0.021*"parents" + 0.021*"people" + 0.017*"care" + 0.015*"school" + 0.015*"america"
+2020-11-20 08:26:04,823:INFO:topic #7 (0.100): 0.043*"crime" + 0.038*"know" + 0.038*"let" + 0.026*"house" + 0.026*"congress" + 0.024*"bill" + 0.022*"pass" + 0.018*"ask" + 0.016*"police" + 0.015*"tell"
+2020-11-20 08:26:04,823:INFO:topic #9 (0.100): 0.038*"thank" + 0.036*"year" + 0.032*"women" + 0.025*"america" + 0.022*"ask" + 0.019*"let" + 0.018*"god" + 0.018*"congress" + 0.017*"years" + 0.017*"men"
+2020-11-20 08:26:04,823:INFO:topic #3 (0.100): 0.043*"new" + 0.026*"right" + 0.024*"century" + 0.023*"children" + 0.023*"america" + 0.020*"communities" + 0.018*"help" + 0.017*"teachers" + 0.016*"schools" + 0.015*"people"
+2020-11-20 08:26:04,824:INFO:topic diff=0.167608, rho=0.283421
+2020-11-20 08:26:04,824:INFO:PROGRESS: pass 11, at document #2000/2898
+2020-11-20 08:26:05,557:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:05,558:INFO:topic #7 (0.100): 0.041*"crime" + 0.039*"know" + 0.037*"let" + 0.029*"house" + 0.027*"congress" + 0.023*"bill" + 0.021*"pass" + 0.017*"tell" + 0.016*"ask" + 0.015*"people"
+2020-11-20 08:26:05,558:INFO:topic #5 (0.100): 0.024*"world" + 0.022*"nuclear" + 0.021*"soviet" + 0.021*"states" + 0.021*"nations" + 0.019*"united" + 0.018*"peace" + 0.017*"trade" + 0.014*"international" + 0.013*"countries"
+2020-11-20 08:26:05,558:INFO:topic #3 (0.100): 0.043*"new" + 0.028*"right" + 0.023*"america" + 0.023*"children" + 0.022*"century" + 0.019*"communities" + 0.018*"help" + 0.015*"schools" + 0.015*"teachers" + 0.015*"people"
+2020-11-20 08:26:05,558:INFO:topic #4 (0.100): 0.041*"security" + 0.031*"social" + 0.015*"need" + 0.014*"support" + 0.014*"future" + 0.013*"america" + 0.013*"long" + 0.013*"economic" + 0.013*"new" + 0.011*"action"
+2020-11-20 08:26:05,558:INFO:topic #1 (0.100): 0.038*"government" + 0.035*"health" + 0.026*"federal" + 0.025*"congress" + 0.020*"budget" + 0.020*"president" + 0.020*"people" + 0.017*"welfare" + 0.017*"care" + 0.017*"reform"
+2020-11-20 08:26:05,558:INFO:topic diff=0.153135, rho=0.272681
+2020-11-20 08:26:06,141:INFO:-6.152 per-word bound, 71.1 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:06,141:INFO:PROGRESS: pass 11, at document #2898/2898
+2020-11-20 08:26:06,422:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:06,423:INFO:topic #7 (0.100): 0.043*"crime" + 0.038*"know" + 0.038*"let" + 0.028*"congress" + 0.027*"house" + 0.024*"bill" + 0.023*"pass" + 0.019*"ask" + 0.016*"police" + 0.016*"tell"
+2020-11-20 08:26:06,423:INFO:topic #0 (0.100): 0.026*"years" + 0.024*"energy" + 0.021*"new" + 0.018*"administration" + 0.018*"program" + 0.018*"federal" + 0.016*"economic" + 0.015*"growth" + 0.014*"inflation" + 0.013*"year"
+2020-11-20 08:26:06,423:INFO:topic #2 (0.100): 0.051*"tax" + 0.037*"year" + 0.022*"college" + 0.017*"people" + 0.017*"cut" + 0.016*"years" + 0.015*"jobs" + 0.014*"americans" + 0.014*"million" + 0.014*"cuts"
+2020-11-20 08:26:06,423:INFO:topic #5 (0.100): 0.024*"nuclear" + 0.023*"world" + 0.022*"nations" + 0.020*"states" + 0.020*"trade" + 0.019*"peace" + 0.019*"united" + 0.019*"soviet" + 0.014*"international" + 0.013*"weapons"
+2020-11-20 08:26:06,424:INFO:topic #1 (0.100): 0.038*"government" + 0.035*"health" + 0.024*"congress" + 0.024*"federal" + 0.021*"budget" + 0.020*"people" + 0.020*"president" + 0.019*"welfare" + 0.017*"reform" + 0.017*"care"
+2020-11-20 08:26:06,424:INFO:topic diff=0.152868, rho=0.272681
+2020-11-20 08:26:06,424:INFO:PROGRESS: pass 12, at document #2000/2898
+2020-11-20 08:26:07,096:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:07,097:INFO:topic #4 (0.100): 0.042*"security" + 0.032*"social" + 0.016*"need" + 0.014*"support" + 0.014*"long" + 0.014*"future" + 0.013*"new" + 0.013*"economic" + 0.013*"america" + 0.011*"drugs"
+2020-11-20 08:26:07,097:INFO:topic #8 (0.100): 0.046*"world" + 0.042*"america" + 0.034*"people" + 0.022*"freedom" + 0.021*"nation" + 0.021*"american" + 0.017*"peace" + 0.015*"americans" + 0.014*"union" + 0.013*"time"
+2020-11-20 08:26:07,097:INFO:topic #2 (0.100): 0.055*"tax" + 0.038*"year" + 0.018*"people" + 0.018*"college" + 0.017*"cut" + 0.016*"jobs" + 0.016*"income" + 0.015*"years" + 0.014*"americans" + 0.014*"million"
+2020-11-20 08:26:07,098:INFO:topic #3 (0.100): 0.044*"new" + 0.028*"right" + 0.023*"america" + 0.022*"children" + 0.022*"century" + 0.019*"communities" + 0.018*"help" + 0.015*"schools" + 0.015*"teachers" + 0.015*"people"
+2020-11-20 08:26:07,098:INFO:topic #9 (0.100): 0.036*"women" + 0.036*"year" + 0.033*"thank" + 0.025*"america" + 0.020*"god" + 0.020*"let" + 0.020*"ask" + 0.019*"men" + 0.017*"years" + 0.017*"congress"
+2020-11-20 08:26:07,098:INFO:topic diff=0.140914, rho=0.263076
+2020-11-20 08:26:07,472:INFO:-6.147 per-word bound, 70.9 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:07,472:INFO:PROGRESS: pass 12, at document #2898/2898
+2020-11-20 08:26:07,764:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:07,765:INFO:topic #8 (0.100): 0.046*"world" + 0.043*"america" + 0.034*"people" + 0.021*"nation" + 0.020*"american" + 0.020*"freedom" + 0.016*"peace" + 0.016*"americans" + 0.014*"union" + 0.013*"time"
+2020-11-20 08:26:07,765:INFO:topic #3 (0.100): 0.046*"new" + 0.027*"right" + 0.024*"century" + 0.024*"america" + 0.023*"children" + 0.021*"communities" + 0.018*"help" + 0.017*"teachers" + 0.016*"schools" + 0.015*"people"
+2020-11-20 08:26:07,765:INFO:topic #4 (0.100): 0.045*"security" + 0.035*"social" + 0.016*"need" + 0.015*"support" + 0.014*"america" + 0.014*"long" + 0.014*"new" + 0.012*"economic" + 0.012*"drugs" + 0.012*"future"
+2020-11-20 08:26:07,766:INFO:topic #2 (0.100): 0.051*"tax" + 0.037*"year" + 0.022*"college" + 0.018*"people" + 0.017*"cut" + 0.016*"years" + 0.015*"jobs" + 0.014*"americans" + 0.014*"million" + 0.014*"income"
+2020-11-20 08:26:07,766:INFO:topic #9 (0.100): 0.038*"thank" + 0.037*"year" + 0.032*"women" + 0.025*"america" + 0.023*"ask" + 0.020*"let" + 0.018*"years" + 0.018*"god" + 0.017*"men" + 0.017*"congress"
+2020-11-20 08:26:07,766:INFO:topic diff=0.140447, rho=0.263076
+2020-11-20 08:26:07,766:INFO:PROGRESS: pass 13, at document #2000/2898
+2020-11-20 08:26:08,418:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:08,419:INFO:topic #8 (0.100): 0.046*"world" + 0.042*"america" + 0.034*"people" + 0.022*"freedom" + 0.021*"nation" + 0.021*"american" + 0.017*"peace" + 0.015*"americans" + 0.014*"union" + 0.013*"time"
+2020-11-20 08:26:08,419:INFO:topic #0 (0.100): 0.025*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"administration" + 0.018*"federal" + 0.018*"program" + 0.016*"economic" + 0.015*"growth" + 0.015*"inflation" + 0.013*"year"
+2020-11-20 08:26:08,419:INFO:topic #1 (0.100): 0.040*"government" + 0.035*"health" + 0.027*"federal" + 0.025*"congress" + 0.021*"budget" + 0.020*"president" + 0.019*"people" + 0.018*"welfare" + 0.017*"reform" + 0.017*"care"
+2020-11-20 08:26:08,419:INFO:topic #3 (0.100): 0.045*"new" + 0.028*"right" + 0.024*"america" + 0.022*"children" + 0.022*"century" + 0.019*"communities" + 0.018*"help" + 0.015*"teachers" + 0.015*"schools" + 0.014*"people"
+2020-11-20 08:26:08,419:INFO:topic #5 (0.100): 0.024*"world" + 0.022*"nuclear" + 0.021*"states" + 0.021*"nations" + 0.021*"soviet" + 0.020*"united" + 0.018*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:08,419:INFO:topic diff=0.130285, rho=0.254419
+2020-11-20 08:26:08,843:INFO:-6.143 per-word bound, 70.7 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:08,843:INFO:PROGRESS: pass 13, at document #2898/2898
+2020-11-20 08:26:09,122:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:09,122:INFO:topic #6 (0.100): 0.050*"children" + 0.041*"work" + 0.028*"child" + 0.025*"families" + 0.023*"family" + 0.022*"parents" + 0.020*"people" + 0.020*"care" + 0.017*"school" + 0.014*"schools"
+2020-11-20 08:26:09,122:INFO:topic #2 (0.100): 0.052*"tax" + 0.037*"year" + 0.022*"college" + 0.018*"people" + 0.017*"cut" + 0.016*"years" + 0.015*"jobs" + 0.015*"income" + 0.014*"americans" + 0.014*"million"
+2020-11-20 08:26:09,122:INFO:topic #8 (0.100): 0.046*"world" + 0.044*"america" + 0.034*"people" + 0.021*"nation" + 0.021*"american" + 0.020*"freedom" + 0.016*"americans" + 0.016*"peace" + 0.014*"union" + 0.013*"time"
+2020-11-20 08:26:09,123:INFO:topic #0 (0.100): 0.026*"years" + 0.024*"energy" + 0.020*"new" + 0.018*"program" + 0.018*"administration" + 0.018*"federal" + 0.016*"economic" + 0.016*"growth" + 0.014*"inflation" + 0.013*"year"
+2020-11-20 08:26:09,123:INFO:topic #9 (0.100): 0.038*"year" + 0.038*"thank" + 0.032*"women" + 0.025*"america" + 0.023*"ask" + 0.020*"let" + 0.019*"years" + 0.018*"god" + 0.017*"men" + 0.017*"congress"
+2020-11-20 08:26:09,123:INFO:topic diff=0.130033, rho=0.254419
+2020-11-20 08:26:09,123:INFO:PROGRESS: pass 14, at document #2000/2898
+2020-11-20 08:26:09,895:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:09,895:INFO:topic #3 (0.100): 0.046*"new" + 0.028*"right" + 0.024*"america" + 0.022*"century" + 0.022*"children" + 0.020*"communities" + 0.018*"help" + 0.015*"teachers" + 0.015*"schools" + 0.014*"people"
+2020-11-20 08:26:09,896:INFO:topic #9 (0.100): 0.038*"year" + 0.036*"women" + 0.033*"thank" + 0.025*"america" + 0.021*"ask" + 0.020*"let" + 0.020*"god" + 0.019*"men" + 0.018*"years" + 0.016*"congress"
+2020-11-20 08:26:09,896:INFO:topic #5 (0.100): 0.024*"world" + 0.022*"nuclear" + 0.022*"states" + 0.021*"nations" + 0.021*"soviet" + 0.020*"united" + 0.018*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:09,896:INFO:topic #6 (0.100): 0.048*"children" + 0.041*"work" + 0.028*"child" + 0.025*"family" + 0.025*"families" + 0.021*"parents" + 0.020*"people" + 0.019*"care" + 0.016*"school" + 0.013*"schools"
+2020-11-20 08:26:09,896:INFO:topic #7 (0.100): 0.041*"crime" + 0.039*"know" + 0.037*"let" + 0.031*"congress" + 0.030*"house" + 0.023*"bill" + 0.022*"pass" + 0.018*"tell" + 0.018*"ask" + 0.017*"people"
+2020-11-20 08:26:09,896:INFO:topic diff=0.121122, rho=0.246564
+2020-11-20 08:26:10,326:INFO:-6.139 per-word bound, 70.5 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:10,326:INFO:PROGRESS: pass 14, at document #2898/2898
+2020-11-20 08:26:10,636:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:10,636:INFO:topic #7 (0.100): 0.042*"crime" + 0.038*"know" + 0.038*"let" + 0.031*"congress" + 0.027*"house" + 0.024*"bill" + 0.023*"pass" + 0.020*"ask" + 0.017*"people" + 0.016*"tell"
+2020-11-20 08:26:10,637:INFO:topic #6 (0.100): 0.050*"children" + 0.042*"work" + 0.029*"child" + 0.025*"families" + 0.023*"family" + 0.022*"parents" + 0.021*"care" + 0.020*"people" + 0.017*"school" + 0.014*"schools"
+2020-11-20 08:26:10,637:INFO:topic #1 (0.100): 0.040*"government" + 0.036*"health" + 0.025*"congress" + 0.024*"federal" + 0.022*"budget" + 0.020*"president" + 0.020*"people" + 0.020*"welfare" + 0.018*"reform" + 0.017*"care"
+2020-11-20 08:26:10,637:INFO:topic #4 (0.100): 0.046*"security" + 0.036*"social" + 0.016*"need" + 0.015*"support" + 0.014*"long" + 0.013*"new" + 0.013*"america" + 0.012*"drugs" + 0.012*"future" + 0.012*"economic"
+2020-11-20 08:26:10,637:INFO:topic #0 (0.100): 0.026*"years" + 0.024*"energy" + 0.020*"new" + 0.018*"program" + 0.018*"administration" + 0.018*"federal" + 0.016*"economic" + 0.016*"growth" + 0.014*"inflation" + 0.013*"year"
+2020-11-20 08:26:10,637:INFO:topic diff=0.121392, rho=0.246564
+2020-11-20 08:26:10,637:INFO:PROGRESS: pass 15, at document #2000/2898
+2020-11-20 08:26:11,389:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:11,390:INFO:topic #4 (0.100): 0.044*"security" + 0.033*"social" + 0.016*"need" + 0.015*"support" + 0.014*"long" + 0.013*"future" + 0.013*"new" + 0.012*"economic" + 0.012*"america" + 0.011*"action"
+2020-11-20 08:26:11,390:INFO:topic #7 (0.100): 0.040*"crime" + 0.040*"know" + 0.037*"let" + 0.032*"congress" + 0.030*"house" + 0.024*"bill" + 0.022*"pass" + 0.018*"tell" + 0.018*"ask" + 0.017*"people"
+2020-11-20 08:26:11,390:INFO:topic #6 (0.100): 0.049*"children" + 0.041*"work" + 0.029*"child" + 0.026*"families" + 0.025*"family" + 0.021*"parents" + 0.020*"people" + 0.020*"care" + 0.017*"school" + 0.014*"schools"
+2020-11-20 08:26:11,390:INFO:topic #9 (0.100): 0.039*"year" + 0.036*"women" + 0.033*"thank" + 0.025*"america" + 0.021*"ask" + 0.020*"let" + 0.020*"god" + 0.019*"men" + 0.018*"years" + 0.016*"congress"
+2020-11-20 08:26:11,390:INFO:topic #5 (0.100): 0.024*"world" + 0.022*"nuclear" + 0.022*"states" + 0.022*"nations" + 0.021*"soviet" + 0.020*"united" + 0.018*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:11,390:INFO:topic diff=0.113680, rho=0.239395
+2020-11-20 08:26:11,821:INFO:-6.136 per-word bound, 70.3 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:11,822:INFO:PROGRESS: pass 15, at document #2898/2898
+2020-11-20 08:26:12,131:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:12,133:INFO:topic #5 (0.100): 0.024*"world" + 0.024*"nuclear" + 0.023*"nations" + 0.022*"states" + 0.020*"united" + 0.019*"trade" + 0.019*"peace" + 0.019*"soviet" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:12,133:INFO:topic #8 (0.100): 0.045*"world" + 0.044*"america" + 0.035*"people" + 0.021*"nation" + 0.021*"american" + 0.020*"freedom" + 0.017*"americans" + 0.016*"peace" + 0.014*"union" + 0.014*"time"
+2020-11-20 08:26:12,133:INFO:topic #1 (0.100): 0.040*"government" + 0.036*"health" + 0.025*"federal" + 0.025*"congress" + 0.022*"budget" + 0.020*"president" + 0.020*"people" + 0.020*"welfare" + 0.018*"reform" + 0.017*"care"
+2020-11-20 08:26:12,134:INFO:topic #9 (0.100): 0.039*"year" + 0.037*"thank" + 0.032*"women" + 0.026*"america" + 0.024*"ask" + 0.020*"let" + 0.019*"years" + 0.018*"god" + 0.017*"men" + 0.016*"congress"
+2020-11-20 08:26:12,134:INFO:topic #4 (0.100): 0.047*"security" + 0.036*"social" + 0.016*"need" + 0.015*"support" + 0.014*"long" + 0.013*"new" + 0.013*"america" + 0.012*"drugs" + 0.012*"future" + 0.011*"action"
+2020-11-20 08:26:12,134:INFO:topic diff=0.113800, rho=0.239395
+2020-11-20 08:26:12,134:INFO:PROGRESS: pass 16, at document #2000/2898
+2020-11-20 08:26:12,861:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:12,862:INFO:topic #1 (0.100): 0.041*"government" + 0.036*"health" + 0.027*"federal" + 0.025*"congress" + 0.021*"budget" + 0.020*"president" + 0.019*"people" + 0.018*"welfare" + 0.018*"reform" + 0.017*"programs"
+2020-11-20 08:26:12,862:INFO:topic #6 (0.100): 0.050*"children" + 0.041*"work" + 0.029*"child" + 0.026*"families" + 0.026*"family" + 0.021*"parents" + 0.020*"care" + 0.020*"people" + 0.017*"school" + 0.014*"schools"
+2020-11-20 08:26:12,862:INFO:topic #2 (0.100): 0.056*"tax" + 0.037*"year" + 0.019*"people" + 0.018*"college" + 0.018*"income" + 0.017*"jobs" + 0.017*"cut" + 0.014*"years" + 0.014*"million" + 0.014*"new"
+2020-11-20 08:26:12,862:INFO:topic #8 (0.100): 0.045*"world" + 0.043*"america" + 0.035*"people" + 0.022*"freedom" + 0.021*"american" + 0.021*"nation" + 0.016*"peace" + 0.015*"americans" + 0.014*"union" + 0.013*"time"
+2020-11-20 08:26:12,862:INFO:topic #9 (0.100): 0.040*"year" + 0.036*"women" + 0.033*"thank" + 0.025*"america" + 0.021*"ask" + 0.020*"let" + 0.020*"god" + 0.019*"men" + 0.018*"years" + 0.016*"congress"
+2020-11-20 08:26:12,862:INFO:topic diff=0.107356, rho=0.232816
+2020-11-20 08:26:13,337:INFO:-6.133 per-word bound, 70.2 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:13,337:INFO:PROGRESS: pass 16, at document #2898/2898
+2020-11-20 08:26:13,775:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:13,776:INFO:topic #4 (0.100): 0.047*"security" + 0.036*"social" + 0.016*"need" + 0.015*"support" + 0.014*"long" + 0.013*"new" + 0.012*"america" + 0.012*"drugs" + 0.012*"future" + 0.012*"action"
+2020-11-20 08:26:13,776:INFO:topic #1 (0.100): 0.041*"government" + 0.037*"health" + 0.025*"federal" + 0.024*"congress" + 0.022*"budget" + 0.020*"president" + 0.020*"welfare" + 0.020*"people" + 0.018*"reform" + 0.016*"care"
+2020-11-20 08:26:13,776:INFO:topic #9 (0.100): 0.041*"year" + 0.037*"thank" + 0.032*"women" + 0.026*"america" + 0.024*"ask" + 0.020*"let" + 0.019*"years" + 0.018*"god" + 0.017*"men" + 0.016*"congress"
+2020-11-20 08:26:13,776:INFO:topic #7 (0.100): 0.042*"crime" + 0.039*"know" + 0.038*"let" + 0.033*"congress" + 0.027*"house" + 0.025*"bill" + 0.024*"pass" + 0.020*"ask" + 0.018*"people" + 0.017*"tell"
+2020-11-20 08:26:13,776:INFO:topic #5 (0.100): 0.024*"world" + 0.024*"nuclear" + 0.023*"nations" + 0.022*"states" + 0.021*"united" + 0.019*"trade" + 0.019*"peace" + 0.019*"soviet" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:13,777:INFO:topic diff=0.107469, rho=0.232816
+2020-11-20 08:26:13,777:INFO:PROGRESS: pass 17, at document #2000/2898
+2020-11-20 08:26:14,593:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:14,594:INFO:topic #6 (0.100): 0.050*"children" + 0.042*"work" + 0.030*"child" + 0.026*"families" + 0.026*"family" + 0.021*"parents" + 0.021*"care" + 0.019*"people" + 0.017*"school" + 0.014*"schools"
+2020-11-20 08:26:14,594:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"administration" + 0.019*"program" + 0.018*"federal" + 0.016*"economic" + 0.015*"growth" + 0.015*"inflation" + 0.014*"year"
+2020-11-20 08:26:14,594:INFO:topic #5 (0.100): 0.025*"world" + 0.022*"states" + 0.022*"nuclear" + 0.022*"nations" + 0.021*"soviet" + 0.021*"united" + 0.018*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:14,595:INFO:topic #7 (0.100): 0.040*"crime" + 0.040*"know" + 0.038*"let" + 0.033*"congress" + 0.030*"house" + 0.024*"bill" + 0.022*"pass" + 0.019*"tell" + 0.018*"ask" + 0.018*"people"
+2020-11-20 08:26:14,595:INFO:topic #8 (0.100): 0.045*"world" + 0.043*"america" + 0.035*"people" + 0.022*"american" + 0.021*"freedom" + 0.021*"nation" + 0.016*"peace" + 0.016*"americans" + 0.014*"union" + 0.014*"time"
+2020-11-20 08:26:14,595:INFO:topic diff=0.101932, rho=0.226752
+2020-11-20 08:26:15,084:INFO:-6.130 per-word bound, 70.0 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:15,084:INFO:PROGRESS: pass 17, at document #2898/2898
+2020-11-20 08:26:15,362:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:15,363:INFO:topic #9 (0.100): 0.041*"year" + 0.037*"thank" + 0.032*"women" + 0.026*"america" + 0.024*"ask" + 0.020*"years" + 0.020*"let" + 0.018*"god" + 0.017*"men" + 0.016*"congress"
+2020-11-20 08:26:15,363:INFO:topic #0 (0.100): 0.026*"years" + 0.024*"energy" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.014*"year" + 0.014*"inflation"
+2020-11-20 08:26:15,363:INFO:topic #4 (0.100): 0.048*"security" + 0.036*"social" + 0.016*"need" + 0.015*"support" + 0.014*"long" + 0.013*"new" + 0.012*"drugs" + 0.012*"america" + 0.012*"future" + 0.012*"action"
+2020-11-20 08:26:15,363:INFO:topic #6 (0.100): 0.052*"children" + 0.042*"work" + 0.030*"child" + 0.026*"families" + 0.024*"family" + 0.023*"parents" + 0.023*"care" + 0.019*"people" + 0.018*"school" + 0.015*"schools"
+2020-11-20 08:26:15,363:INFO:topic #5 (0.100): 0.024*"world" + 0.024*"nuclear" + 0.023*"nations" + 0.022*"states" + 0.021*"united" + 0.019*"trade" + 0.019*"peace" + 0.019*"soviet" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:15,363:INFO:topic diff=0.101989, rho=0.226752
+2020-11-20 08:26:15,363:INFO:PROGRESS: pass 18, at document #2000/2898
+2020-11-20 08:26:16,052:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:16,052:INFO:topic #8 (0.100): 0.045*"world" + 0.043*"america" + 0.035*"people" + 0.022*"american" + 0.021*"freedom" + 0.021*"nation" + 0.016*"peace" + 0.016*"americans" + 0.014*"union" + 0.014*"time"
+2020-11-20 08:26:16,053:INFO:topic #9 (0.100): 0.042*"year" + 0.035*"women" + 0.033*"thank" + 0.026*"america" + 0.022*"ask" + 0.020*"god" + 0.020*"let" + 0.019*"years" + 0.019*"men" + 0.016*"country"
+2020-11-20 08:26:16,053:INFO:topic #6 (0.100): 0.051*"children" + 0.042*"work" + 0.030*"child" + 0.027*"families" + 0.026*"family" + 0.022*"care" + 0.021*"parents" + 0.019*"people" + 0.018*"school" + 0.014*"schools"
+2020-11-20 08:26:16,053:INFO:topic #5 (0.100): 0.025*"world" + 0.023*"states" + 0.022*"nuclear" + 0.022*"nations" + 0.021*"united" + 0.021*"soviet" + 0.018*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:16,053:INFO:topic #4 (0.100): 0.045*"security" + 0.033*"social" + 0.016*"need" + 0.015*"long" + 0.015*"support" + 0.013*"future" + 0.013*"new" + 0.012*"action" + 0.011*"economic" + 0.011*"system"
+2020-11-20 08:26:16,053:INFO:topic diff=0.097170, rho=0.221138
+2020-11-20 08:26:16,441:INFO:-6.128 per-word bound, 69.9 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:16,442:INFO:PROGRESS: pass 18, at document #2898/2898
+2020-11-20 08:26:16,778:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:16,779:INFO:topic #7 (0.100): 0.041*"crime" + 0.039*"let" + 0.039*"know" + 0.034*"congress" + 0.027*"house" + 0.025*"bill" + 0.024*"pass" + 0.020*"ask" + 0.018*"people" + 0.017*"tell"
+2020-11-20 08:26:16,779:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.014*"year" + 0.014*"inflation"
+2020-11-20 08:26:16,779:INFO:topic #5 (0.100): 0.024*"world" + 0.023*"nuclear" + 0.023*"nations" + 0.023*"states" + 0.021*"united" + 0.019*"peace" + 0.019*"trade" + 0.019*"soviet" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:16,780:INFO:topic #6 (0.100): 0.052*"children" + 0.042*"work" + 0.031*"child" + 0.027*"families" + 0.024*"family" + 0.023*"care" + 0.023*"parents" + 0.019*"school" + 0.019*"people" + 0.015*"schools"
+2020-11-20 08:26:16,780:INFO:topic #3 (0.100): 0.050*"new" + 0.028*"right" + 0.026*"america" + 0.025*"century" + 0.022*"children" + 0.021*"communities" + 0.017*"help" + 0.017*"teachers" + 0.016*"schools" + 0.015*"economy"
+2020-11-20 08:26:16,780:INFO:topic diff=0.097219, rho=0.221138
+2020-11-20 08:26:16,780:INFO:PROGRESS: pass 19, at document #2000/2898
+2020-11-20 08:26:17,501:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:17,502:INFO:topic #3 (0.100): 0.049*"new" + 0.029*"right" + 0.026*"america" + 0.023*"century" + 0.022*"children" + 0.020*"communities" + 0.017*"help" + 0.016*"teachers" + 0.015*"schools" + 0.014*"economy"
+2020-11-20 08:26:17,502:INFO:topic #5 (0.100): 0.025*"world" + 0.023*"states" + 0.022*"nuclear" + 0.022*"nations" + 0.021*"united" + 0.021*"soviet" + 0.018*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:17,502:INFO:topic #7 (0.100): 0.040*"crime" + 0.040*"know" + 0.038*"let" + 0.035*"congress" + 0.029*"house" + 0.024*"bill" + 0.022*"pass" + 0.019*"tell" + 0.019*"ask" + 0.018*"people"
+2020-11-20 08:26:17,502:INFO:topic #1 (0.100): 0.043*"government" + 0.036*"health" + 0.027*"federal" + 0.025*"congress" + 0.022*"budget" + 0.020*"president" + 0.019*"people" + 0.018*"welfare" + 0.018*"reform" + 0.017*"programs"
+2020-11-20 08:26:17,503:INFO:topic #9 (0.100): 0.042*"year" + 0.035*"women" + 0.033*"thank" + 0.026*"america" + 0.022*"ask" + 0.020*"let" + 0.020*"god" + 0.019*"years" + 0.019*"men" + 0.017*"country"
+2020-11-20 08:26:17,503:INFO:topic diff=0.093001, rho=0.215922
+2020-11-20 08:26:17,885:INFO:-6.126 per-word bound, 69.8 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:17,885:INFO:PROGRESS: pass 19, at document #2898/2898
+2020-11-20 08:26:18,173:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:18,174:INFO:topic #4 (0.100): 0.048*"security" + 0.037*"social" + 0.016*"need" + 0.015*"support" + 0.015*"long" + 0.013*"new" + 0.012*"drugs" + 0.012*"action" + 0.012*"future" + 0.012*"america"
+2020-11-20 08:26:18,174:INFO:topic #8 (0.100): 0.045*"america" + 0.044*"world" + 0.035*"people" + 0.022*"nation" + 0.022*"american" + 0.020*"freedom" + 0.017*"americans" + 0.016*"peace" + 0.014*"time" + 0.013*"union"
+2020-11-20 08:26:18,174:INFO:topic #9 (0.100): 0.043*"year" + 0.037*"thank" + 0.032*"women" + 0.026*"america" + 0.024*"ask" + 0.020*"years" + 0.019*"let" + 0.018*"god" + 0.017*"men" + 0.017*"country"
+2020-11-20 08:26:18,175:INFO:topic #3 (0.100): 0.050*"new" + 0.027*"right" + 0.026*"america" + 0.025*"century" + 0.022*"children" + 0.021*"communities" + 0.017*"teachers" + 0.017*"help" + 0.016*"schools" + 0.015*"economy"
+2020-11-20 08:26:18,175:INFO:topic #1 (0.100): 0.042*"government" + 0.037*"health" + 0.025*"federal" + 0.024*"congress" + 0.023*"budget" + 0.021*"president" + 0.020*"welfare" + 0.019*"people" + 0.019*"reform" + 0.017*"programs"
+2020-11-20 08:26:18,175:INFO:topic diff=0.093240, rho=0.215922
+2020-11-20 08:26:18,175:INFO:PROGRESS: pass 20, at document #2000/2898
+2020-11-20 08:26:18,886:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:18,887:INFO:topic #8 (0.100): 0.044*"world" + 0.044*"america" + 0.036*"people" + 0.022*"american" + 0.022*"nation" + 0.021*"freedom" + 0.016*"peace" + 0.016*"americans" + 0.014*"time" + 0.014*"union"
+2020-11-20 08:26:18,887:INFO:topic #5 (0.100): 0.025*"world" + 0.023*"states" + 0.022*"nuclear" + 0.022*"nations" + 0.021*"united" + 0.021*"soviet" + 0.018*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:18,887:INFO:topic #3 (0.100): 0.050*"new" + 0.028*"right" + 0.026*"america" + 0.023*"century" + 0.022*"children" + 0.020*"communities" + 0.017*"help" + 0.016*"teachers" + 0.015*"schools" + 0.014*"economy"
+2020-11-20 08:26:18,887:INFO:topic #2 (0.100): 0.056*"tax" + 0.036*"year" + 0.020*"people" + 0.019*"income" + 0.018*"college" + 0.018*"jobs" + 0.017*"cut" + 0.015*"new" + 0.014*"years" + 0.014*"million"
+2020-11-20 08:26:18,888:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.019*"administration" + 0.018*"federal" + 0.016*"economic" + 0.016*"growth" + 0.015*"inflation" + 0.014*"year"
+2020-11-20 08:26:18,888:INFO:topic diff=0.089133, rho=0.211058
+2020-11-20 08:26:19,264:INFO:-6.124 per-word bound, 69.7 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:19,265:INFO:PROGRESS: pass 20, at document #2898/2898
+2020-11-20 08:26:19,532:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:19,533:INFO:topic #7 (0.100): 0.041*"crime" + 0.039*"let" + 0.038*"know" + 0.036*"congress" + 0.027*"house" + 0.025*"bill" + 0.023*"pass" + 0.021*"ask" + 0.019*"people" + 0.018*"tell"
+2020-11-20 08:26:19,533:INFO:topic #4 (0.100): 0.049*"security" + 0.037*"social" + 0.016*"need" + 0.015*"support" + 0.015*"long" + 0.013*"new" + 0.012*"drugs" + 0.012*"action" + 0.012*"future" + 0.011*"america"
+2020-11-20 08:26:19,533:INFO:topic #1 (0.100): 0.043*"government" + 0.037*"health" + 0.025*"federal" + 0.024*"congress" + 0.023*"budget" + 0.021*"president" + 0.020*"welfare" + 0.019*"people" + 0.019*"reform" + 0.017*"programs"
+2020-11-20 08:26:19,533:INFO:topic #6 (0.100): 0.053*"children" + 0.043*"work" + 0.031*"child" + 0.027*"families" + 0.024*"family" + 0.024*"care" + 0.023*"parents" + 0.019*"school" + 0.018*"people" + 0.015*"schools"
+2020-11-20 08:26:19,534:INFO:topic #8 (0.100): 0.045*"america" + 0.044*"world" + 0.036*"people" + 0.022*"nation" + 0.022*"american" + 0.020*"freedom" + 0.017*"americans" + 0.016*"peace" + 0.014*"time" + 0.013*"union"
+2020-11-20 08:26:19,534:INFO:topic diff=0.089485, rho=0.211058
+2020-11-20 08:26:19,534:INFO:PROGRESS: pass 21, at document #2000/2898
+2020-11-20 08:26:20,320:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:20,321:INFO:topic #8 (0.100): 0.044*"world" + 0.044*"america" + 0.036*"people" + 0.022*"american" + 0.022*"nation" + 0.021*"freedom" + 0.016*"americans" + 0.016*"peace" + 0.014*"time" + 0.014*"union"
+2020-11-20 08:26:20,321:INFO:topic #5 (0.100): 0.026*"world" + 0.023*"states" + 0.022*"nations" + 0.022*"nuclear" + 0.021*"united" + 0.021*"soviet" + 0.018*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:20,321:INFO:topic #2 (0.100): 0.056*"tax" + 0.036*"year" + 0.021*"people" + 0.019*"income" + 0.019*"college" + 0.018*"jobs" + 0.017*"cut" + 0.015*"new" + 0.014*"years" + 0.013*"million"
+2020-11-20 08:26:20,321:INFO:topic #7 (0.100): 0.039*"crime" + 0.039*"know" + 0.038*"let" + 0.036*"congress" + 0.029*"house" + 0.024*"bill" + 0.022*"pass" + 0.019*"ask" + 0.019*"tell" + 0.019*"people"
+2020-11-20 08:26:20,321:INFO:topic #4 (0.100): 0.046*"security" + 0.034*"social" + 0.016*"need" + 0.015*"long" + 0.014*"support" + 0.013*"new" + 0.013*"future" + 0.012*"action" + 0.012*"system" + 0.012*"drugs"
+2020-11-20 08:26:20,321:INFO:topic diff=0.085596, rho=0.206508
+2020-11-20 08:26:20,708:INFO:-6.122 per-word bound, 69.6 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:20,708:INFO:PROGRESS: pass 21, at document #2898/2898
+2020-11-20 08:26:20,979:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:20,980:INFO:topic #8 (0.100): 0.045*"america" + 0.044*"world" + 0.036*"people" + 0.022*"nation" + 0.022*"american" + 0.020*"freedom" + 0.017*"americans" + 0.015*"peace" + 0.014*"time" + 0.013*"union"
+2020-11-20 08:26:20,980:INFO:topic #2 (0.100): 0.053*"tax" + 0.037*"year" + 0.022*"college" + 0.020*"people" + 0.018*"income" + 0.018*"cut" + 0.017*"jobs" + 0.016*"new" + 0.015*"years" + 0.014*"million"
+2020-11-20 08:26:20,980:INFO:topic #9 (0.100): 0.043*"year" + 0.036*"thank" + 0.032*"women" + 0.027*"america" + 0.024*"ask" + 0.021*"years" + 0.019*"let" + 0.019*"country" + 0.018*"god" + 0.017*"men"
+2020-11-20 08:26:20,980:INFO:topic #5 (0.100): 0.025*"world" + 0.023*"nuclear" + 0.023*"states" + 0.023*"nations" + 0.021*"united" + 0.019*"peace" + 0.019*"trade" + 0.019*"soviet" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:20,980:INFO:topic #6 (0.100): 0.053*"children" + 0.043*"work" + 0.031*"child" + 0.027*"families" + 0.025*"care" + 0.024*"family" + 0.023*"parents" + 0.019*"school" + 0.018*"people" + 0.015*"schools"
+2020-11-20 08:26:20,980:INFO:topic diff=0.085973, rho=0.206508
+2020-11-20 08:26:20,981:INFO:PROGRESS: pass 22, at document #2000/2898
+2020-11-20 08:26:21,772:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:21,773:INFO:topic #7 (0.100): 0.039*"crime" + 0.039*"know" + 0.039*"let" + 0.037*"congress" + 0.029*"house" + 0.024*"bill" + 0.022*"pass" + 0.019*"ask" + 0.019*"people" + 0.019*"tell"
+2020-11-20 08:26:21,774:INFO:topic #9 (0.100): 0.043*"year" + 0.035*"women" + 0.033*"thank" + 0.027*"america" + 0.022*"ask" + 0.020*"years" + 0.020*"country" + 0.019*"god" + 0.019*"let" + 0.018*"men"
+2020-11-20 08:26:21,774:INFO:topic #5 (0.100): 0.026*"world" + 0.023*"states" + 0.022*"nations" + 0.022*"nuclear" + 0.022*"united" + 0.021*"soviet" + 0.019*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:21,774:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.019*"administration" + 0.018*"federal" + 0.016*"economic" + 0.016*"growth" + 0.014*"inflation" + 0.014*"year"
+2020-11-20 08:26:21,774:INFO:topic #6 (0.100): 0.052*"children" + 0.042*"work" + 0.031*"child" + 0.027*"families" + 0.026*"family" + 0.024*"care" + 0.022*"parents" + 0.019*"school" + 0.018*"people" + 0.014*"schools"
+2020-11-20 08:26:21,774:INFO:topic diff=0.082179, rho=0.202241
+2020-11-20 08:26:22,300:INFO:-6.120 per-word bound, 69.6 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:22,300:INFO:PROGRESS: pass 22, at document #2898/2898
+2020-11-20 08:26:22,572:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:22,573:INFO:topic #7 (0.100): 0.040*"crime" + 0.039*"let" + 0.038*"know" + 0.037*"congress" + 0.027*"house" + 0.025*"bill" + 0.023*"pass" + 0.021*"ask" + 0.019*"people" + 0.018*"tell"
+2020-11-20 08:26:22,573:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.021*"new" + 0.019*"program" + 0.018*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.014*"year" + 0.014*"inflation"
+2020-11-20 08:26:22,573:INFO:topic #2 (0.100): 0.053*"tax" + 0.036*"year" + 0.022*"college" + 0.021*"people" + 0.018*"income" + 0.018*"cut" + 0.017*"jobs" + 0.016*"new" + 0.015*"years" + 0.014*"cuts"
+2020-11-20 08:26:22,574:INFO:topic #3 (0.100): 0.052*"new" + 0.027*"right" + 0.027*"america" + 0.025*"century" + 0.022*"children" + 0.022*"communities" + 0.017*"teachers" + 0.017*"help" + 0.016*"schools" + 0.015*"economy"
+2020-11-20 08:26:22,574:INFO:topic #9 (0.100): 0.043*"year" + 0.036*"thank" + 0.032*"women" + 0.027*"america" + 0.024*"ask" + 0.021*"years" + 0.019*"country" + 0.019*"let" + 0.018*"god" + 0.017*"men"
+2020-11-20 08:26:22,574:INFO:topic diff=0.082723, rho=0.202241
+2020-11-20 08:26:22,574:INFO:PROGRESS: pass 23, at document #2000/2898
+2020-11-20 08:26:23,452:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:23,453:INFO:topic #5 (0.100): 0.026*"world" + 0.024*"states" + 0.022*"nations" + 0.022*"nuclear" + 0.022*"united" + 0.021*"soviet" + 0.019*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:23,453:INFO:topic #2 (0.100): 0.056*"tax" + 0.036*"year" + 0.021*"people" + 0.020*"income" + 0.019*"jobs" + 0.019*"college" + 0.018*"cut" + 0.015*"new" + 0.014*"years" + 0.013*"million"
+2020-11-20 08:26:23,453:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.019*"administration" + 0.018*"federal" + 0.016*"economic" + 0.016*"growth" + 0.014*"inflation" + 0.014*"year"
+2020-11-20 08:26:23,453:INFO:topic #1 (0.100): 0.044*"government" + 0.036*"health" + 0.027*"federal" + 0.025*"congress" + 0.023*"budget" + 0.020*"president" + 0.019*"reform" + 0.019*"people" + 0.019*"welfare" + 0.018*"programs"
+2020-11-20 08:26:23,453:INFO:topic #7 (0.100): 0.039*"crime" + 0.039*"know" + 0.039*"let" + 0.037*"congress" + 0.029*"house" + 0.024*"bill" + 0.022*"pass" + 0.019*"ask" + 0.019*"people" + 0.019*"tell"
+2020-11-20 08:26:23,453:INFO:topic diff=0.079029, rho=0.198228
+2020-11-20 08:26:23,889:INFO:-6.119 per-word bound, 69.5 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:23,889:INFO:PROGRESS: pass 23, at document #2898/2898
+2020-11-20 08:26:24,147:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:24,148:INFO:topic #3 (0.100): 0.052*"new" + 0.027*"right" + 0.027*"america" + 0.025*"century" + 0.022*"children" + 0.022*"communities" + 0.017*"teachers" + 0.017*"help" + 0.016*"schools" + 0.015*"economy"
+2020-11-20 08:26:24,148:INFO:topic #5 (0.100): 0.025*"world" + 0.023*"states" + 0.023*"nuclear" + 0.023*"nations" + 0.022*"united" + 0.020*"peace" + 0.019*"trade" + 0.019*"soviet" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:24,148:INFO:topic #8 (0.100): 0.045*"america" + 0.043*"world" + 0.036*"people" + 0.022*"nation" + 0.022*"american" + 0.020*"freedom" + 0.017*"americans" + 0.015*"peace" + 0.014*"time" + 0.013*"union"
+2020-11-20 08:26:24,148:INFO:topic #7 (0.100): 0.040*"crime" + 0.040*"let" + 0.038*"know" + 0.037*"congress" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.021*"ask" + 0.019*"people" + 0.018*"tell"
+2020-11-20 08:26:24,148:INFO:topic #4 (0.100): 0.050*"security" + 0.037*"social" + 0.016*"need" + 0.015*"long" + 0.015*"support" + 0.013*"new" + 0.013*"drugs" + 0.012*"action" + 0.012*"future" + 0.011*"america"
+2020-11-20 08:26:24,148:INFO:topic diff=0.079848, rho=0.198228
+2020-11-20 08:26:24,148:INFO:PROGRESS: pass 24, at document #2000/2898
+2020-11-20 08:26:24,786:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:24,786:INFO:topic #6 (0.100): 0.053*"children" + 0.043*"work" + 0.031*"child" + 0.028*"families" + 0.026*"family" + 0.025*"care" + 0.022*"parents" + 0.019*"school" + 0.018*"people" + 0.015*"support"
+2020-11-20 08:26:24,786:INFO:topic #5 (0.100): 0.026*"world" + 0.024*"states" + 0.022*"nations" + 0.022*"nuclear" + 0.022*"united" + 0.021*"soviet" + 0.019*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:24,786:INFO:topic #3 (0.100): 0.051*"new" + 0.028*"right" + 0.026*"america" + 0.023*"century" + 0.022*"children" + 0.021*"communities" + 0.017*"help" + 0.016*"teachers" + 0.015*"schools" + 0.015*"economy"
+2020-11-20 08:26:24,787:INFO:topic #8 (0.100): 0.044*"america" + 0.043*"world" + 0.036*"people" + 0.022*"american" + 0.022*"nation" + 0.021*"freedom" + 0.016*"americans" + 0.016*"peace" + 0.014*"time" + 0.013*"union"
+2020-11-20 08:26:24,787:INFO:topic #4 (0.100): 0.047*"security" + 0.035*"social" + 0.016*"need" + 0.015*"long" + 0.014*"support" + 0.013*"new" + 0.013*"future" + 0.012*"system" + 0.012*"action" + 0.012*"drugs"
+2020-11-20 08:26:24,787:INFO:topic diff=0.076257, rho=0.194444
+2020-11-20 08:26:25,143:INFO:-6.118 per-word bound, 69.4 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:25,143:INFO:PROGRESS: pass 24, at document #2898/2898
+2020-11-20 08:26:25,408:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:25,408:INFO:topic #4 (0.100): 0.050*"security" + 0.037*"social" + 0.016*"need" + 0.015*"long" + 0.015*"support" + 0.013*"new" + 0.013*"drugs" + 0.012*"action" + 0.012*"future" + 0.011*"america"
+2020-11-20 08:26:25,408:INFO:topic #2 (0.100): 0.053*"tax" + 0.036*"year" + 0.022*"college" + 0.021*"people" + 0.018*"income" + 0.018*"cut" + 0.018*"jobs" + 0.016*"new" + 0.015*"years" + 0.014*"cuts"
+2020-11-20 08:26:25,409:INFO:topic #7 (0.100): 0.040*"crime" + 0.040*"let" + 0.038*"congress" + 0.038*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.021*"ask" + 0.020*"people" + 0.018*"tell"
+2020-11-20 08:26:25,409:INFO:topic #6 (0.100): 0.054*"children" + 0.043*"work" + 0.031*"child" + 0.028*"families" + 0.026*"care" + 0.025*"family" + 0.024*"parents" + 0.020*"school" + 0.018*"people" + 0.016*"support"
+2020-11-20 08:26:25,409:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.021*"new" + 0.019*"program" + 0.017*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.014*"year" + 0.014*"inflation"
+2020-11-20 08:26:25,409:INFO:topic diff=0.077196, rho=0.194444
+2020-11-20 08:26:25,409:INFO:PROGRESS: pass 25, at document #2000/2898
+2020-11-20 08:26:26,007:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:26,008:INFO:topic #6 (0.100): 0.053*"children" + 0.043*"work" + 0.031*"child" + 0.028*"families" + 0.026*"family" + 0.025*"care" + 0.022*"parents" + 0.019*"school" + 0.018*"people" + 0.015*"support"
+2020-11-20 08:26:26,008:INFO:topic #8 (0.100): 0.044*"america" + 0.043*"world" + 0.036*"people" + 0.022*"american" + 0.022*"nation" + 0.021*"freedom" + 0.016*"americans" + 0.015*"peace" + 0.014*"time" + 0.013*"union"
+2020-11-20 08:26:26,008:INFO:topic #4 (0.100): 0.048*"security" + 0.035*"social" + 0.016*"need" + 0.015*"long" + 0.014*"support" + 0.013*"new" + 0.012*"future" + 0.012*"system" + 0.012*"drugs" + 0.012*"action"
+2020-11-20 08:26:26,009:INFO:topic #3 (0.100): 0.052*"new" + 0.028*"right" + 0.026*"america" + 0.023*"century" + 0.021*"children" + 0.021*"communities" + 0.017*"help" + 0.016*"teachers" + 0.015*"schools" + 0.015*"economy"
+2020-11-20 08:26:26,009:INFO:topic #1 (0.100): 0.044*"government" + 0.037*"health" + 0.027*"federal" + 0.025*"congress" + 0.023*"budget" + 0.020*"president" + 0.019*"reform" + 0.019*"welfare" + 0.018*"people" + 0.018*"programs"
+2020-11-20 08:26:26,009:INFO:topic diff=0.074043, rho=0.190870
+2020-11-20 08:26:26,411:INFO:-6.117 per-word bound, 69.4 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:26,412:INFO:PROGRESS: pass 25, at document #2898/2898
+2020-11-20 08:26:26,667:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:26,667:INFO:topic #1 (0.100): 0.043*"government" + 0.037*"health" + 0.025*"federal" + 0.024*"congress" + 0.024*"budget" + 0.021*"president" + 0.020*"welfare" + 0.019*"reform" + 0.019*"people" + 0.017*"programs"
+2020-11-20 08:26:26,667:INFO:topic #3 (0.100): 0.053*"new" + 0.028*"right" + 0.027*"america" + 0.025*"century" + 0.022*"communities" + 0.022*"children" + 0.017*"teachers" + 0.017*"help" + 0.016*"schools" + 0.015*"economy"
+2020-11-20 08:26:26,668:INFO:topic #7 (0.100): 0.040*"let" + 0.040*"crime" + 0.038*"congress" + 0.037*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.021*"ask" + 0.020*"people" + 0.017*"tell"
+2020-11-20 08:26:26,668:INFO:topic #9 (0.100): 0.044*"year" + 0.036*"thank" + 0.032*"women" + 0.027*"america" + 0.024*"ask" + 0.022*"years" + 0.021*"country" + 0.018*"god" + 0.018*"let" + 0.017*"men"
+2020-11-20 08:26:26,668:INFO:topic #5 (0.100): 0.026*"world" + 0.024*"states" + 0.023*"nuclear" + 0.023*"nations" + 0.022*"united" + 0.020*"peace" + 0.019*"trade" + 0.019*"soviet" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:26,668:INFO:topic diff=0.074761, rho=0.190870
+2020-11-20 08:26:26,668:INFO:PROGRESS: pass 26, at document #2000/2898
+2020-11-20 08:26:27,271:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:27,272:INFO:topic #6 (0.100): 0.053*"children" + 0.043*"work" + 0.031*"child" + 0.028*"families" + 0.026*"family" + 0.025*"care" + 0.023*"parents" + 0.019*"school" + 0.018*"people" + 0.015*"support"
+2020-11-20 08:26:27,272:INFO:topic #1 (0.100): 0.044*"government" + 0.037*"health" + 0.027*"federal" + 0.025*"congress" + 0.023*"budget" + 0.020*"president" + 0.019*"reform" + 0.019*"welfare" + 0.018*"people" + 0.018*"programs"
+2020-11-20 08:26:27,272:INFO:topic #3 (0.100): 0.052*"new" + 0.028*"right" + 0.027*"america" + 0.023*"century" + 0.021*"children" + 0.021*"communities" + 0.017*"help" + 0.016*"teachers" + 0.016*"schools" + 0.015*"economy"
+2020-11-20 08:26:27,272:INFO:topic #2 (0.100): 0.055*"tax" + 0.036*"year" + 0.021*"people" + 0.020*"income" + 0.019*"jobs" + 0.019*"college" + 0.018*"cut" + 0.016*"new" + 0.014*"years" + 0.014*"deficit"
+2020-11-20 08:26:27,272:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.018*"federal" + 0.016*"economic" + 0.016*"growth" + 0.014*"year" + 0.014*"inflation"
+2020-11-20 08:26:27,272:INFO:topic diff=0.071829, rho=0.187485
+2020-11-20 08:26:27,628:INFO:-6.115 per-word bound, 69.3 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:27,628:INFO:PROGRESS: pass 26, at document #2898/2898
+2020-11-20 08:26:27,887:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:27,887:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.021*"new" + 0.019*"program" + 0.017*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:27,887:INFO:topic #5 (0.100): 0.026*"world" + 0.024*"states" + 0.023*"nuclear" + 0.023*"nations" + 0.022*"united" + 0.020*"peace" + 0.019*"trade" + 0.019*"soviet" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:27,888:INFO:topic #7 (0.100): 0.040*"let" + 0.040*"crime" + 0.039*"congress" + 0.037*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.021*"ask" + 0.020*"people" + 0.017*"tell"
+2020-11-20 08:26:27,888:INFO:topic #9 (0.100): 0.044*"year" + 0.036*"thank" + 0.032*"women" + 0.028*"america" + 0.024*"ask" + 0.022*"years" + 0.022*"country" + 0.018*"god" + 0.017*"let" + 0.017*"men"
+2020-11-20 08:26:27,888:INFO:topic #8 (0.100): 0.045*"america" + 0.043*"world" + 0.036*"people" + 0.022*"nation" + 0.022*"american" + 0.020*"freedom" + 0.018*"americans" + 0.015*"peace" + 0.014*"time" + 0.013*"government"
+2020-11-20 08:26:27,888:INFO:topic diff=0.072639, rho=0.187485
+2020-11-20 08:26:27,888:INFO:PROGRESS: pass 27, at document #2000/2898
+2020-11-20 08:26:28,483:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:28,483:INFO:topic #3 (0.100): 0.053*"new" + 0.028*"right" + 0.027*"america" + 0.023*"century" + 0.021*"children" + 0.021*"communities" + 0.017*"help" + 0.016*"teachers" + 0.016*"schools" + 0.015*"economy"
+2020-11-20 08:26:28,483:INFO:topic #4 (0.100): 0.048*"security" + 0.035*"social" + 0.016*"need" + 0.016*"long" + 0.014*"support" + 0.013*"new" + 0.012*"system" + 0.012*"future" + 0.012*"drugs" + 0.012*"action"
+2020-11-20 08:26:28,484:INFO:topic #8 (0.100): 0.044*"america" + 0.043*"world" + 0.036*"people" + 0.022*"american" + 0.022*"nation" + 0.021*"freedom" + 0.017*"americans" + 0.015*"peace" + 0.014*"time" + 0.013*"government"
+2020-11-20 08:26:28,484:INFO:topic #6 (0.100): 0.054*"children" + 0.043*"work" + 0.031*"child" + 0.028*"families" + 0.027*"family" + 0.026*"care" + 0.023*"parents" + 0.020*"school" + 0.018*"people" + 0.015*"support"
+2020-11-20 08:26:28,484:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.018*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:28,484:INFO:topic diff=0.070043, rho=0.184274
+2020-11-20 08:26:28,836:INFO:-6.114 per-word bound, 69.3 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:28,836:INFO:PROGRESS: pass 27, at document #2898/2898
+2020-11-20 08:26:29,089:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:29,089:INFO:topic #3 (0.100): 0.054*"new" + 0.028*"right" + 0.027*"america" + 0.025*"century" + 0.022*"communities" + 0.022*"children" + 0.017*"teachers" + 0.017*"help" + 0.016*"schools" + 0.015*"economy"
+2020-11-20 08:26:29,089:INFO:topic #8 (0.100): 0.045*"america" + 0.043*"world" + 0.036*"people" + 0.022*"nation" + 0.022*"american" + 0.020*"freedom" + 0.018*"americans" + 0.015*"peace" + 0.014*"time" + 0.014*"government"
+2020-11-20 08:26:29,089:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.021*"new" + 0.019*"program" + 0.017*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:29,090:INFO:topic #7 (0.100): 0.040*"let" + 0.040*"crime" + 0.039*"congress" + 0.037*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.022*"ask" + 0.020*"people" + 0.017*"tell"
+2020-11-20 08:26:29,090:INFO:topic #2 (0.100): 0.053*"tax" + 0.036*"year" + 0.022*"college" + 0.021*"people" + 0.018*"income" + 0.018*"jobs" + 0.018*"cut" + 0.016*"new" + 0.015*"years" + 0.014*"cuts"
+2020-11-20 08:26:29,090:INFO:topic diff=0.070744, rho=0.184274
+2020-11-20 08:26:29,090:INFO:PROGRESS: pass 28, at document #2000/2898
+2020-11-20 08:26:29,694:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:29,695:INFO:topic #6 (0.100): 0.054*"children" + 0.043*"work" + 0.031*"child" + 0.029*"families" + 0.027*"family" + 0.026*"care" + 0.023*"parents" + 0.020*"school" + 0.017*"people" + 0.015*"support"
+2020-11-20 08:26:29,695:INFO:topic #5 (0.100): 0.027*"world" + 0.024*"states" + 0.022*"nations" + 0.022*"united" + 0.022*"nuclear" + 0.021*"soviet" + 0.019*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:29,695:INFO:topic #4 (0.100): 0.049*"security" + 0.035*"social" + 0.016*"need" + 0.016*"long" + 0.014*"support" + 0.013*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"future" + 0.012*"action"
+2020-11-20 08:26:29,695:INFO:topic #9 (0.100): 0.044*"year" + 0.034*"women" + 0.032*"thank" + 0.028*"america" + 0.023*"country" + 0.022*"ask" + 0.022*"years" + 0.019*"god" + 0.018*"men" + 0.017*"let"
+2020-11-20 08:26:29,695:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.018*"federal" + 0.016*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:29,695:INFO:topic diff=0.068356, rho=0.181223
+2020-11-20 08:26:30,045:INFO:-6.113 per-word bound, 69.2 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:30,045:INFO:PROGRESS: pass 28, at document #2898/2898
+2020-11-20 08:26:30,298:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:30,299:INFO:topic #8 (0.100): 0.045*"america" + 0.043*"world" + 0.036*"people" + 0.022*"nation" + 0.022*"american" + 0.020*"freedom" + 0.018*"americans" + 0.015*"peace" + 0.014*"time" + 0.014*"government"
+2020-11-20 08:26:30,299:INFO:topic #5 (0.100): 0.026*"world" + 0.024*"states" + 0.023*"nuclear" + 0.023*"nations" + 0.022*"united" + 0.020*"peace" + 0.019*"soviet" + 0.019*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:30,299:INFO:topic #9 (0.100): 0.045*"year" + 0.036*"thank" + 0.031*"women" + 0.028*"america" + 0.024*"ask" + 0.022*"years" + 0.022*"country" + 0.018*"god" + 0.017*"let" + 0.017*"men"
+2020-11-20 08:26:30,299:INFO:topic #2 (0.100): 0.053*"tax" + 0.036*"year" + 0.022*"college" + 0.021*"people" + 0.019*"jobs" + 0.018*"income" + 0.018*"cut" + 0.016*"new" + 0.016*"years" + 0.014*"cuts"
+2020-11-20 08:26:30,299:INFO:topic #7 (0.100): 0.040*"let" + 0.040*"congress" + 0.039*"crime" + 0.037*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.022*"ask" + 0.021*"people" + 0.017*"tell"
+2020-11-20 08:26:30,299:INFO:topic diff=0.069130, rho=0.181223
+2020-11-20 08:26:30,300:INFO:PROGRESS: pass 29, at document #2000/2898
+2020-11-20 08:26:30,893:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:30,893:INFO:topic #7 (0.100): 0.040*"congress" + 0.040*"let" + 0.038*"crime" + 0.038*"know" + 0.028*"house" + 0.025*"bill" + 0.022*"pass" + 0.021*"people" + 0.020*"ask" + 0.019*"tell"
+2020-11-20 08:26:30,893:INFO:topic #2 (0.100): 0.055*"tax" + 0.036*"year" + 0.022*"people" + 0.020*"jobs" + 0.020*"income" + 0.019*"college" + 0.018*"cut" + 0.016*"new" + 0.015*"years" + 0.014*"deficit"
+2020-11-20 08:26:30,893:INFO:topic #5 (0.100): 0.027*"world" + 0.024*"states" + 0.022*"united" + 0.022*"nations" + 0.022*"nuclear" + 0.020*"soviet" + 0.019*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"forces"
+2020-11-20 08:26:30,894:INFO:topic #8 (0.100): 0.044*"america" + 0.043*"world" + 0.036*"people" + 0.022*"nation" + 0.022*"american" + 0.021*"freedom" + 0.017*"americans" + 0.015*"peace" + 0.014*"time" + 0.014*"government"
+2020-11-20 08:26:30,894:INFO:topic #4 (0.100): 0.049*"security" + 0.035*"social" + 0.017*"need" + 0.016*"long" + 0.014*"support" + 0.013*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"action" + 0.011*"future"
+2020-11-20 08:26:30,894:INFO:topic diff=0.066829, rho=0.178319
+2020-11-20 08:26:31,243:INFO:-6.113 per-word bound, 69.2 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:31,243:INFO:PROGRESS: pass 29, at document #2898/2898
+2020-11-20 08:26:31,492:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:31,493:INFO:topic #5 (0.100): 0.026*"world" + 0.024*"states" + 0.023*"nuclear" + 0.023*"nations" + 0.022*"united" + 0.020*"peace" + 0.019*"soviet" + 0.019*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:31,493:INFO:topic #4 (0.100): 0.051*"security" + 0.038*"social" + 0.017*"need" + 0.016*"long" + 0.015*"support" + 0.013*"new" + 0.013*"drugs" + 0.012*"action" + 0.011*"system" + 0.011*"american"
+2020-11-20 08:26:31,493:INFO:topic #6 (0.100): 0.055*"children" + 0.043*"work" + 0.032*"child" + 0.029*"families" + 0.027*"care" + 0.025*"family" + 0.024*"parents" + 0.020*"school" + 0.017*"people" + 0.016*"support"
+2020-11-20 08:26:31,493:INFO:topic #2 (0.100): 0.053*"tax" + 0.036*"year" + 0.022*"college" + 0.021*"people" + 0.019*"jobs" + 0.019*"income" + 0.018*"cut" + 0.017*"new" + 0.016*"years" + 0.014*"deficit"
+2020-11-20 08:26:31,493:INFO:topic #8 (0.100): 0.045*"america" + 0.043*"world" + 0.036*"people" + 0.022*"nation" + 0.022*"american" + 0.020*"freedom" + 0.018*"americans" + 0.015*"peace" + 0.014*"time" + 0.014*"government"
+2020-11-20 08:26:31,494:INFO:topic diff=0.067394, rho=0.178319
+2020-11-20 08:26:31,494:INFO:PROGRESS: pass 30, at document #2000/2898
+2020-11-20 08:26:32,093:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:32,093:INFO:topic #7 (0.100): 0.040*"congress" + 0.040*"let" + 0.038*"crime" + 0.038*"know" + 0.028*"house" + 0.025*"bill" + 0.022*"pass" + 0.021*"people" + 0.020*"ask" + 0.018*"tell"
+2020-11-20 08:26:32,093:INFO:topic #4 (0.100): 0.049*"security" + 0.036*"social" + 0.017*"need" + 0.016*"long" + 0.014*"support" + 0.013*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"action" + 0.011*"term"
+2020-11-20 08:26:32,093:INFO:topic #6 (0.100): 0.054*"children" + 0.043*"work" + 0.031*"child" + 0.029*"families" + 0.027*"family" + 0.026*"care" + 0.023*"parents" + 0.020*"school" + 0.017*"people" + 0.016*"support"
+2020-11-20 08:26:32,094:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.018*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:32,094:INFO:topic #2 (0.100): 0.055*"tax" + 0.036*"year" + 0.022*"people" + 0.020*"jobs" + 0.020*"income" + 0.019*"college" + 0.018*"cut" + 0.016*"new" + 0.015*"years" + 0.014*"deficit"
+2020-11-20 08:26:32,094:INFO:topic diff=0.065226, rho=0.175549
+2020-11-20 08:26:32,446:INFO:-6.112 per-word bound, 69.2 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:32,446:INFO:PROGRESS: pass 30, at document #2898/2898
+2020-11-20 08:26:32,696:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:32,697:INFO:topic #1 (0.100): 0.043*"government" + 0.037*"health" + 0.026*"federal" + 0.024*"budget" + 0.024*"congress" + 0.021*"president" + 0.020*"welfare" + 0.019*"reform" + 0.019*"people" + 0.018*"programs"
+2020-11-20 08:26:32,697:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.020*"new" + 0.019*"program" + 0.017*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:32,697:INFO:topic #7 (0.100): 0.041*"congress" + 0.040*"let" + 0.039*"crime" + 0.037*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.022*"ask" + 0.021*"people" + 0.017*"tell"
+2020-11-20 08:26:32,697:INFO:topic #6 (0.100): 0.056*"children" + 0.043*"work" + 0.032*"child" + 0.029*"families" + 0.027*"care" + 0.025*"family" + 0.024*"parents" + 0.020*"school" + 0.017*"people" + 0.016*"support"
+2020-11-20 08:26:32,697:INFO:topic #3 (0.100): 0.054*"new" + 0.028*"right" + 0.027*"america" + 0.025*"century" + 0.022*"communities" + 0.021*"children" + 0.017*"teachers" + 0.016*"help" + 0.016*"schools" + 0.016*"economy"
+2020-11-20 08:26:32,697:INFO:topic diff=0.065779, rho=0.175549
+2020-11-20 08:26:32,698:INFO:PROGRESS: pass 31, at document #2000/2898
+2020-11-20 08:26:33,292:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:33,292:INFO:topic #8 (0.100): 0.044*"america" + 0.042*"world" + 0.036*"people" + 0.022*"nation" + 0.022*"american" + 0.021*"freedom" + 0.017*"americans" + 0.015*"peace" + 0.014*"government" + 0.014*"time"
+2020-11-20 08:26:33,293:INFO:topic #6 (0.100): 0.055*"children" + 0.043*"work" + 0.031*"child" + 0.029*"families" + 0.027*"family" + 0.026*"care" + 0.023*"parents" + 0.020*"school" + 0.017*"people" + 0.016*"support"
+2020-11-20 08:26:33,293:INFO:topic #4 (0.100): 0.049*"security" + 0.036*"social" + 0.017*"need" + 0.016*"long" + 0.014*"support" + 0.013*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"action" + 0.011*"term"
+2020-11-20 08:26:33,293:INFO:topic #7 (0.100): 0.041*"congress" + 0.040*"let" + 0.038*"crime" + 0.038*"know" + 0.028*"house" + 0.024*"bill" + 0.022*"pass" + 0.021*"people" + 0.021*"ask" + 0.018*"tell"
+2020-11-20 08:26:33,293:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.018*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:33,293:INFO:topic diff=0.063735, rho=0.172905
+2020-11-20 08:26:33,651:INFO:-6.111 per-word bound, 69.1 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:33,651:INFO:PROGRESS: pass 31, at document #2898/2898
+2020-11-20 08:26:33,910:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:33,910:INFO:topic #3 (0.100): 0.055*"new" + 0.028*"right" + 0.027*"america" + 0.025*"century" + 0.022*"communities" + 0.021*"children" + 0.017*"teachers" + 0.016*"help" + 0.016*"schools" + 0.016*"economy"
+2020-11-20 08:26:33,911:INFO:topic #9 (0.100): 0.045*"year" + 0.035*"thank" + 0.031*"women" + 0.029*"america" + 0.024*"ask" + 0.023*"country" + 0.022*"years" + 0.018*"god" + 0.017*"let" + 0.017*"men"
+2020-11-20 08:26:33,911:INFO:topic #4 (0.100): 0.051*"security" + 0.038*"social" + 0.016*"need" + 0.016*"long" + 0.015*"support" + 0.013*"new" + 0.013*"drugs" + 0.012*"action" + 0.011*"system" + 0.011*"american"
+2020-11-20 08:26:33,911:INFO:topic #7 (0.100): 0.041*"congress" + 0.040*"let" + 0.039*"crime" + 0.037*"know" + 0.026*"house" + 0.025*"bill" + 0.023*"pass" + 0.022*"ask" + 0.021*"people" + 0.017*"tell"
+2020-11-20 08:26:33,911:INFO:topic #2 (0.100): 0.053*"tax" + 0.036*"year" + 0.022*"college" + 0.022*"people" + 0.019*"jobs" + 0.019*"income" + 0.018*"cut" + 0.017*"new" + 0.016*"years" + 0.014*"deficit"
+2020-11-20 08:26:33,911:INFO:topic diff=0.064200, rho=0.172905
+2020-11-20 08:26:33,911:INFO:PROGRESS: pass 32, at document #2000/2898
+2020-11-20 08:26:34,526:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:34,526:INFO:topic #3 (0.100): 0.054*"new" + 0.029*"right" + 0.027*"america" + 0.024*"century" + 0.021*"communities" + 0.021*"children" + 0.017*"help" + 0.016*"teachers" + 0.016*"economy" + 0.015*"schools"
+2020-11-20 08:26:34,526:INFO:topic #7 (0.100): 0.041*"congress" + 0.040*"let" + 0.038*"crime" + 0.038*"know" + 0.028*"house" + 0.024*"bill" + 0.023*"pass" + 0.021*"people" + 0.021*"ask" + 0.018*"tell"
+2020-11-20 08:26:34,527:INFO:topic #8 (0.100): 0.044*"america" + 0.042*"world" + 0.036*"people" + 0.022*"nation" + 0.022*"american" + 0.021*"freedom" + 0.017*"americans" + 0.015*"peace" + 0.014*"government" + 0.014*"time"
+2020-11-20 08:26:34,527:INFO:topic #4 (0.100): 0.049*"security" + 0.036*"social" + 0.017*"need" + 0.016*"long" + 0.014*"support" + 0.013*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"action" + 0.011*"term"
+2020-11-20 08:26:34,527:INFO:topic #9 (0.100): 0.045*"year" + 0.034*"women" + 0.032*"thank" + 0.029*"america" + 0.024*"country" + 0.022*"years" + 0.022*"ask" + 0.019*"god" + 0.018*"men" + 0.017*"let"
+2020-11-20 08:26:34,527:INFO:topic diff=0.062464, rho=0.170377
+2020-11-20 08:26:34,886:INFO:-6.111 per-word bound, 69.1 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:34,886:INFO:PROGRESS: pass 32, at document #2898/2898
+2020-11-20 08:26:35,142:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:35,142:INFO:topic #4 (0.100): 0.052*"security" + 0.038*"social" + 0.016*"need" + 0.016*"long" + 0.015*"support" + 0.013*"new" + 0.013*"drugs" + 0.012*"action" + 0.011*"system" + 0.011*"term"
+2020-11-20 08:26:35,142:INFO:topic #3 (0.100): 0.055*"new" + 0.028*"right" + 0.027*"america" + 0.025*"century" + 0.022*"communities" + 0.021*"children" + 0.017*"teachers" + 0.016*"help" + 0.016*"economy" + 0.016*"schools"
+2020-11-20 08:26:35,142:INFO:topic #8 (0.100): 0.045*"america" + 0.042*"world" + 0.036*"people" + 0.022*"nation" + 0.022*"american" + 0.020*"freedom" + 0.018*"americans" + 0.015*"peace" + 0.014*"government" + 0.014*"time"
+2020-11-20 08:26:35,143:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.020*"new" + 0.019*"program" + 0.017*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:35,143:INFO:topic #6 (0.100): 0.056*"children" + 0.043*"work" + 0.032*"child" + 0.029*"families" + 0.027*"care" + 0.025*"family" + 0.024*"parents" + 0.021*"school" + 0.017*"people" + 0.017*"support"
+2020-11-20 08:26:35,143:INFO:topic diff=0.062859, rho=0.170377
+2020-11-20 08:26:35,143:INFO:PROGRESS: pass 33, at document #2000/2898
+2020-11-20 08:26:35,741:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:35,742:INFO:topic #2 (0.100): 0.055*"tax" + 0.035*"year" + 0.022*"people" + 0.020*"jobs" + 0.020*"income" + 0.019*"college" + 0.018*"cut" + 0.016*"new" + 0.015*"years" + 0.014*"deficit"
+2020-11-20 08:26:35,742:INFO:topic #3 (0.100): 0.054*"new" + 0.029*"right" + 0.027*"america" + 0.024*"century" + 0.021*"communities" + 0.021*"children" + 0.017*"help" + 0.016*"teachers" + 0.016*"economy" + 0.015*"schools"
+2020-11-20 08:26:35,742:INFO:topic #5 (0.100): 0.027*"world" + 0.025*"states" + 0.023*"united" + 0.022*"nations" + 0.022*"nuclear" + 0.020*"soviet" + 0.019*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"forces"
+2020-11-20 08:26:35,742:INFO:topic #1 (0.100): 0.044*"government" + 0.037*"health" + 0.028*"federal" + 0.024*"congress" + 0.024*"budget" + 0.021*"president" + 0.019*"reform" + 0.018*"welfare" + 0.018*"programs" + 0.018*"people"
+2020-11-20 08:26:35,742:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:35,742:INFO:topic diff=0.061310, rho=0.167957
+2020-11-20 08:26:36,093:INFO:-6.110 per-word bound, 69.1 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:36,093:INFO:PROGRESS: pass 33, at document #2898/2898
+2020-11-20 08:26:36,343:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:36,344:INFO:topic #2 (0.100): 0.053*"tax" + 0.036*"year" + 0.022*"people" + 0.022*"college" + 0.019*"jobs" + 0.019*"income" + 0.018*"cut" + 0.017*"new" + 0.016*"years" + 0.014*"deficit"
+2020-11-20 08:26:36,344:INFO:topic #4 (0.100): 0.052*"security" + 0.038*"social" + 0.016*"need" + 0.016*"long" + 0.015*"support" + 0.013*"new" + 0.013*"drugs" + 0.012*"action" + 0.011*"system" + 0.011*"term"
+2020-11-20 08:26:36,344:INFO:topic #8 (0.100): 0.045*"america" + 0.042*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.020*"freedom" + 0.018*"americans" + 0.015*"peace" + 0.014*"government" + 0.014*"time"
+2020-11-20 08:26:36,344:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.020*"new" + 0.019*"program" + 0.017*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:36,345:INFO:topic #7 (0.100): 0.042*"congress" + 0.040*"let" + 0.039*"crime" + 0.037*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.022*"ask" + 0.022*"people" + 0.017*"tell"
+2020-11-20 08:26:36,345:INFO:topic diff=0.061641, rho=0.167957
+2020-11-20 08:26:36,345:INFO:PROGRESS: pass 34, at document #2000/2898
+2020-11-20 08:26:36,943:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:36,944:INFO:topic #9 (0.100): 0.046*"year" + 0.034*"women" + 0.032*"thank" + 0.029*"america" + 0.024*"country" + 0.022*"years" + 0.022*"ask" + 0.019*"god" + 0.018*"men" + 0.017*"let"
+2020-11-20 08:26:36,944:INFO:topic #5 (0.100): 0.027*"world" + 0.025*"states" + 0.023*"united" + 0.022*"nations" + 0.022*"nuclear" + 0.020*"soviet" + 0.019*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"forces"
+2020-11-20 08:26:36,944:INFO:topic #3 (0.100): 0.054*"new" + 0.028*"right" + 0.027*"america" + 0.024*"century" + 0.021*"communities" + 0.021*"children" + 0.016*"help" + 0.016*"teachers" + 0.016*"economy" + 0.015*"schools"
+2020-11-20 08:26:36,944:INFO:topic #6 (0.100): 0.056*"children" + 0.042*"work" + 0.032*"child" + 0.029*"families" + 0.027*"care" + 0.027*"family" + 0.023*"parents" + 0.021*"school" + 0.017*"people" + 0.016*"support"
+2020-11-20 08:26:36,944:INFO:topic #7 (0.100): 0.042*"congress" + 0.040*"let" + 0.038*"crime" + 0.037*"know" + 0.028*"house" + 0.025*"bill" + 0.023*"pass" + 0.022*"people" + 0.021*"ask" + 0.018*"tell"
+2020-11-20 08:26:36,945:INFO:topic diff=0.059900, rho=0.165637
+2020-11-20 08:26:37,296:INFO:-6.110 per-word bound, 69.1 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:37,296:INFO:PROGRESS: pass 34, at document #2898/2898
+2020-11-20 08:26:37,549:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:37,549:INFO:topic #6 (0.100): 0.057*"children" + 0.043*"work" + 0.032*"child" + 0.029*"families" + 0.028*"care" + 0.025*"family" + 0.024*"parents" + 0.021*"school" + 0.017*"support" + 0.016*"people"
+2020-11-20 08:26:37,550:INFO:topic #7 (0.100): 0.042*"congress" + 0.040*"let" + 0.039*"crime" + 0.037*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.022*"ask" + 0.022*"people" + 0.017*"tell"
+2020-11-20 08:26:37,550:INFO:topic #1 (0.100): 0.043*"government" + 0.037*"health" + 0.026*"federal" + 0.025*"budget" + 0.024*"congress" + 0.021*"president" + 0.019*"reform" + 0.019*"welfare" + 0.019*"people" + 0.018*"programs"
+2020-11-20 08:26:37,550:INFO:topic #5 (0.100): 0.026*"world" + 0.025*"states" + 0.023*"united" + 0.023*"nuclear" + 0.023*"nations" + 0.020*"peace" + 0.019*"soviet" + 0.019*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:37,550:INFO:topic #2 (0.100): 0.053*"tax" + 0.035*"year" + 0.022*"people" + 0.022*"college" + 0.019*"jobs" + 0.019*"income" + 0.019*"cut" + 0.017*"new" + 0.016*"years" + 0.014*"deficit"
+2020-11-20 08:26:37,550:INFO:topic diff=0.060220, rho=0.165637
+2020-11-20 08:26:37,550:INFO:PROGRESS: pass 35, at document #2000/2898
+2020-11-20 08:26:38,226:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:38,226:INFO:topic #9 (0.100): 0.046*"year" + 0.034*"women" + 0.032*"thank" + 0.029*"america" + 0.025*"country" + 0.022*"years" + 0.022*"ask" + 0.019*"god" + 0.018*"men" + 0.017*"let"
+2020-11-20 08:26:38,227:INFO:topic #6 (0.100): 0.056*"children" + 0.042*"work" + 0.032*"child" + 0.029*"families" + 0.027*"care" + 0.027*"family" + 0.023*"parents" + 0.021*"school" + 0.017*"people" + 0.016*"support"
+2020-11-20 08:26:38,227:INFO:topic #4 (0.100): 0.049*"security" + 0.036*"social" + 0.016*"long" + 0.016*"need" + 0.015*"support" + 0.013*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"action" + 0.011*"term"
+2020-11-20 08:26:38,227:INFO:topic #2 (0.100): 0.055*"tax" + 0.035*"year" + 0.022*"people" + 0.020*"jobs" + 0.020*"income" + 0.019*"college" + 0.018*"cut" + 0.017*"new" + 0.015*"years" + 0.015*"deficit"
+2020-11-20 08:26:38,227:INFO:topic #8 (0.100): 0.044*"america" + 0.042*"world" + 0.037*"people" + 0.022*"nation" + 0.022*"american" + 0.021*"freedom" + 0.017*"americans" + 0.015*"peace" + 0.014*"government" + 0.014*"time"
+2020-11-20 08:26:38,227:INFO:topic diff=0.058757, rho=0.163410
+2020-11-20 08:26:38,605:INFO:-6.109 per-word bound, 69.0 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:38,605:INFO:PROGRESS: pass 35, at document #2898/2898
+2020-11-20 08:26:38,956:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:38,957:INFO:topic #5 (0.100): 0.026*"world" + 0.025*"states" + 0.023*"united" + 0.023*"nuclear" + 0.023*"nations" + 0.020*"peace" + 0.019*"soviet" + 0.019*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:38,957:INFO:topic #3 (0.100): 0.055*"new" + 0.028*"right" + 0.027*"america" + 0.025*"century" + 0.022*"communities" + 0.021*"children" + 0.017*"teachers" + 0.016*"help" + 0.016*"economy" + 0.016*"schools"
+2020-11-20 08:26:38,957:INFO:topic #7 (0.100): 0.043*"congress" + 0.040*"let" + 0.039*"crime" + 0.036*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.022*"ask" + 0.022*"people" + 0.017*"tell"
+2020-11-20 08:26:38,957:INFO:topic #2 (0.100): 0.053*"tax" + 0.035*"year" + 0.022*"people" + 0.022*"college" + 0.019*"jobs" + 0.019*"cut" + 0.019*"income" + 0.017*"new" + 0.016*"years" + 0.014*"deficit"
+2020-11-20 08:26:38,958:INFO:topic #8 (0.100): 0.045*"america" + 0.042*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.020*"freedom" + 0.018*"americans" + 0.014*"government" + 0.014*"peace" + 0.014*"time"
+2020-11-20 08:26:38,958:INFO:topic diff=0.058944, rho=0.163410
+2020-11-20 08:26:38,958:INFO:PROGRESS: pass 36, at document #2000/2898
+2020-11-20 08:26:39,560:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:39,560:INFO:topic #4 (0.100): 0.050*"security" + 0.036*"social" + 0.017*"long" + 0.016*"need" + 0.015*"support" + 0.013*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"action" + 0.011*"term"
+2020-11-20 08:26:39,560:INFO:topic #1 (0.100): 0.044*"government" + 0.037*"health" + 0.028*"federal" + 0.024*"budget" + 0.024*"congress" + 0.021*"president" + 0.019*"reform" + 0.018*"programs" + 0.018*"welfare" + 0.018*"people"
+2020-11-20 08:26:39,561:INFO:topic #2 (0.100): 0.055*"tax" + 0.035*"year" + 0.022*"people" + 0.021*"jobs" + 0.020*"income" + 0.019*"college" + 0.019*"cut" + 0.017*"new" + 0.015*"years" + 0.015*"deficit"
+2020-11-20 08:26:39,561:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:39,561:INFO:topic #6 (0.100): 0.056*"children" + 0.042*"work" + 0.032*"child" + 0.029*"families" + 0.027*"care" + 0.027*"family" + 0.023*"parents" + 0.021*"school" + 0.016*"people" + 0.016*"support"
+2020-11-20 08:26:39,561:INFO:topic diff=0.057620, rho=0.161271
+2020-11-20 08:26:39,911:INFO:-6.108 per-word bound, 69.0 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:39,911:INFO:PROGRESS: pass 36, at document #2898/2898
+2020-11-20 08:26:40,162:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:40,163:INFO:topic #1 (0.100): 0.043*"government" + 0.038*"health" + 0.027*"federal" + 0.025*"budget" + 0.024*"congress" + 0.021*"president" + 0.019*"reform" + 0.019*"welfare" + 0.018*"people" + 0.018*"programs"
+2020-11-20 08:26:40,163:INFO:topic #2 (0.100): 0.053*"tax" + 0.035*"year" + 0.022*"people" + 0.022*"college" + 0.019*"jobs" + 0.019*"cut" + 0.019*"income" + 0.017*"new" + 0.016*"years" + 0.014*"deficit"
+2020-11-20 08:26:40,163:INFO:topic #7 (0.100): 0.043*"congress" + 0.040*"let" + 0.039*"crime" + 0.036*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.022*"ask" + 0.022*"people" + 0.017*"tell"
+2020-11-20 08:26:40,163:INFO:topic #9 (0.100): 0.047*"year" + 0.035*"thank" + 0.031*"women" + 0.029*"america" + 0.024*"country" + 0.023*"ask" + 0.023*"years" + 0.018*"god" + 0.017*"men" + 0.017*"let"
+2020-11-20 08:26:40,163:INFO:topic #4 (0.100): 0.052*"security" + 0.038*"social" + 0.017*"long" + 0.016*"need" + 0.015*"support" + 0.013*"new" + 0.013*"drugs" + 0.012*"action" + 0.012*"system" + 0.011*"term"
+2020-11-20 08:26:40,163:INFO:topic diff=0.057749, rho=0.161271
+2020-11-20 08:26:40,163:INFO:PROGRESS: pass 37, at document #2000/2898
+2020-11-20 08:26:40,774:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:40,774:INFO:topic #7 (0.100): 0.043*"congress" + 0.040*"let" + 0.038*"crime" + 0.037*"know" + 0.028*"house" + 0.025*"bill" + 0.023*"pass" + 0.022*"people" + 0.021*"ask" + 0.018*"tell"
+2020-11-20 08:26:40,774:INFO:topic #3 (0.100): 0.055*"new" + 0.028*"right" + 0.027*"america" + 0.024*"century" + 0.021*"communities" + 0.021*"children" + 0.016*"help" + 0.016*"teachers" + 0.016*"economy" + 0.015*"schools"
+2020-11-20 08:26:40,775:INFO:topic #6 (0.100): 0.056*"children" + 0.042*"work" + 0.032*"child" + 0.029*"families" + 0.027*"care" + 0.027*"family" + 0.023*"parents" + 0.021*"school" + 0.016*"support" + 0.016*"people"
+2020-11-20 08:26:40,775:INFO:topic #2 (0.100): 0.055*"tax" + 0.035*"year" + 0.022*"people" + 0.021*"jobs" + 0.020*"income" + 0.019*"college" + 0.019*"cut" + 0.017*"new" + 0.015*"years" + 0.015*"deficit"
+2020-11-20 08:26:40,775:INFO:topic #9 (0.100): 0.047*"year" + 0.034*"women" + 0.032*"thank" + 0.029*"america" + 0.025*"country" + 0.022*"years" + 0.021*"ask" + 0.019*"god" + 0.018*"men" + 0.017*"let"
+2020-11-20 08:26:40,775:INFO:topic diff=0.056507, rho=0.159214
+2020-11-20 08:26:41,126:INFO:-6.108 per-word bound, 69.0 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:41,126:INFO:PROGRESS: pass 37, at document #2898/2898
+2020-11-20 08:26:41,378:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:41,379:INFO:topic #3 (0.100): 0.055*"new" + 0.028*"right" + 0.028*"america" + 0.025*"century" + 0.022*"communities" + 0.021*"children" + 0.017*"teachers" + 0.016*"economy" + 0.016*"help" + 0.016*"schools"
+2020-11-20 08:26:41,379:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.020*"new" + 0.019*"program" + 0.017*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:41,379:INFO:topic #4 (0.100): 0.052*"security" + 0.038*"social" + 0.017*"long" + 0.016*"need" + 0.015*"support" + 0.014*"new" + 0.013*"drugs" + 0.012*"action" + 0.012*"system" + 0.011*"term"
+2020-11-20 08:26:41,379:INFO:topic #2 (0.100): 0.053*"tax" + 0.035*"year" + 0.022*"people" + 0.022*"college" + 0.020*"jobs" + 0.019*"cut" + 0.019*"income" + 0.017*"new" + 0.016*"years" + 0.015*"deficit"
+2020-11-20 08:26:41,379:INFO:topic #7 (0.100): 0.043*"congress" + 0.040*"let" + 0.039*"crime" + 0.036*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.023*"ask" + 0.022*"people" + 0.017*"tell"
+2020-11-20 08:26:41,379:INFO:topic diff=0.056623, rho=0.159214
+2020-11-20 08:26:41,379:INFO:PROGRESS: pass 38, at document #2000/2898
+2020-11-20 08:26:41,972:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:41,973:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:41,973:INFO:topic #8 (0.100): 0.044*"america" + 0.042*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.021*"freedom" + 0.018*"americans" + 0.015*"peace" + 0.014*"government" + 0.014*"time"
+2020-11-20 08:26:41,973:INFO:topic #2 (0.100): 0.055*"tax" + 0.035*"year" + 0.022*"people" + 0.021*"jobs" + 0.020*"income" + 0.019*"college" + 0.019*"cut" + 0.017*"new" + 0.015*"years" + 0.015*"deficit"
+2020-11-20 08:26:41,974:INFO:topic #4 (0.100): 0.050*"security" + 0.036*"social" + 0.017*"long" + 0.016*"need" + 0.015*"support" + 0.013*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"action" + 0.012*"term"
+2020-11-20 08:26:41,974:INFO:topic #9 (0.100): 0.047*"year" + 0.034*"women" + 0.032*"thank" + 0.029*"america" + 0.025*"country" + 0.022*"years" + 0.021*"ask" + 0.019*"god" + 0.018*"men" + 0.017*"let"
+2020-11-20 08:26:41,974:INFO:topic diff=0.055456, rho=0.157234
+2020-11-20 08:26:42,325:INFO:-6.107 per-word bound, 68.9 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:42,325:INFO:PROGRESS: pass 38, at document #2898/2898
+2020-11-20 08:26:42,574:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:42,575:INFO:topic #2 (0.100): 0.053*"tax" + 0.035*"year" + 0.022*"people" + 0.022*"college" + 0.020*"jobs" + 0.019*"cut" + 0.019*"income" + 0.018*"new" + 0.016*"years" + 0.015*"deficit"
+2020-11-20 08:26:42,575:INFO:topic #3 (0.100): 0.055*"new" + 0.028*"right" + 0.027*"america" + 0.025*"century" + 0.022*"communities" + 0.021*"children" + 0.017*"teachers" + 0.016*"economy" + 0.016*"help" + 0.016*"schools"
+2020-11-20 08:26:42,575:INFO:topic #1 (0.100): 0.043*"government" + 0.038*"health" + 0.027*"federal" + 0.026*"budget" + 0.024*"congress" + 0.021*"president" + 0.019*"reform" + 0.019*"welfare" + 0.018*"people" + 0.018*"programs"
+2020-11-20 08:26:42,575:INFO:topic #8 (0.100): 0.045*"america" + 0.042*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.020*"freedom" + 0.019*"americans" + 0.015*"government" + 0.014*"time" + 0.014*"peace"
+2020-11-20 08:26:42,575:INFO:topic #5 (0.100): 0.027*"world" + 0.025*"states" + 0.023*"united" + 0.023*"nuclear" + 0.023*"nations" + 0.020*"peace" + 0.019*"soviet" + 0.019*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:42,575:INFO:topic diff=0.055682, rho=0.157234
+2020-11-20 08:26:42,576:INFO:PROGRESS: pass 39, at document #2000/2898
+2020-11-20 08:26:43,174:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:43,174:INFO:topic #5 (0.100): 0.027*"world" + 0.025*"states" + 0.023*"united" + 0.022*"nations" + 0.022*"nuclear" + 0.020*"soviet" + 0.019*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"forces"
+2020-11-20 08:26:43,174:INFO:topic #2 (0.100): 0.055*"tax" + 0.035*"year" + 0.022*"people" + 0.021*"jobs" + 0.020*"income" + 0.019*"cut" + 0.019*"college" + 0.017*"new" + 0.015*"years" + 0.015*"deficit"
+2020-11-20 08:26:43,174:INFO:topic #6 (0.100): 0.056*"children" + 0.042*"work" + 0.032*"child" + 0.030*"families" + 0.028*"care" + 0.027*"family" + 0.023*"parents" + 0.021*"school" + 0.017*"support" + 0.016*"people"
+2020-11-20 08:26:43,175:INFO:topic #9 (0.100): 0.047*"year" + 0.034*"women" + 0.032*"thank" + 0.029*"america" + 0.025*"country" + 0.022*"years" + 0.021*"ask" + 0.019*"god" + 0.018*"men" + 0.017*"let"
+2020-11-20 08:26:43,175:INFO:topic #3 (0.100): 0.055*"new" + 0.028*"right" + 0.027*"america" + 0.024*"century" + 0.021*"communities" + 0.021*"children" + 0.016*"help" + 0.016*"teachers" + 0.016*"economy" + 0.015*"schools"
+2020-11-20 08:26:43,175:INFO:topic diff=0.054462, rho=0.155326
+2020-11-20 08:26:43,525:INFO:-6.107 per-word bound, 68.9 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:43,526:INFO:PROGRESS: pass 39, at document #2898/2898
+2020-11-20 08:26:43,779:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:43,779:INFO:topic #8 (0.100): 0.045*"america" + 0.042*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.020*"freedom" + 0.019*"americans" + 0.015*"government" + 0.014*"time" + 0.014*"peace"
+2020-11-20 08:26:43,780:INFO:topic #6 (0.100): 0.057*"children" + 0.043*"work" + 0.032*"child" + 0.030*"families" + 0.028*"care" + 0.025*"family" + 0.024*"parents" + 0.022*"school" + 0.017*"support" + 0.016*"working"
+2020-11-20 08:26:43,780:INFO:topic #2 (0.100): 0.053*"tax" + 0.035*"year" + 0.022*"people" + 0.022*"college" + 0.020*"jobs" + 0.019*"cut" + 0.019*"income" + 0.018*"new" + 0.016*"years" + 0.015*"deficit"
+2020-11-20 08:26:43,780:INFO:topic #7 (0.100): 0.043*"congress" + 0.040*"let" + 0.039*"crime" + 0.036*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.023*"ask" + 0.023*"people" + 0.017*"tell"
+2020-11-20 08:26:43,780:INFO:topic #4 (0.100): 0.052*"security" + 0.038*"social" + 0.017*"long" + 0.016*"need" + 0.016*"support" + 0.014*"new" + 0.013*"drugs" + 0.012*"action" + 0.012*"system" + 0.011*"term"
+2020-11-20 08:26:43,780:INFO:topic diff=0.054583, rho=0.155326
+2020-11-20 08:26:43,780:INFO:PROGRESS: pass 40, at document #2000/2898
+2020-11-20 08:26:44,380:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:44,381:INFO:topic #4 (0.100): 0.050*"security" + 0.036*"social" + 0.017*"long" + 0.016*"need" + 0.015*"support" + 0.014*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"action" + 0.012*"term"
+2020-11-20 08:26:44,381:INFO:topic #2 (0.100): 0.055*"tax" + 0.035*"year" + 0.022*"people" + 0.021*"jobs" + 0.020*"income" + 0.019*"cut" + 0.019*"college" + 0.017*"new" + 0.015*"deficit" + 0.015*"years"
+2020-11-20 08:26:44,381:INFO:topic #9 (0.100): 0.047*"year" + 0.034*"women" + 0.032*"thank" + 0.029*"america" + 0.025*"country" + 0.022*"years" + 0.021*"ask" + 0.019*"god" + 0.018*"men" + 0.017*"let"
+2020-11-20 08:26:44,381:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:44,382:INFO:topic #1 (0.100): 0.044*"government" + 0.038*"health" + 0.028*"federal" + 0.025*"budget" + 0.024*"congress" + 0.021*"president" + 0.019*"reform" + 0.018*"programs" + 0.018*"people" + 0.018*"welfare"
+2020-11-20 08:26:44,382:INFO:topic diff=0.053596, rho=0.153485
+2020-11-20 08:26:44,734:INFO:-6.106 per-word bound, 68.9 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:44,735:INFO:PROGRESS: pass 40, at document #2898/2898
+2020-11-20 08:26:44,987:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:44,987:INFO:topic #1 (0.100): 0.043*"government" + 0.038*"health" + 0.027*"federal" + 0.026*"budget" + 0.023*"congress" + 0.021*"president" + 0.019*"reform" + 0.018*"people" + 0.018*"welfare" + 0.018*"programs"
+2020-11-20 08:26:44,988:INFO:topic #8 (0.100): 0.045*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.020*"freedom" + 0.019*"americans" + 0.015*"government" + 0.014*"time" + 0.014*"peace"
+2020-11-20 08:26:44,988:INFO:topic #7 (0.100): 0.044*"congress" + 0.040*"let" + 0.039*"crime" + 0.036*"know" + 0.026*"house" + 0.025*"bill" + 0.024*"pass" + 0.023*"ask" + 0.023*"people" + 0.017*"tell"
+2020-11-20 08:26:44,988:INFO:topic #3 (0.100): 0.056*"new" + 0.028*"right" + 0.027*"america" + 0.025*"century" + 0.022*"communities" + 0.021*"children" + 0.017*"teachers" + 0.016*"economy" + 0.016*"help" + 0.016*"schools"
+2020-11-20 08:26:44,988:INFO:topic #9 (0.100): 0.048*"year" + 0.035*"thank" + 0.031*"women" + 0.030*"america" + 0.024*"country" + 0.023*"years" + 0.022*"ask" + 0.018*"god" + 0.017*"men" + 0.017*"let"
+2020-11-20 08:26:44,988:INFO:topic diff=0.053889, rho=0.153485
+2020-11-20 08:26:44,988:INFO:PROGRESS: pass 41, at document #2000/2898
+2020-11-20 08:26:45,586:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:45,587:INFO:topic #8 (0.100): 0.044*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.021*"freedom" + 0.018*"americans" + 0.015*"government" + 0.014*"peace" + 0.014*"time"
+2020-11-20 08:26:45,587:INFO:topic #4 (0.100): 0.050*"security" + 0.036*"social" + 0.017*"long" + 0.016*"need" + 0.015*"support" + 0.014*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"term" + 0.012*"action"
+2020-11-20 08:26:45,587:INFO:topic #7 (0.100): 0.044*"congress" + 0.040*"let" + 0.038*"crime" + 0.037*"know" + 0.028*"house" + 0.025*"bill" + 0.023*"pass" + 0.023*"people" + 0.022*"ask" + 0.018*"tell"
+2020-11-20 08:26:45,587:INFO:topic #3 (0.100): 0.055*"new" + 0.028*"right" + 0.027*"america" + 0.024*"century" + 0.021*"communities" + 0.021*"children" + 0.016*"teachers" + 0.016*"economy" + 0.016*"help" + 0.015*"schools"
+2020-11-20 08:26:45,587:INFO:topic #1 (0.100): 0.044*"government" + 0.038*"health" + 0.028*"federal" + 0.025*"budget" + 0.024*"congress" + 0.021*"president" + 0.019*"reform" + 0.019*"programs" + 0.018*"people" + 0.017*"welfare"
+2020-11-20 08:26:45,588:INFO:topic diff=0.052661, rho=0.151709
+2020-11-20 08:26:45,938:INFO:-6.106 per-word bound, 68.9 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:45,938:INFO:PROGRESS: pass 41, at document #2898/2898
+2020-11-20 08:26:46,212:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:46,212:INFO:topic #5 (0.100): 0.027*"world" + 0.025*"states" + 0.024*"united" + 0.023*"nuclear" + 0.023*"nations" + 0.020*"peace" + 0.019*"soviet" + 0.019*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:46,212:INFO:topic #8 (0.100): 0.045*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.020*"freedom" + 0.019*"americans" + 0.015*"government" + 0.014*"time" + 0.014*"peace"
+2020-11-20 08:26:46,212:INFO:topic #9 (0.100): 0.048*"year" + 0.035*"thank" + 0.031*"women" + 0.030*"america" + 0.024*"country" + 0.023*"years" + 0.022*"ask" + 0.018*"god" + 0.017*"men" + 0.017*"let"
+2020-11-20 08:26:46,213:INFO:topic #4 (0.100): 0.052*"security" + 0.038*"social" + 0.017*"long" + 0.016*"need" + 0.016*"support" + 0.014*"new" + 0.013*"drugs" + 0.012*"system" + 0.012*"action" + 0.011*"term"
+2020-11-20 08:26:46,213:INFO:topic #2 (0.100): 0.054*"tax" + 0.035*"year" + 0.022*"people" + 0.022*"college" + 0.020*"jobs" + 0.019*"cut" + 0.019*"income" + 0.018*"new" + 0.016*"years" + 0.015*"deficit"
+2020-11-20 08:26:46,213:INFO:topic diff=0.052835, rho=0.151709
+2020-11-20 08:26:46,213:INFO:PROGRESS: pass 42, at document #2000/2898
+2020-11-20 08:26:46,834:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:46,835:INFO:topic #7 (0.100): 0.045*"congress" + 0.039*"let" + 0.038*"crime" + 0.037*"know" + 0.028*"house" + 0.025*"bill" + 0.023*"pass" + 0.023*"people" + 0.022*"ask" + 0.018*"tell"
+2020-11-20 08:26:46,835:INFO:topic #8 (0.100): 0.044*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.021*"freedom" + 0.018*"americans" + 0.015*"government" + 0.014*"peace" + 0.014*"time"
+2020-11-20 08:26:46,835:INFO:topic #3 (0.100): 0.055*"new" + 0.028*"right" + 0.027*"america" + 0.024*"century" + 0.021*"communities" + 0.021*"children" + 0.016*"teachers" + 0.016*"economy" + 0.016*"help" + 0.015*"schools"
+2020-11-20 08:26:46,835:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:46,835:INFO:topic #1 (0.100): 0.044*"government" + 0.038*"health" + 0.028*"federal" + 0.025*"budget" + 0.024*"congress" + 0.021*"president" + 0.019*"reform" + 0.019*"programs" + 0.018*"people" + 0.017*"welfare"
+2020-11-20 08:26:46,835:INFO:topic diff=0.051791, rho=0.149992
+2020-11-20 08:26:47,187:INFO:-6.105 per-word bound, 68.9 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:47,188:INFO:PROGRESS: pass 42, at document #2898/2898
+2020-11-20 08:26:47,440:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:47,441:INFO:topic #7 (0.100): 0.045*"congress" + 0.040*"let" + 0.039*"crime" + 0.036*"know" + 0.027*"house" + 0.025*"bill" + 0.024*"pass" + 0.023*"people" + 0.023*"ask" + 0.017*"tell"
+2020-11-20 08:26:47,441:INFO:topic #9 (0.100): 0.048*"year" + 0.035*"thank" + 0.031*"women" + 0.030*"america" + 0.024*"country" + 0.023*"years" + 0.022*"ask" + 0.018*"god" + 0.017*"men" + 0.017*"let"
+2020-11-20 08:26:47,441:INFO:topic #5 (0.100): 0.027*"world" + 0.026*"states" + 0.024*"united" + 0.023*"nuclear" + 0.023*"nations" + 0.020*"peace" + 0.019*"soviet" + 0.019*"trade" + 0.015*"international" + 0.013*"countries"
+2020-11-20 08:26:47,441:INFO:topic #1 (0.100): 0.043*"government" + 0.038*"health" + 0.027*"federal" + 0.026*"budget" + 0.023*"congress" + 0.022*"president" + 0.019*"reform" + 0.018*"people" + 0.018*"programs" + 0.017*"welfare"
+2020-11-20 08:26:47,441:INFO:topic #2 (0.100): 0.054*"tax" + 0.035*"year" + 0.022*"people" + 0.022*"college" + 0.020*"jobs" + 0.019*"cut" + 0.019*"income" + 0.018*"new" + 0.016*"years" + 0.015*"deficit"
+2020-11-20 08:26:47,441:INFO:topic diff=0.051946, rho=0.149992
+2020-11-20 08:26:47,442:INFO:PROGRESS: pass 43, at document #2000/2898
+2020-11-20 08:26:48,048:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:48,048:INFO:topic #1 (0.100): 0.044*"government" + 0.038*"health" + 0.029*"federal" + 0.025*"budget" + 0.024*"congress" + 0.021*"president" + 0.019*"reform" + 0.019*"programs" + 0.018*"people" + 0.017*"welfare"
+2020-11-20 08:26:48,049:INFO:topic #6 (0.100): 0.057*"children" + 0.043*"work" + 0.032*"child" + 0.030*"families" + 0.028*"care" + 0.027*"family" + 0.023*"parents" + 0.022*"school" + 0.017*"welfare" + 0.017*"support"
+2020-11-20 08:26:48,049:INFO:topic #4 (0.100): 0.050*"security" + 0.036*"social" + 0.018*"long" + 0.016*"need" + 0.016*"support" + 0.014*"new" + 0.013*"system" + 0.012*"drugs" + 0.012*"term" + 0.012*"action"
+2020-11-20 08:26:48,049:INFO:topic #3 (0.100): 0.055*"new" + 0.028*"right" + 0.027*"america" + 0.024*"century" + 0.021*"communities" + 0.021*"children" + 0.016*"teachers" + 0.016*"economy" + 0.016*"help" + 0.015*"schools"
+2020-11-20 08:26:48,049:INFO:topic #8 (0.100): 0.044*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.021*"freedom" + 0.018*"americans" + 0.015*"government" + 0.014*"time" + 0.014*"peace"
+2020-11-20 08:26:48,049:INFO:topic diff=0.051041, rho=0.148333
+2020-11-20 08:26:48,480:INFO:-6.105 per-word bound, 68.8 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:48,481:INFO:PROGRESS: pass 43, at document #2898/2898
+2020-11-20 08:26:48,743:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:48,743:INFO:topic #9 (0.100): 0.048*"year" + 0.035*"thank" + 0.031*"women" + 0.030*"america" + 0.024*"country" + 0.023*"years" + 0.022*"ask" + 0.018*"god" + 0.017*"men" + 0.017*"days"
+2020-11-20 08:26:48,743:INFO:topic #8 (0.100): 0.045*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.020*"freedom" + 0.019*"americans" + 0.015*"government" + 0.014*"time" + 0.014*"peace"
+2020-11-20 08:26:48,743:INFO:topic #4 (0.100): 0.052*"security" + 0.038*"social" + 0.018*"long" + 0.016*"support" + 0.016*"need" + 0.014*"new" + 0.013*"drugs" + 0.012*"system" + 0.012*"action" + 0.011*"term"
+2020-11-20 08:26:48,744:INFO:topic #6 (0.100): 0.057*"children" + 0.043*"work" + 0.032*"child" + 0.030*"families" + 0.029*"care" + 0.026*"family" + 0.024*"parents" + 0.022*"school" + 0.018*"welfare" + 0.017*"support"
+2020-11-20 08:26:48,744:INFO:topic #7 (0.100): 0.045*"congress" + 0.040*"let" + 0.039*"crime" + 0.036*"know" + 0.027*"house" + 0.025*"bill" + 0.024*"pass" + 0.023*"people" + 0.023*"ask" + 0.017*"tell"
+2020-11-20 08:26:48,744:INFO:topic diff=0.051203, rho=0.148333
+2020-11-20 08:26:48,744:INFO:PROGRESS: pass 44, at document #2000/2898
+2020-11-20 08:26:49,346:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:49,347:INFO:topic #4 (0.100): 0.050*"security" + 0.036*"social" + 0.018*"long" + 0.016*"need" + 0.016*"support" + 0.014*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"term" + 0.011*"action"
+2020-11-20 08:26:49,347:INFO:topic #2 (0.100): 0.055*"tax" + 0.034*"year" + 0.022*"people" + 0.021*"jobs" + 0.020*"income" + 0.019*"cut" + 0.019*"college" + 0.017*"new" + 0.015*"deficit" + 0.015*"years"
+2020-11-20 08:26:49,347:INFO:topic #9 (0.100): 0.048*"year" + 0.033*"women" + 0.032*"thank" + 0.030*"america" + 0.025*"country" + 0.022*"years" + 0.021*"ask" + 0.019*"god" + 0.018*"men" + 0.017*"days"
+2020-11-20 08:26:49,347:INFO:topic #3 (0.100): 0.055*"new" + 0.028*"right" + 0.027*"america" + 0.024*"century" + 0.021*"communities" + 0.021*"children" + 0.016*"teachers" + 0.016*"economy" + 0.016*"help" + 0.015*"schools"
+2020-11-20 08:26:49,347:INFO:topic #5 (0.100): 0.027*"world" + 0.026*"states" + 0.024*"united" + 0.022*"nations" + 0.022*"nuclear" + 0.020*"soviet" + 0.020*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"forces"
+2020-11-20 08:26:49,347:INFO:topic diff=0.050268, rho=0.146728
+2020-11-20 08:26:49,693:INFO:-6.105 per-word bound, 68.8 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:49,693:INFO:PROGRESS: pass 44, at document #2898/2898
+2020-11-20 08:26:49,940:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:49,940:INFO:topic #3 (0.100): 0.056*"new" + 0.028*"right" + 0.027*"america" + 0.026*"century" + 0.022*"communities" + 0.021*"children" + 0.017*"teachers" + 0.016*"economy" + 0.016*"help" + 0.016*"schools"
+2020-11-20 08:26:49,940:INFO:topic #5 (0.100): 0.027*"world" + 0.026*"states" + 0.024*"united" + 0.023*"nuclear" + 0.023*"nations" + 0.020*"peace" + 0.019*"soviet" + 0.019*"trade" + 0.015*"international" + 0.013*"forces"
+2020-11-20 08:26:49,940:INFO:topic #9 (0.100): 0.048*"year" + 0.035*"thank" + 0.031*"women" + 0.030*"america" + 0.024*"country" + 0.023*"years" + 0.022*"ask" + 0.018*"god" + 0.017*"days" + 0.017*"men"
+2020-11-20 08:26:49,941:INFO:topic #7 (0.100): 0.045*"congress" + 0.040*"let" + 0.038*"crime" + 0.036*"know" + 0.027*"house" + 0.026*"bill" + 0.024*"pass" + 0.023*"people" + 0.023*"ask" + 0.017*"tell"
+2020-11-20 08:26:49,941:INFO:topic #1 (0.100): 0.043*"government" + 0.038*"health" + 0.027*"federal" + 0.026*"budget" + 0.023*"congress" + 0.022*"president" + 0.019*"reform" + 0.018*"programs" + 0.018*"people" + 0.016*"welfare"
+2020-11-20 08:26:49,941:INFO:topic diff=0.050435, rho=0.146728
+2020-11-20 08:26:49,941:INFO:PROGRESS: pass 45, at document #2000/2898
+2020-11-20 08:26:50,534:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:50,535:INFO:topic #8 (0.100): 0.045*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.021*"freedom" + 0.018*"americans" + 0.015*"government" + 0.014*"time" + 0.014*"peace"
+2020-11-20 08:26:50,535:INFO:topic #2 (0.100): 0.055*"tax" + 0.034*"year" + 0.022*"people" + 0.021*"jobs" + 0.020*"income" + 0.019*"cut" + 0.019*"college" + 0.017*"new" + 0.015*"deficit" + 0.015*"years"
+2020-11-20 08:26:50,535:INFO:topic #4 (0.100): 0.050*"security" + 0.036*"social" + 0.018*"long" + 0.016*"need" + 0.016*"support" + 0.014*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"term" + 0.011*"action"
+2020-11-20 08:26:50,535:INFO:topic #5 (0.100): 0.028*"world" + 0.026*"states" + 0.024*"united" + 0.022*"nations" + 0.022*"nuclear" + 0.020*"soviet" + 0.020*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"forces"
+2020-11-20 08:26:50,536:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:50,536:INFO:topic diff=0.049613, rho=0.145173
+2020-11-20 08:26:50,880:INFO:-6.105 per-word bound, 68.8 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:50,880:INFO:PROGRESS: pass 45, at document #2898/2898
+2020-11-20 08:26:51,123:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:51,124:INFO:topic #2 (0.100): 0.054*"tax" + 0.034*"year" + 0.022*"people" + 0.022*"college" + 0.020*"jobs" + 0.019*"cut" + 0.019*"income" + 0.018*"new" + 0.016*"years" + 0.015*"deficit"
+2020-11-20 08:26:51,124:INFO:topic #8 (0.100): 0.045*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.020*"freedom" + 0.019*"americans" + 0.015*"government" + 0.015*"time" + 0.014*"peace"
+2020-11-20 08:26:51,124:INFO:topic #6 (0.100): 0.057*"children" + 0.044*"work" + 0.032*"child" + 0.030*"families" + 0.029*"care" + 0.026*"family" + 0.024*"parents" + 0.022*"school" + 0.019*"welfare" + 0.018*"support"
+2020-11-20 08:26:51,124:INFO:topic #3 (0.100): 0.056*"new" + 0.028*"right" + 0.027*"america" + 0.026*"century" + 0.022*"communities" + 0.021*"children" + 0.017*"teachers" + 0.016*"economy" + 0.016*"help" + 0.016*"schools"
+2020-11-20 08:26:51,124:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.020*"new" + 0.019*"program" + 0.017*"administration" + 0.017*"economic" + 0.017*"federal" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:51,124:INFO:topic diff=0.049821, rho=0.145173
+2020-11-20 08:26:51,125:INFO:PROGRESS: pass 46, at document #2000/2898
+2020-11-20 08:26:51,721:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:51,722:INFO:topic #2 (0.100): 0.055*"tax" + 0.034*"year" + 0.022*"people" + 0.021*"jobs" + 0.020*"income" + 0.019*"cut" + 0.019*"college" + 0.017*"new" + 0.015*"deficit" + 0.015*"years"
+2020-11-20 08:26:51,722:INFO:topic #6 (0.100): 0.057*"children" + 0.043*"work" + 0.032*"child" + 0.030*"families" + 0.028*"care" + 0.027*"family" + 0.023*"parents" + 0.022*"school" + 0.019*"welfare" + 0.017*"support"
+2020-11-20 08:26:51,722:INFO:topic #1 (0.100): 0.044*"government" + 0.038*"health" + 0.029*"federal" + 0.026*"budget" + 0.024*"congress" + 0.021*"president" + 0.019*"reform" + 0.019*"programs" + 0.018*"people" + 0.016*"welfare"
+2020-11-20 08:26:51,722:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:51,722:INFO:topic #9 (0.100): 0.049*"year" + 0.033*"women" + 0.032*"thank" + 0.030*"america" + 0.025*"country" + 0.023*"years" + 0.020*"ask" + 0.019*"god" + 0.018*"men" + 0.017*"days"
+2020-11-20 08:26:51,722:INFO:topic diff=0.048988, rho=0.143667
+2020-11-20 08:26:52,066:INFO:-6.104 per-word bound, 68.8 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:52,066:INFO:PROGRESS: pass 46, at document #2898/2898
+2020-11-20 08:26:52,329:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:52,330:INFO:topic #1 (0.100): 0.043*"government" + 0.038*"health" + 0.028*"federal" + 0.026*"budget" + 0.023*"congress" + 0.022*"president" + 0.019*"reform" + 0.018*"programs" + 0.018*"people" + 0.016*"welfare"
+2020-11-20 08:26:52,330:INFO:topic #6 (0.100): 0.057*"children" + 0.044*"work" + 0.032*"child" + 0.030*"families" + 0.029*"care" + 0.026*"family" + 0.024*"parents" + 0.022*"school" + 0.019*"welfare" + 0.018*"support"
+2020-11-20 08:26:52,330:INFO:topic #8 (0.100): 0.045*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.020*"freedom" + 0.019*"americans" + 0.015*"government" + 0.015*"time" + 0.014*"peace"
+2020-11-20 08:26:52,330:INFO:topic #9 (0.100): 0.049*"year" + 0.034*"thank" + 0.031*"women" + 0.030*"america" + 0.024*"country" + 0.023*"years" + 0.022*"ask" + 0.018*"god" + 0.017*"days" + 0.017*"men"
+2020-11-20 08:26:52,330:INFO:topic #2 (0.100): 0.054*"tax" + 0.034*"year" + 0.022*"people" + 0.022*"college" + 0.020*"jobs" + 0.019*"cut" + 0.019*"income" + 0.018*"new" + 0.016*"years" + 0.015*"deficit"
+2020-11-20 08:26:52,330:INFO:topic diff=0.049029, rho=0.143667
+2020-11-20 08:26:52,330:INFO:PROGRESS: pass 47, at document #2000/2898
+2020-11-20 08:26:52,927:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:52,928:INFO:topic #8 (0.100): 0.045*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.021*"freedom" + 0.018*"americans" + 0.015*"government" + 0.014*"time" + 0.014*"peace"
+2020-11-20 08:26:52,928:INFO:topic #1 (0.100): 0.044*"government" + 0.038*"health" + 0.029*"federal" + 0.026*"budget" + 0.024*"congress" + 0.021*"president" + 0.019*"reform" + 0.019*"programs" + 0.018*"people" + 0.015*"care"
+2020-11-20 08:26:52,928:INFO:topic #2 (0.100): 0.055*"tax" + 0.034*"year" + 0.022*"people" + 0.021*"jobs" + 0.020*"income" + 0.019*"cut" + 0.019*"college" + 0.017*"new" + 0.016*"deficit" + 0.015*"years"
+2020-11-20 08:26:52,928:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:52,928:INFO:topic #5 (0.100): 0.028*"world" + 0.026*"states" + 0.024*"united" + 0.022*"nations" + 0.022*"nuclear" + 0.020*"soviet" + 0.020*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"forces"
+2020-11-20 08:26:52,928:INFO:topic diff=0.048399, rho=0.142207
+2020-11-20 08:26:53,311:INFO:-6.104 per-word bound, 68.8 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:53,311:INFO:PROGRESS: pass 47, at document #2898/2898
+2020-11-20 08:26:53,555:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:53,555:INFO:topic #4 (0.100): 0.052*"security" + 0.038*"social" + 0.018*"long" + 0.016*"support" + 0.016*"need" + 0.014*"new" + 0.013*"drugs" + 0.012*"system" + 0.011*"term" + 0.011*"action"
+2020-11-20 08:26:53,556:INFO:topic #6 (0.100): 0.057*"children" + 0.044*"work" + 0.032*"child" + 0.030*"families" + 0.029*"care" + 0.026*"family" + 0.024*"parents" + 0.022*"school" + 0.020*"welfare" + 0.018*"support"
+2020-11-20 08:26:53,556:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.020*"new" + 0.019*"program" + 0.017*"administration" + 0.017*"economic" + 0.017*"federal" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:53,556:INFO:topic #9 (0.100): 0.049*"year" + 0.034*"thank" + 0.031*"women" + 0.030*"america" + 0.024*"country" + 0.023*"years" + 0.021*"ask" + 0.018*"god" + 0.018*"days" + 0.017*"men"
+2020-11-20 08:26:53,556:INFO:topic #7 (0.100): 0.046*"congress" + 0.040*"let" + 0.038*"crime" + 0.036*"know" + 0.027*"house" + 0.026*"bill" + 0.024*"pass" + 0.024*"people" + 0.023*"ask" + 0.017*"tell"
+2020-11-20 08:26:53,556:INFO:topic diff=0.048419, rho=0.142207
+2020-11-20 08:26:53,556:INFO:PROGRESS: pass 48, at document #2000/2898
+2020-11-20 08:26:54,213:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:54,214:INFO:topic #3 (0.100): 0.056*"new" + 0.028*"right" + 0.026*"america" + 0.024*"century" + 0.021*"communities" + 0.021*"children" + 0.016*"teachers" + 0.016*"economy" + 0.016*"help" + 0.015*"schools"
+2020-11-20 08:26:54,215:INFO:topic #1 (0.100): 0.044*"government" + 0.038*"health" + 0.029*"federal" + 0.026*"budget" + 0.024*"congress" + 0.022*"president" + 0.019*"programs" + 0.019*"reform" + 0.018*"people" + 0.015*"care"
+2020-11-20 08:26:54,215:INFO:topic #0 (0.100): 0.024*"energy" + 0.023*"years" + 0.020*"new" + 0.019*"program" + 0.018*"administration" + 0.017*"federal" + 0.017*"economic" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:54,215:INFO:topic #6 (0.100): 0.056*"children" + 0.044*"work" + 0.032*"child" + 0.030*"families" + 0.028*"care" + 0.027*"family" + 0.023*"parents" + 0.022*"school" + 0.019*"welfare" + 0.017*"support"
+2020-11-20 08:26:54,215:INFO:topic #5 (0.100): 0.028*"world" + 0.026*"states" + 0.024*"united" + 0.022*"nations" + 0.022*"nuclear" + 0.020*"soviet" + 0.020*"peace" + 0.018*"trade" + 0.015*"international" + 0.013*"forces"
+2020-11-20 08:26:54,215:INFO:topic diff=0.047797, rho=0.140791
+2020-11-20 08:26:54,710:INFO:-6.104 per-word bound, 68.8 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:54,710:INFO:PROGRESS: pass 48, at document #2898/2898
+2020-11-20 08:26:54,977:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:54,978:INFO:topic #8 (0.100): 0.045*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.020*"freedom" + 0.019*"americans" + 0.015*"government" + 0.015*"time" + 0.014*"peace"
+2020-11-20 08:26:54,978:INFO:topic #5 (0.100): 0.027*"world" + 0.026*"states" + 0.024*"united" + 0.023*"nations" + 0.023*"nuclear" + 0.020*"peace" + 0.019*"soviet" + 0.019*"trade" + 0.015*"international" + 0.013*"forces"
+2020-11-20 08:26:54,978:INFO:topic #4 (0.100): 0.052*"security" + 0.038*"social" + 0.018*"long" + 0.016*"support" + 0.016*"need" + 0.014*"new" + 0.013*"drugs" + 0.012*"system" + 0.012*"term" + 0.011*"action"
+2020-11-20 08:26:54,979:INFO:topic #3 (0.100): 0.056*"new" + 0.028*"right" + 0.027*"america" + 0.026*"century" + 0.022*"communities" + 0.021*"children" + 0.017*"teachers" + 0.016*"economy" + 0.016*"schools" + 0.016*"help"
+2020-11-20 08:26:54,979:INFO:topic #7 (0.100): 0.046*"congress" + 0.039*"let" + 0.038*"crime" + 0.036*"know" + 0.027*"house" + 0.026*"bill" + 0.024*"pass" + 0.024*"people" + 0.024*"ask" + 0.017*"tell"
+2020-11-20 08:26:54,979:INFO:topic diff=0.047898, rho=0.140791
+2020-11-20 08:26:54,979:INFO:PROGRESS: pass 49, at document #2000/2898
+2020-11-20 08:26:55,628:INFO:merging changes from 2000 documents into a model of 2898 documents
+2020-11-20 08:26:55,629:INFO:topic #4 (0.100): 0.050*"security" + 0.037*"social" + 0.018*"long" + 0.016*"need" + 0.016*"support" + 0.014*"new" + 0.012*"system" + 0.012*"drugs" + 0.012*"term" + 0.011*"action"
+2020-11-20 08:26:55,629:INFO:topic #2 (0.100): 0.055*"tax" + 0.034*"year" + 0.022*"people" + 0.021*"jobs" + 0.020*"income" + 0.019*"cut" + 0.019*"college" + 0.018*"new" + 0.016*"deficit" + 0.015*"years"
+2020-11-20 08:26:55,629:INFO:topic #6 (0.100): 0.057*"children" + 0.044*"work" + 0.032*"child" + 0.030*"families" + 0.028*"care" + 0.027*"family" + 0.023*"parents" + 0.022*"school" + 0.020*"welfare" + 0.017*"support"
+2020-11-20 08:26:55,629:INFO:topic #8 (0.100): 0.045*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.021*"freedom" + 0.018*"americans" + 0.015*"government" + 0.014*"time" + 0.014*"peace"
+2020-11-20 08:26:55,629:INFO:topic #7 (0.100): 0.047*"congress" + 0.039*"let" + 0.037*"crime" + 0.037*"know" + 0.028*"house" + 0.025*"bill" + 0.024*"people" + 0.023*"pass" + 0.022*"ask" + 0.018*"tell"
+2020-11-20 08:26:55,630:INFO:topic diff=0.047259, rho=0.139416
+2020-11-20 08:26:56,045:INFO:-6.103 per-word bound, 68.7 perplexity estimate based on a held-out corpus of 898 documents with 12685 words
+2020-11-20 08:26:56,045:INFO:PROGRESS: pass 49, at document #2898/2898
+2020-11-20 08:26:56,331:INFO:merging changes from 898 documents into a model of 2898 documents
+2020-11-20 08:26:56,331:INFO:topic #8 (0.100): 0.045*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.020*"freedom" + 0.019*"americans" + 0.015*"government" + 0.015*"time" + 0.014*"peace"
+2020-11-20 08:26:56,332:INFO:topic #2 (0.100): 0.054*"tax" + 0.034*"year" + 0.022*"people" + 0.022*"college" + 0.020*"jobs" + 0.020*"cut" + 0.019*"income" + 0.018*"new" + 0.016*"years" + 0.015*"deficit"
+2020-11-20 08:26:56,332:INFO:topic #5 (0.100): 0.027*"world" + 0.026*"states" + 0.024*"united" + 0.023*"nations" + 0.023*"nuclear" + 0.020*"peace" + 0.019*"soviet" + 0.019*"trade" + 0.015*"international" + 0.013*"forces"
+2020-11-20 08:26:56,332:INFO:topic #3 (0.100): 0.056*"new" + 0.028*"right" + 0.027*"america" + 0.026*"century" + 0.022*"communities" + 0.021*"children" + 0.017*"teachers" + 0.016*"economy" + 0.016*"schools" + 0.016*"help"
+2020-11-20 08:26:56,332:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.020*"new" + 0.019*"program" + 0.017*"administration" + 0.017*"economic" + 0.017*"federal" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:26:56,332:INFO:topic diff=0.047339, rho=0.139416
+2020-11-20 08:30:18,528:INFO:topic #0 (0.100): 0.025*"years" + 0.024*"energy" + 0.020*"new" + 0.019*"program" + 0.017*"administration" + 0.017*"economic" + 0.017*"federal" + 0.016*"growth" + 0.015*"year" + 0.014*"inflation"
+2020-11-20 08:30:18,528:INFO:topic #1 (0.100): 0.044*"government" + 0.039*"health" + 0.028*"federal" + 0.027*"budget" + 0.023*"congress" + 0.022*"president" + 0.019*"reform" + 0.019*"programs" + 0.018*"people" + 0.015*"insurance"
+2020-11-20 08:30:18,529:INFO:topic #2 (0.100): 0.054*"tax" + 0.034*"year" + 0.022*"people" + 0.022*"college" + 0.020*"jobs" + 0.020*"cut" + 0.019*"income" + 0.018*"new" + 0.016*"years" + 0.015*"deficit"
+2020-11-20 08:30:18,529:INFO:topic #3 (0.100): 0.056*"new" + 0.028*"right" + 0.027*"america" + 0.026*"century" + 0.022*"communities" + 0.021*"children" + 0.017*"teachers" + 0.016*"economy" + 0.016*"schools" + 0.016*"help"
+2020-11-20 08:30:18,529:INFO:topic #4 (0.100): 0.052*"security" + 0.038*"social" + 0.018*"long" + 0.016*"support" + 0.016*"need" + 0.014*"new" + 0.013*"drugs" + 0.012*"system" + 0.012*"term" + 0.011*"action"
+2020-11-20 08:30:18,529:INFO:topic #5 (0.100): 0.027*"world" + 0.026*"states" + 0.024*"united" + 0.023*"nations" + 0.023*"nuclear" + 0.020*"peace" + 0.019*"soviet" + 0.019*"trade" + 0.015*"international" + 0.013*"forces"
+2020-11-20 08:30:18,530:INFO:topic #6 (0.100): 0.057*"children" + 0.044*"work" + 0.032*"child" + 0.030*"families" + 0.029*"care" + 0.026*"family" + 0.024*"parents" + 0.022*"school" + 0.020*"welfare" + 0.018*"support"
+2020-11-20 08:30:18,530:INFO:topic #7 (0.100): 0.047*"congress" + 0.039*"let" + 0.038*"crime" + 0.036*"know" + 0.027*"house" + 0.026*"bill" + 0.024*"pass" + 0.024*"people" + 0.024*"ask" + 0.017*"tell"
+2020-11-20 08:30:18,530:INFO:topic #8 (0.100): 0.045*"america" + 0.041*"world" + 0.037*"people" + 0.022*"nation" + 0.021*"american" + 0.020*"freedom" + 0.019*"americans" + 0.015*"government" + 0.015*"time" + 0.014*"peace"
+2020-11-20 08:30:18,530:INFO:topic #9 (0.100): 0.049*"year" + 0.034*"thank" + 0.031*"women" + 0.030*"america" + 0.024*"country" + 0.023*"years" + 0.021*"ask" + 0.018*"days" + 0.018*"god" + 0.017*"men"
