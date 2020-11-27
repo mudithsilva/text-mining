@@ -26,41 +26,53 @@ class Helper:
     time = None
     chat_count = 0
 
+    welcome_greeting = None
+    
+
     def __init__(self):
         # Add Name Matchers
-        pattern1 = [{'POS': "AUX"},
-                   {'POS': "PROPN"}]
-        pattern2 = [{'POS': "AUX"},
-                    {'DEP': "acomp"}]
-        pattern3 = [{'POS': 'AUX'},
-                    {'DEP': 'attr'}]
-        pattern4 = [{'POS': "PROPN"},
-                    {'LOWER': 'here'}]
+        name_pattern_1 = [{'POS': 'AUX', 'OP': '+'},
+                            {'POS': 'PROPN', 'OP': '*'},
+                            {'POS': 'PROPN', 'OP': '!', 'DEP': 'compound'}]
+        name_pattern_2 = [{'POS': "PROPN"},
+                            {'LOWER': 'here'}]
+        
+        # Add General Greeting Matchers
+        greeting_pattern_1 = [{'LOWER': 'good', 'OP': '*'},
+                                {'LOWER': 'morning'}]
+        greeting_pattern_2 = [{'LOWER': 'good', 'OP': '*'},
+                                {'LOWER': 'evening'}]
+        greeting_pattern_3 = [{'LOWER': 'good', 'OP': '*'},
+                                {'LOWER': 'afternoon'}]
+        
+        
 
-        self.matcher.add("Caller_Name1", None, pattern1)
-        self.matcher.add("Caller_Name2", None, pattern2)
-        self.matcher.add("Caller_Name3", None, pattern3)
-        self.matcher.add("Caller_Name4", None, pattern4)
+        self.matcher.add("Caller_Name1", None, name_pattern_1)
+        self.matcher.add("Caller_Name2", None, name_pattern_2)
+        self.matcher.add("Greeting1", None, greeting_pattern_1)
+        self.matcher.add("Greeting2", None, greeting_pattern_2)
+        self.matcher.add("Greeting3", None, greeting_pattern_3)
 
     def preprocess(self,text):
         doc = self.nlp(text)
         # [t.lemma_ for t in doc if not t.is_stop if t.lemma_.isalpha()]
         # [t.text.title() if t.pos_ == 'ADJ' else t.text for t in doc]
-        lemma_list = [t.lemma_ for t in doc]
+        lemma_list = [t.lemma_ for t in doc if t.pos_ != 'PUNCT']
         return self.listToString(lemma_list)
     
     def remove_names(self,text):
-        doc = self.nlp(text.lower())
-        self.matches = self.matcher(doc)
-        
-        for match_id, start, end in self.matches:   
-            string_id = self.nlp.vocab.strings[match_id]
-            if string_id == "Caller_Name1" or string_id == "Caller_Name2" or string_id == "Caller_Name3":
-                return self.remove_span(doc, end-1)
-            elif string_id == "Caller_Name4":
-                return self.remove_span(doc,start)
-            else:
-                return text
+        if self.caller_name != None:
+            new_set = text.lower().replace(self.caller_name.lower(), '-username-')
+            return new_set
+        else:
+            return text
+    
+    def remove_greetings(self,text):
+        if self.welcome_greeting != None:
+            new_set = text.lower().replace(self.welcome_greeting.lower(), '-greeting-')
+            return new_set
+        else:
+            return text
     
     def listToString(self,s):  
         str1 = " " 
@@ -73,18 +85,46 @@ class Helper:
         doc2.from_array([LOWER, POS, ENT_TYPE, IS_ALPHA], np_array_2)
         return str(doc2)
     
-
     def check_name(self,text):
-        doc = self.nlp(text.lower())
+        doc = self.nlp(text)
         self.matches = self.matcher(doc)
         
         for match_id, start, end in self.matches:   
             string_id = self.nlp.vocab.strings[match_id]
-            if string_id == "Caller_Name1" or string_id == "Caller_Name2" or string_id == "Caller_Name3":
-                self.caller_name = str(doc[end-1]).title()
-            elif string_id == "Caller_Name4":
+            if string_id == "Caller_Name1":
+                self.caller_name = str(doc[start+1:end]).title()
+                break
+            elif string_id == "Caller_Name2":
                 self.caller_name = str(doc[start]).title()
-            print('Chat Person name is :- ', self.caller_name)
+                break
+        print('Chat Person name is :- ', self.caller_name)
+
+    def remove_unwanted_text(self,text):
+        removed_name = self.remove_names(text)
+        removed_greeting = self.remove_greetings(removed_name)
+        return removed_greeting
+
+    def check_greeting(self,text):
+        doc = self.nlp(text)
+        self.matches = self.matcher(doc)
+        
+        for match_id, start, end  in self.matches:   
+            string_id = self.nlp.vocab.strings[match_id]
+            if string_id == "Greeting1":
+                self.is_welcome_greeting = True
+                self.welcome_greeting = "Good Morning"
+                print('Detected Time Greeting!')
+                break
+            elif string_id == "Greeting2":
+                self.is_welcome_greeting = True
+                self.welcome_greeting = "Good Evening"
+                print('Detected Time Greeting!')
+                break
+            elif string_id == "Greeting3":
+                self.is_welcome_greeting = True
+                self.welcome_greeting = "Good Afternoon"
+                print('Detected Time Greeting!')
+                break
 
 
     ########## Chat Helper ########
@@ -100,7 +140,10 @@ class Helper:
         # load the model from disk
         loaded_model = joblib.load("Group_model.sav")
         self.check_name(text)
-        pred_group = loaded_model.predict([self.preprocess(text)])
+        self.check_greeting(text)
+        proc_text = self.remove_unwanted_text(text)
+        print('Test ||| ', self.preprocess(proc_text))
+        pred_group = loaded_model.predict([self.preprocess(proc_text)])
         print("Pred Group is ", pred_group)
         if pred_group == 1:
             return self.get_general_greeting()
