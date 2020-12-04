@@ -28,6 +28,7 @@ class Helper:
 
     # Available Services
     gen_service_tags_df = None
+    service_info = None
 
     caller_name = None
     app_name = None
@@ -35,6 +36,7 @@ class Helper:
     time = None
     checked_services_codes = []
     checked_services_tags = []
+    is_newProd_check = False
     chat_count = 0
 
     time_greet = None
@@ -42,14 +44,22 @@ class Helper:
     welcome_greeting = None
     welcome_intj = None
 
+    cluster3_words = None
+
     def __init__(self):
         self.gen_service_tags_df = pd.read_excel('Services_tags.xlsx', header=0)
+        self.service_info = pd.read_excel('Service_details.xlsx', header=0)
+        self.load_cluster3_words()
 
         self.add_matchers()             # Add Name Matchers
         self.add_service_entities()     # Add Saloon Services as Entities
 
         # Load Time Greeting
         self.time_greet = TimeHelper().getCurrentGreeting()
+
+
+
+############################# --- Text Preprocess --- #############################
 
     def preprocess(self,text):
         doc = self.nlp(text)
@@ -60,10 +70,11 @@ class Helper:
     
     def preprocess_givendata(self,text):
         doc = self.nlp(text)
-        self.check_name(doc)
-        self.check_greeting(doc)
-        self.check_intj(doc)
-        self.check_services(doc)
+        self.check_all_elements(doc)
+        # self.check_name(doc)
+        # self.check_greeting(doc)
+        # self.check_intj(doc)
+        # self.check_services(doc)
 
         proc_text = self.remove_unwanted_text(text)
         self.caller_name = None
@@ -80,6 +91,30 @@ class Helper:
 
         return self.preprocess(proc_text)
     
+    def preprocess_cluster_data(self,text):   
+        doc = self.nlp(text)
+        lemma_list = [t.lemma_ for t in doc if t.pos_ != 'PUNCT' if not t.is_stop if t.pos_ == 'NOUN' or t.pos_ == 'VERB' or t.pos_ == 'ADJ']
+        return lemma_list
+
+    def load_cluster3_words(self):
+        chat_data = pd.read_excel('UserChatData.xlsx', header=0) 
+        clust_3_df = chat_data[chat_data['Group'] == 3]
+        ret_list = []
+        
+        for row in clust_3_df.itertuples():
+            text_list = self.preprocess_cluster_data(row[1])
+            ret_list.extend(text_list)
+        self.cluster3_words = list(dict.fromkeys(ret_list))
+
+    def is_text_cluster3(self,text):
+        text_word_list = self.preprocess_cluster_data(text)
+        if len(list(set(text_word_list) - set(self.cluster3_words))) > 0:
+            return False
+        else:
+            return True
+
+############################# --- Text word removers --- #############################
+
     def remove_names(self,text):
         if self.caller_name != None:
             new_set = text.lower().replace(self.caller_name.lower(), 'username')
@@ -124,6 +159,10 @@ class Helper:
         removed_welcomeINTJ = self.remove_welcomeINTJ(removed_greeting)
         removed_services = self.remove_services(removed_welcomeINTJ)
         return removed_services
+
+
+
+############################# --- Word Checkers --- #############################
 
     def check_name(self,doc):
         self.matches = self.matcher(doc)
@@ -174,10 +213,17 @@ class Helper:
                 ind_val = self.gen_service_tags_df.loc[self.gen_service_tags_df['Tag'] == ent.text.lower()]
                 self.checked_services_codes.append(ind_val['Code'].values[0])
                 self.checked_services_tags.append(ent.text.lower())
+                self.is_newProd_check = True
             else:
                 pass
 
-    ############################# Start of - Matchers , Entity Add #############################
+    def check_all_elements(self,doc):
+        self.check_name(doc)
+        self.check_greeting(doc)
+        self.check_intj(doc)
+        self.check_services(doc)
+
+############################# --- Matchers , Entity Add --- #############################
 
     def add_matchers(self):
         name_pattern_1 = [{'POS': 'AUX', 'OP': '+'},
@@ -216,10 +262,8 @@ class Helper:
         service_entity = Entity(keywords_list=service_list, label='GEN_SERVICE')
         self.nlp.add_pipe(service_entity, last=True)
 
-    ############################# End of - Matchers , Entity Add #############################
 
-
-    ############################# Start of - Chat Helper #############################
+############################# --- Chat Helper --- #############################
 
     def get_general_greeting(self):
         greet_data = pd.read_excel('ReplyChat.xlsx', header=0) 
@@ -259,29 +303,32 @@ class Helper:
         
         return reply_chat
 
-    # def get_service_information(self):
-    #     service_names = available_services['Tag'].tolist()
-    #     item = random.randint(len(reply_chat))
-    #     reply_chat = reply_chat['Chat'].tolist()[item]
+    def get_service_information(self):
 
-    #     if self.caller_name != None:
-    #         reply_chat =  reply_chat.replace("USER", self.caller_name)
-    #     else:
-    #         reply_chat =  reply_chat.replace("USER", "")
+        if self.is_newProd_check:
+            ind_val = self.service_info.loc[self.service_info['Code'] == self.checked_services_codes[0]]
+            self.is_newProd_check = False
+            return ind_val['Description'].values[0]
+        else:
+            ind_val = self.service_info.loc[self.service_info['Code'] == 'ERROR']
+            return ind_val['Description'].values[0]
+    
+    def get_general_information(self,text):
 
-    #     if self.time_greet != None:
-    #         reply_chat = reply_chat.replace("GREETING", self.time_greet)
-    #     else:
-    #         reply_chat = reply_chat.replace("GREETING", "")
-        
-    #     return reply_chat
+        if self.is_text_cluster3(text):
+            ind_val = self.service_info.loc[self.service_info['Code'] == 'G000']
+            return ind_val['Description'].values[0]
+        else:
+            ind_val = self.service_info.loc[self.service_info['Code'] == 'ERROR']
+            return ind_val['Description'].values[0]
     
     def get_chat_response(self,text):
         doc = self.nlp(text)
-        self.check_name(doc)
-        self.check_greeting(doc)
-        self.check_intj(doc)
-        self.check_services(doc)
+        self.check_all_elements(doc)
+        # self.check_name(doc)
+        # self.check_greeting(doc)
+        # self.check_intj(doc)
+        # self.check_services(doc)
 
         proc_text = self.remove_unwanted_text(text)
         print('Test ||| ', self.preprocess(proc_text))
@@ -292,13 +339,13 @@ class Helper:
         elif pred_group == 2:
             return self.get_checkback_greeting()
         elif pred_group == 3:
-            pass
+            return self.get_general_information(proc_text)
+        elif pred_group == 4:
+            return self.get_service_information()
         print('Chat Person Name :- ', self.caller_name)
         print('Greeting :- ', self.welcome_greeting)
         print('Service Codes :- ', self.checked_services_codes)
         print('Service Tags :- ', self.checked_services_tags)
-
-    ############################# End of - Chat Helper #############################
 
 
 
