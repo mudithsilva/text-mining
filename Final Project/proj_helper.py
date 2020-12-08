@@ -24,16 +24,28 @@ class Helper:
     nlp = spacy.load('en_core_web_sm', disable=["ner","textcat"])
     # load the model from disk
     loaded_model = joblib.load("Group_model.sav")
+    loaded_acc_rej_model = joblib.load("Acc_Rej_model.sav")
     matcher = Matcher(nlp.vocab)
 
     # Available Services
     gen_service_tags_df = None
     service_info = None
+    reply_data = None
+    appointment_reply = None
 
     caller_name = None
-    app_name = None
     phone_no = None
-    time = None
+    re_name = None
+    re_service = None
+    re_time = None
+    re_date = None
+
+    re_name_checked = False
+    re_time_checked = False
+    re_date_checked = False
+    re_service_checked = False
+    re_phone_no_checked = False
+
     checked_services_codes = []
     checked_services_tags = []
     is_newProd_check = False
@@ -49,6 +61,9 @@ class Helper:
     def __init__(self):
         self.gen_service_tags_df = pd.read_excel('Services_tags.xlsx', header=0)
         self.service_info = pd.read_excel('Service_details.xlsx', header=0)
+        self.reply_data = pd.read_excel('ReplyChat.xlsx', header=0)
+        self.appointment_reply = pd.read_excel('Appointment_Reply.xlsx', header=0)
+
         self.load_cluster3_words()
 
         self.add_matchers()             # Add Name Matchers
@@ -78,7 +93,7 @@ class Helper:
 
         proc_text = self.remove_unwanted_text(text)
         self.caller_name = None
-        self.app_name = None
+        #self.re_name = None
         self.phone_no = None
         self.time = None
         self.checked_services_codes = []
@@ -121,7 +136,7 @@ class Helper:
             return new_set
         else:
             return text
-    
+
     def remove_greetings(self,text):
         if self.welcome_greeting != None:
             new_set = text.lower().replace(self.welcome_greeting.lower(), 'usergreet')
@@ -217,15 +232,29 @@ class Helper:
             else:
                 pass
 
+    def check_client_name(self,text):
+        doc = self.nlp(text)
+        name_list = [t.text for t in doc if t.pos_ == 'PROPN' if not t.is_stop]
+        
+        if len(name_list) != 0:
+            det_name = self.listToString(name_list)
+            print("Name detected:- ", det_name)
+            self.re_name = det_name
+        else:
+            print("Name not detected!")
+            self.ret_name = ""
+
     def check_all_elements(self,doc):
         self.check_name(doc)
         self.check_greeting(doc)
         self.check_intj(doc)
         self.check_services(doc)
 
+
 ############################# --- Matchers , Entity Add --- #############################
 
     def add_matchers(self):
+        # Add name Detect Matcher
         name_pattern_1 = [{'POS': 'AUX', 'OP': '+'},
                             {'POS': 'PROPN', 'OP': '+'},
                             {'POS': 'PROPN', 'OP': '!', 'DEP': 'compound'}]
@@ -246,6 +275,7 @@ class Helper:
         intj1 = [{'POS': 'INTJ'}]
         
         
+        
 
         self.matcher.add("Caller_Name1", None, name_pattern_1)
         self.matcher.add("Caller_Name2", None, name_pattern_2)
@@ -263,12 +293,40 @@ class Helper:
         self.nlp.add_pipe(service_entity, last=True)
 
 
+############################# --- Add,Change,Remove Reservation --- #############################
+
+
+    def check_appointment_name(self):
+        if self.re_name_checked == False:
+            if self.re_name == None and self.caller_name != None:
+                # Check we could make appointment for chat person name
+                reply_chat = self.appointment_reply[self.appointment_reply['Code'] == 'NAME_CHECK' and self.appointment_reply['Type'] == 'P']
+                item = random.randint(len(reply_chat))
+                reply_chat = reply_chat['Chat'].tolist()[item]
+                return False, reply_chat.replace("USER", self.caller_name)
+            elif self.re_name == "":
+                # self.re_name = "" when not detected appointment person name
+                reply_chat = self.appointment_reply[self.appointment_reply['Code'] == 'NAME_CHECK' and self.appointment_reply['Type'] == 'NA']
+                item = random.randint(len(reply_chat))
+                return False, reply_chat['Chat'].tolist()[item]
+            else:
+                # Get the reservation name
+                reply_chat = self.appointment_reply[self.appointment_reply['Code'] == 'NAME_CHECK' and self.appointment_reply['Type'] == 'N']
+                item = random.randint(len(reply_chat))
+                reply_chat = reply_chat['Chat'].tolist()[item]
+                return False, reply_chat.replace("USER", self.re_name)
+        else:
+            # Name Confirmed!
+            return True, "Name Confirmed!"
+        
+
+
 ############################# --- Chat Helper --- #############################
 
     def get_general_greeting(self):
-        greet_data = pd.read_excel('ReplyChat.xlsx', header=0) 
+        #greet_data = pd.read_excel('ReplyChat.xlsx', header=0) 
 
-        reply_chat = greet_data[greet_data['Type'] == 1]
+        reply_chat = self.reply_data[self.reply_data['Type'] == 1]
         item = random.randint(len(reply_chat))
         reply_chat = reply_chat['Chat'].tolist()[item]
 
@@ -285,9 +343,9 @@ class Helper:
         return reply_chat
 
     def get_checkback_greeting(self):
-        greet_data = pd.read_excel('ReplyChat.xlsx', header=0) 
+        #greet_data = pd.read_excel('ReplyChat.xlsx', header=0) 
 
-        reply_chat = greet_data[greet_data['Type'] == 2]
+        reply_chat = self.reply_data[self.reply_data['Type'] == 2]
         item = random.randint(len(reply_chat))
         reply_chat = reply_chat['Chat'].tolist()[item]
 
@@ -334,6 +392,11 @@ class Helper:
         print('Test ||| ', self.preprocess(proc_text))
         pred_group = self.loaded_model.predict([self.preprocess(proc_text)])
         print("Pred Group is ", pred_group)
+        print('Chat Person Name :- ', self.caller_name)
+        print('Greeting :- ', self.welcome_greeting)
+        print('Service Codes :- ', self.checked_services_codes)
+        print('Service Tags :- ', self.checked_services_tags)
+
         if pred_group == 1:
             return self.get_general_greeting()
         elif pred_group == 2:
@@ -342,10 +405,7 @@ class Helper:
             return self.get_general_information(proc_text)
         elif pred_group == 4:
             return self.get_service_information()
-        print('Chat Person Name :- ', self.caller_name)
-        print('Greeting :- ', self.welcome_greeting)
-        print('Service Codes :- ', self.checked_services_codes)
-        print('Service Tags :- ', self.checked_services_tags)
+
 
 
 
