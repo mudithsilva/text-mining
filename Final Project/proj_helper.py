@@ -21,11 +21,11 @@ import datetime
 
 class Helper:
 
-    nlp = spacy.load('en_core_web_sm', disable=["ner","textcat"])
+    nlp = None #spacy.load('en_core_web_sm')
     # load the model from disk
     loaded_model = joblib.load("Group_model.sav")
     loaded_acc_rej_model = joblib.load("Acc_Rej_model.sav")
-    matcher = Matcher(nlp.vocab)
+    matcher = None #Matcher(nlp.vocab)
 
     # Available Services
     gen_service_tags_df = None
@@ -42,10 +42,10 @@ class Helper:
     re_date = None
 
     re_name_checked = False
-    re_time_checked = False
-    re_date_checked = False
-    re_service_checked = False
-    re_phone_no_checked = False
+    re_status = 0 # 0 - NA, 1 - In progress(Pending Conformation), 2 - Cancel, 3 - Completed! (Enum can be used also)
+    # re_date_checked = False
+    # re_service_checked = False
+    # re_phone_no_checked = False
 
     checked_services_codes = []
     checked_services_tags = []
@@ -65,6 +65,8 @@ class Helper:
 
 
     def __init__(self):
+        self.nlp = spacy.load('en_core_web_sm')
+        self.matcher = Matcher(self.nlp.vocab)
         self.gen_service_tags_df = pd.read_excel('Services_tags.xlsx', header=0)
         self.service_info = pd.read_excel('Service_details.xlsx', header=0)
         self.reply_data = pd.read_excel('ReplyChat.xlsx', header=0)
@@ -257,6 +259,8 @@ class Helper:
             self.re_name = ""
 
     def has_user_feedback(self,text):
+        # Add extra user feedback words of bag
+        extra_feedback_words = ['indeed', 'correct', 'not', 'absolutely', 'definitely', 'right', 'accurate', 'wrong', 'inaccurate']
         have_user_feedback = False
         have_name = False
         n_doc = self.nlp(text)
@@ -264,6 +268,9 @@ class Helper:
 
         for token in n_doc:
             if token.pos_ == "INTJ":
+                have_user_feedback = True
+                break
+            elif token.text.lower() in extra_feedback_words:
                 have_user_feedback = True
                 break
         if len(name_list) != 0:
@@ -274,13 +281,31 @@ class Helper:
         doc = self.nlp(text)
         for ent in doc.ents:
             if ent.label_ == "GEN_SERVICE":
+                print('Service Found!')
                 ind_val = self.gen_service_tags_df.loc[self.gen_service_tags_df['Tag'] == ent.text.lower()]
-                self.re_service = ent.text.title()
-                self.re_ser_code = ind_val['Code'].values[0]
-            elif ent.label_ == "DATE":
-                self.re_date = ent.text
-            elif ent.label_ == "CARDINAL":
-                self.phone_no = ent.text
+                if self.re_service != None:
+                    self.re_service = self.re_service.replace(' & ', ' , ')
+                    self.re_ser_code = self.re_ser_code.replace(' & ', ' , ')
+
+                    self.re_service = self.re_service + " & " + ent.text.title()
+                    self.re_ser_code = self.re_ser_code + " & " + ind_val['Code'].values[0]
+                else:
+                    self.re_service = ent.text.title()
+                    self.re_ser_code = ind_val['Code'].values[0]
+            elif ent.label_ == "DATE" and not ent.text.isnumeric():
+                print('Reservation Date found!')
+                if self.re_date != None:
+                    self.re_date = self.re_date .replace(' & ', ' , ')
+                    self.re_date = self.re_date + " & " + ent.text
+                else:
+                    self.re_date = ent.text
+            elif ent.label_ == "CARDINAL" or ent.label_ == "DATE" and ent.text.isnumeric():
+                print('Reservation Phone number found!')
+                if self.phone_no != None:
+                    self.phone_no = self.phone_no .replace(' & ', ' , ')
+                    self.phone_no = self.phone_no + " & " + ent.text
+                else:
+                    self.phone_no = ent.text
 
     def check_all_elements(self,doc):
         self.check_name(doc)
@@ -366,7 +391,6 @@ class Helper:
             return True, "Name Confirmed!"
         
 
-
 ############################# --- Chat Helper --- #############################
 
     def get_general_greeting(self):
@@ -439,6 +463,23 @@ class Helper:
         
         return reply_chat
 
+    def get_reservation_confirmation(self):
+        reply_chat = self.reply_data[self.reply_data['Type'] == 52]
+        item = random.randint(len(reply_chat))
+        reply_chat = reply_chat['Chat'].tolist()[item]
+
+        reply_chat = reply_chat.replace("USER", self.re_name)
+        reply_chat = reply_chat.replace("GSERVICE", self.re_service)
+        reply_chat = reply_chat.replace("APPDATE", self.re_date)
+        reply_chat = reply_chat.replace("PHONUM", self.phone_no)
+
+        if self.caller_name != None:
+            reply_chat =  reply_chat.replace("CALLER", self.caller_name)
+        else:
+            reply_chat =  reply_chat.replace("CALLER", "")
+        
+        return reply_chat
+
     def get_chat_response(self,text):
         doc = self.nlp(text)
         self.check_all_elements(doc)
@@ -500,14 +541,57 @@ class Helper:
             else:
                 self.detect_service_date_phone(text)
                 if self.phone_no != None and self.re_ser_code != None and self.re_date != None:
-                    pass
+                    if self.re_status == 0:
+                        self.re_status = 1
+                        return self.get_reservation_confirmation()
+                    elif self.re_status == 1:
+                        pred_user_feedback = self.loaded_acc_rej_model.predict([text])[0]
+                        if pred_user_feedback == "ACCEPT":
+                            self.re_status = 4
+                            self.is_make_reser_mode = False
+                            reply_chat = self.reply_data[self.reply_data['Type'] == 53]
+                            item = random.randint(len(reply_chat))
+                            reply_chat = reply_chat['Chat'].tolist()[item]
+                            if self.caller_name != None:
+                                reply_chat =  reply_chat.replace("CALLER", self.caller_name)
+                            else:
+                                reply_chat =  reply_chat.replace(" CALLER", "")
+                            return reply_chat
+                        else:
+                            self.re_status = 0
+                            self.phone_no = None
+                            self.re_service = None
+                            self.re_ser_code = None
+                            self.re_date = None
+
+                            reply_chat = self.reply_data[self.reply_data['Type'] == 54]
+                            item = random.randint(len(reply_chat))
+                            reply_chat = reply_chat['Chat'].tolist()[item]
+                            if self.caller_name != None:
+                                reply_chat =  reply_chat.replace("CALLER", self.caller_name)
+                            else:
+                                reply_chat =  reply_chat.replace(" CALLER", "")
+                            return reply_chat
                 elif self.phone_no == None:
-                    pass
+                    self.phone_no = None
+                    reply_chat = self.reply_data[self.reply_data['Type'] == 55]
+                    item = random.randint(len(reply_chat))
+                    return reply_chat['Chat'].tolist()[item]
                 elif self.re_ser_code == None:
-                    pass
+                    self.re_ser_code = None
+                    self.re_service = None
+                    reply_chat = self.reply_data[self.reply_data['Type'] == 56]
+                    item = random.randint(len(reply_chat))
+                    return reply_chat['Chat'].tolist()[item]
                 elif self.re_date == None:
-                    pass
-                print('Name Checked!!! Now move to detect all other info!')
+                    self.re_date = None
+                    reply_chat = self.reply_data[self.reply_data['Type'] == 57]
+                    item = random.randint(len(reply_chat))
+                    return reply_chat['Chat'].tolist()[item]
+        elif self.is_change_reser_mode == True:
+            pass
+        elif self.is_remove_reser_mode == True:
+            pass
 
 
 
