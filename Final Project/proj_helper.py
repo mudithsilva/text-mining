@@ -510,6 +510,10 @@ class Helper:
                 reservation_text = self.get_general_reser_reply() + self.check_appointment_name()[1]
                 self.is_make_reser_mode = True
                 return reservation_text
+            elif pred_group == 6:
+                self.is_change_reser_mode = True
+            elif pred_group == 7:
+                self.is_remove_reser_mode = True
         elif self.is_make_reser_mode == True:
             if self.re_name_checked == False:
                 has_feedback, has_name = self.has_user_feedback(text)
