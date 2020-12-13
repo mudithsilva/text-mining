@@ -362,27 +362,32 @@ class Helper:
 ############################# --- Add,Change,Remove Reservation --- #############################
 
 
-    def check_appointment_name(self):
+    def check_appointment_name(self,re_type):
+        # re_type = 5  => Make Reservation
+        # re_type = 6  => Change Reservation
+        # re_type = 7  => Cancel Reservation
+
+        group_df = self.appointment_reply[self.appointment_reply['Group'] == re_type]
         if self.re_name_checked == False:
             if self.re_name == self.caller_name and self.re_name != None:
                 # Check we could make appointment for chat person name
-                reply_chat = self.appointment_reply[self.appointment_reply['Code'] == 'NAME_CHECK_P']
+                reply_chat = group_df[group_df['Code'] == 'NAME_CHECK_P']
                 item = random.randint(len(reply_chat))
                 reply_chat = reply_chat['Chat'].tolist()[item]
                 return False, reply_chat.replace("USER", self.re_name)
             elif self.re_name == None:
                 # self.re_name = "" when not detected appointment person name
-                reply_chat = self.appointment_reply[self.appointment_reply['Code'] == 'NAME_CHECK_NA']
+                reply_chat = group_df[group_df['Code'] == 'NAME_CHECK_NA']
                 item = random.randint(len(reply_chat))
                 return False, reply_chat['Chat'].tolist()[item]
             elif self.re_name == "":
                 # self.re_name = "" when not detected appointment person name
-                reply_chat = self.appointment_reply[self.appointment_reply['Code'] == 'NAME_CHECK_ERROR']
+                reply_chat = group_df[group_df['Code'] == 'NAME_CHECK_ERROR']
                 item = random.randint(len(reply_chat))
                 return False, reply_chat['Chat'].tolist()[item]
             else:
                 # Get the reservation name
-                reply_chat = self.appointment_reply[self.appointment_reply['Code'] == 'NAME_CHECK_N']
+                reply_chat = group_df[group_df['Code'] == 'NAME_CHECK_N']
                 item = random.randint(len(reply_chat))
                 reply_chat = reply_chat['Chat'].tolist()[item]
                 return True, reply_chat.replace("USER", self.re_name)
@@ -450,9 +455,12 @@ class Helper:
             ind_val = self.service_info.loc[self.service_info['Code'] == 'ERROR']
             return ind_val['Description'].values[0]
     
-    def get_general_reser_reply(self):
+    def get_general_reser_reply(self,re_type):
+        # re_type = 5  => Make Reservation
+        # re_type = 6  => Change Reservation
+        # re_type = 7  => Cancel Reservation
 
-        reply_chat = self.reply_data[self.reply_data['Type'] == 5]
+        reply_chat = self.reply_data[self.reply_data['Type'] == re_type]
         item = random.randint(len(reply_chat))
         reply_chat = reply_chat['Chat'].tolist()[item]
 
@@ -507,13 +515,17 @@ class Helper:
             elif pred_group == 4:
                 return self.get_service_information()
             elif pred_group == 5:
-                reservation_text = self.get_general_reser_reply() + self.check_appointment_name()[1]
+                reservation_text = self.get_general_reser_reply(5) + self.check_appointment_name(5)[1]
                 self.is_make_reser_mode = True
                 return reservation_text
             elif pred_group == 6:
+                reservation_text = self.get_general_reser_reply(6) + self.check_appointment_name(6)[1]
                 self.is_change_reser_mode = True
+                return reservation_text
             elif pred_group == 7:
+                reservation_text = self.get_general_reser_reply(6) + self.check_appointment_name(6)[1]
                 self.is_remove_reser_mode = True
+                return reservation_text
         elif self.is_make_reser_mode == True:
             if self.re_name_checked == False:
                 has_feedback, has_name = self.has_user_feedback(text)
@@ -527,7 +539,7 @@ class Helper:
                         return reply_chat['Chat'].tolist()[item]
                     else:
                         #self.check_client_name(text)
-                        return self.check_appointment_name()[1]
+                        return self.check_appointment_name(5)[1]
                 elif has_feedback:
                     #self.check_client_name(text)
                     pred_user_feedback = self.loaded_acc_rej_model.predict([text])[0]
@@ -538,10 +550,10 @@ class Helper:
                         return reply_chat['Chat'].tolist()[item]
                     else:
                         self.check_client_name(text)
-                        return self.check_appointment_name()[1]
+                        return self.check_appointment_name(5)[1]
                 else:
                     self.check_client_name(text)
-                    return self.check_appointment_name()[1]
+                    return self.check_appointment_name(5)[1]
             else:
                 self.detect_service_date_phone(text)
                 if self.phone_no != None and self.re_ser_code != None and self.re_date != None:
