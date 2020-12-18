@@ -64,6 +64,7 @@ class Helper:
     is_remove_reser_mode = False
 
     is_exit_chat = False
+    current_group = 0
 
 
     def __init__(self):
@@ -171,10 +172,13 @@ class Helper:
     def listToString(self,s):  
         str1 = " " 
         ret_str = str1.join(s)
-        if ret_str[len(ret_str)-1] != '.':
-            return ret_str + '.'
+        return ret_str
+
+    def endSentence(self,text):  
+        if text[len(text)-1] != '.':
+            return text + ' .'
         else:
-            return ret_str
+            return text
     
     def remove_span(self, doc, index):
         np_array = doc.to_array([LOWER, POS, ENT_TYPE, IS_ALPHA])
@@ -201,6 +205,7 @@ class Helper:
             for match_id, start, end in self.matches:   
                 string_id = self.nlp.vocab.strings[match_id]
                 if string_id == "Caller_Name1":
+                    print('Pass')
                     self.caller_name = str(doc[start+1:end]).title()
                     if self.caller_name[len(self.caller_name) - 1] == ".":
                         self.caller_name = self.caller_name[0:len(self.caller_name) - 1]
@@ -331,10 +336,12 @@ class Helper:
         # name_pattern_1 = [{'POS': 'AUX', 'OP': '*'},
         #                     {'POS': 'PROPN', 'OP': '+'},
         #                     {'POS': 'PROPN', 'OP': '*'}]
+        # name_pattern_1 = [{'POS': 'AUX', 'OP': '+'},
+        #                     {'POS': 'PROPN', 'OP': '+'},
+        #                     {'POS': 'PROPN', 'OP': '?'},
+        #                     {'POS': 'PROPN', 'OP': '!', 'DEP': 'compound'}]
         name_pattern_1 = [{'POS': 'AUX', 'OP': '+'},
-                            {'POS': 'PROPN', 'OP': '+'},
-                            {'POS': 'PROPN', 'OP': '?'},
-                            {'POS': 'PROPN', 'OP': '!', 'DEP': 'compound'}]
+                            {'POS': 'PROPN', 'OP': '+'}]
         name_pattern_2 = [{'POS': "PROPN"},
                             {'LOWER': 'here'}]
         
@@ -525,7 +532,7 @@ class Helper:
         return reply_chat
 
     def get_chat_response(self,text):
-        doc = self.nlp(self.preprocess(text)) #self.nlp(text)
+        doc = self.nlp(self.endSentence(text)) #self.nlp(text)
         self.check_all_elements(doc)
         # self.check_name(doc)
         # self.check_greeting(doc)
@@ -534,8 +541,8 @@ class Helper:
 
         if self.is_make_reser_mode == False and self.is_change_reser_mode == False and self.is_remove_reser_mode == False:
             proc_text = self.remove_unwanted_text(text)
-            doc = self.nlp(text)
-            self.check_all_elements(doc)
+            # doc = self.nlp(text)
+            # self.check_all_elements(doc)
             # print('Test ||| ', self.preprocess(proc_text))
             pred_group = self.loaded_model.predict([self.preprocess(proc_text)])[0]
             # print("Pred Group is ", pred_group)
@@ -545,28 +552,37 @@ class Helper:
             # print('Service Tags :- ', self.checked_services_tags)
 
             if pred_group == 1:
+                self.current_group = 1
                 return self.get_general_greeting()
             elif pred_group == 2:
+                self.current_group = 2
                 return self.get_checkback_greeting()
             elif pred_group == 3:
+                self.current_group = 3
                 return self.get_general_information(proc_text)
             elif pred_group == 4:
+                self.current_group = 4
                 return self.get_service_information()
             elif pred_group == 5:
+                self.current_group = 5
                 reservation_text = self.get_general_reser_reply(5) + self.check_appointment_name(5)[1]
                 self.is_make_reser_mode = True
                 return reservation_text
             elif pred_group == 6:
+                self.current_group = 6
                 reservation_text = self.get_general_reser_reply(6) + self.check_appointment_name(6)[1]
                 self.is_change_reser_mode = True
                 return reservation_text
             elif pred_group == 7:
+                self.current_group = 7
                 reservation_text = self.get_general_reser_reply(7) + self.check_appointment_name(7)[1]
                 self.is_remove_reser_mode = True
                 return reservation_text
             elif pred_group == 8:
+                self.current_group = 8
                 return self.get_exit_reply()
         elif self.is_make_reser_mode == True:
+            self.current_group = 500
             if self.re_name_checked == False:
                 has_feedback, has_name = self.has_user_feedback(text)
                 if has_feedback and has_name:
@@ -595,7 +611,7 @@ class Helper:
                     self.check_client_name(text)
                     return self.check_appointment_name(5)[1]
             else:
-                self.detect_service_date_phone(text)
+                self.detect_service_date_phone(self.endSentence(text))
                 if self.phone_no != None and self.re_ser_code != None and self.re_date != None:
                     if self.re_status == 0:
                         self.re_status = 1
@@ -647,6 +663,7 @@ class Helper:
                     item = random.randint(len(reply_chat))
                     return reply_chat['Chat'].tolist()[item]
         elif self.is_change_reser_mode == True:
+            self.current_group = 600
             if self.re_name_checked == False:
                 has_feedback, has_name = self.has_user_feedback(text)
                 if has_feedback and has_name:
@@ -675,7 +692,7 @@ class Helper:
                     self.check_client_name(text)
                     return self.check_appointment_name(6)[1]
             else:
-                self.detect_service_date_phone(text)
+                self.detect_service_date_phone(self.endSentence(text))
                 if self.phone_no != None and self.re_date != None:
                     if self.re_status == 0:
                         self.re_status = 1
@@ -721,6 +738,7 @@ class Helper:
                     item = random.randint(len(reply_chat))
                     return reply_chat['Chat'].tolist()[item]
         elif self.is_remove_reser_mode == True:
+            self.current_group = 700
             if self.re_name_checked == False:
                 has_feedback, has_name = self.has_user_feedback(text)
                 if has_feedback and has_name:
@@ -749,7 +767,7 @@ class Helper:
                     self.check_client_name(text)
                     return self.check_appointment_name(7)[1]
             else:
-                self.detect_service_date_phone(text)
+                self.detect_service_date_phone(self.endSentence(text))
                 if self.phone_no != None:
                     if self.re_status == 0:
                         self.re_status = 1
