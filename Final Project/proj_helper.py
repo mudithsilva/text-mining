@@ -471,7 +471,13 @@ class Helper:
             return ind_val['Description'].values[0]
         else:
             ind_val = self.service_info.loc[self.service_info['Code'] == 'ERROR']
-            return ind_val['Description'].values[0]
+            reply_chat = ind_val['Description'].values[0]
+
+            if self.caller_name != None:
+                reply_chat =  reply_chat.replace("USER", self.caller_name)
+            else:
+                reply_chat =  reply_chat.replace("USER", "")
+            return reply_chat
     
     def get_general_reser_reply(self,re_type):
         # re_type = 5  => Make Reservation
