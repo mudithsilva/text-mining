@@ -205,7 +205,6 @@ class Helper:
             for match_id, start, end in self.matches:   
                 string_id = self.nlp.vocab.strings[match_id]
                 if string_id == "Caller_Name1":
-                    print('Pass')
                     self.caller_name = str(doc[start+1:end]).title()
                     if self.caller_name[len(self.caller_name) - 1] == ".":
                         self.caller_name = self.caller_name[0:len(self.caller_name) - 1]
@@ -311,7 +310,7 @@ class Helper:
                     self.re_date = self.re_date + " & " + ent.text
                 else:
                     self.re_date = ent.text
-            elif ent.label_ == "CARDINAL" or ent.label_ == "DATE" and ent.text.isnumeric():
+            elif ent.label_ == "CARDINAL" or (ent.label_ == "DATE" and ent.text.isnumeric()):
                 # print('Reservation Phone number found!')
                 if self.phone_no != None:
                     self.phone_no = self.phone_no .replace(' & ', ' , ')
